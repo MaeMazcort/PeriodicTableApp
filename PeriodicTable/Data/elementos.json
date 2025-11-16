@@ -2420,5 +2420,437 @@
     ],
     "curiosidadesES": "El mercurio es uno de los dos elementos líquidos a temperatura ambiente y es tóxico.",
     "curiosidadesEN": "Mercury is one of two elements liquid at room temperature and is toxic."
+  },
+  {
+    "id": 81,
+    "simbolo": "Tl",
+    "nombreES": "Talio",
+    "nombreEN": "Thallium",
+    "familia": "Metales del Bloque p",
+    "periodo": 6,
+    "grupo": 13,
+    "masaAtomica": 204.38,
+    "estado25C": "Sólido",
+    "densidad": 11.85,
+    "puntoFusionC": 304,
+    "puntoEbullicionC": 1473,
+    "configuracionElectronica": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p¹",
+    "electronegatividad": 1.62,
+    "radioAtomico": 145,
+    "energiaIonizacion": 589,
+    "usosES": [
+      "Electrónica",
+      "Vidrios especiales",
+      "Investigación"
+    ],
+    "usosEN": [
+      "Electronics",
+      "Specialty glasses",
+      "Research"
+    ],
+    "curiosidadesES": "El talio es altamente tóxico; históricamente se usó en venenos para ratas.",
+    "curiosidadesEN": "Thallium is highly toxic; it was historically used in rat poisons."
+  },
+  {
+    "id": 82,
+    "simbolo": "Pb",
+    "nombreES": "Plomo",
+    "nombreEN": "Lead",
+    "familia": "Metales del Bloque p",
+    "periodo": 6,
+    "grupo": 14,
+    "masaAtomica": 207.2,
+    "estado25C": "Sólido",
+    "densidad": 11.34,
+    "puntoFusionC": 327.46,
+    "puntoEbullicionC": 1749,
+    "configuracionElectronica": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p²",
+    "electronegatividad": 2.33,
+    "radioAtomico": 154,
+    "energiaIonizacion": 716,
+    "usosES": [
+      "Baterías de plomo-ácido",
+      "Blindaje contra radiación",
+      "Aleaciones"
+    ],
+    "usosEN": [
+      "Lead-acid batteries",
+      "Radiation shielding",
+      "Alloys"
+    ],
+    "curiosidadesES": "El plomo es tóxico; su uso en gasolina y pinturas ha sido eliminado en muchos países.",
+    "curiosidadesEN": "Lead is toxic; its use in gasoline and paints has been phased out in many countries."
+  },
+  {
+    "id": 83,
+    "simbolo": "Bi",
+    "nombreES": "Bismuto",
+    "nombreEN": "Bismuth",
+    "familia": "Metales del Bloque p",
+    "periodo": 6,
+    "grupo": 15,
+    "masaAtomica": 208.98,
+    "estado25C": "Sólido",
+    "densidad": 9.78,
+    "puntoFusionC": 271.4,
+    "puntoEbullicionC": 1564,
+    "configuracionElectronica": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p³",
+    "electronegatividad": 2.02,
+    "radioAtomico": 143,
+    "energiaIonizacion": 703,
+    "usosES": [
+      "Fármacos",
+      "Aleaciones de bajo punto de fusión",
+      "Cosméticos"
+    ],
+    "usosEN": [
+      "Pharmaceuticals",
+      "Low-melting alloys",
+      "Cosmetics"
+    ],
+    "curiosidadesES": "El bismuto es relativamente no tóxico y forma cristales con colores iridiscentes.",
+    "curiosidadesEN": "Bismuth is relatively non-toxic and forms iridescent-colored crystals."
+  },
+  {
+    "id": 84,
+    "simbolo": "Po",
+    "nombreES": "Polonio",
+    "nombreEN": "Polonium",
+    "familia": "Metales del Bloque p",
+    "periodo": 6,
+    "grupo": 16,
+    "masaAtomica": 209,
+    "estado25C": "Sólido",
+    "densidad": 9.2,
+    "puntoFusionC": 254,
+    "puntoEbullicionC": 962,
+    "configuracionElectronica": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁴",
+    "electronegatividad": 2.0,
+    "radioAtomico": 135,
+    "energiaIonizacion": 812,
+    "usosES": [
+      "Fuentes de calor para sondas espaciales (histórico)",
+      "Investigación"
+    ],
+    "usosEN": [
+      "Heat sources for space probes (historical)",
+      "Research"
+    ],
+    "curiosidadesES": "El polonio es extremadamente radiactivo; el Po-210 es notorio por envenenamientos.",
+    "curiosidadesEN": "Polonium is extremely radioactive; Po-210 is notorious for poisonings."
+  },
+  {
+    "id": 85,
+    "simbolo": "At",
+    "nombreES": "Astato",
+    "nombreEN": "Astatine",
+    "familia": "Halógenos",
+    "periodo": 6,
+    "grupo": 17,
+    "masaAtomica": 210,
+    "estado25C": "Sólido",
+    "densidad": 7.0,
+    "puntoFusionC": 302,
+    "puntoEbullicionC": 337,
+    "configuracionElectronica": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁵",
+    "electronegatividad": 2.2,
+    "radioAtomico": 127,
+    "energiaIonizacion": 920,
+    "usosES": [
+      "Medicina nuclear (At-211)",
+      "Investigación"
+    ],
+    "usosEN": [
+      "Nuclear medicine (At-211)",
+      "Research"
+    ],
+    "curiosidadesES": "El astato es extremadamente raro y radiactivo; se estima que solo hay trazas en la corteza terrestre.",
+    "curiosidadesEN": "Astatine is extremely rare and radioactive; only trace amounts exist in Earth's crust."
+  },
+  {
+    "id": 86,
+    "simbolo": "Rn",
+    "nombreES": "Radón",
+    "nombreEN": "Radon",
+    "familia": "Gases Nobles",
+    "periodo": 6,
+    "grupo": 18,
+    "masaAtomica": 222,
+    "estado25C": "Gas",
+    "densidad": 0.00973,
+    "puntoFusionC": -71,
+    "puntoEbullicionC": -61.7,
+    "configuracionElectronica": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁶",
+    "electronegatividad": null,
+    "radioAtomico": 120,
+    "energiaIonizacion": 1037,
+    "usosES": [
+      "Terapias médicas (histórico)",
+      "Investigación"
+    ],
+    "usosEN": [
+      "Medical therapies (historical)",
+      "Research"
+    ],
+    "curiosidadesES": "El radón es un gas radiactivo que puede acumularse en edificios y es un riesgo para la salud.",
+    "curiosidadesEN": "Radon is a radioactive gas that can accumulate in buildings and poses health risks."
+  },
+  {
+    "id": 87,
+    "simbolo": "Fr",
+    "nombreES": "Francio",
+    "nombreEN": "Francium",
+    "familia": "Metales Alcalinos",
+    "periodo": 7,
+    "grupo": 1,
+    "masaAtomica": 223,
+    "estado25C": "Sólido",
+    "densidad": 1.87,
+    "puntoFusionC": 27,
+    "puntoEbullicionC": 677,
+    "configuracionElectronica": "[Rn] 7s¹",
+    "electronegatividad": 0.7,
+    "radioAtomico": 348,
+    "energiaIonizacion": 380,
+    "usosES": [
+      "Investigación"
+    ],
+    "usosEN": [
+      "Research"
+    ],
+    "curiosidadesES": "El francio es extremadamente raro y radiactivo; casi no existe en forma macroscópica.",
+    "curiosidadesEN": "Francium is extremely rare and radioactive; it scarcely exists in macroscopic form."
+  },
+  {
+    "id": 88,
+    "simbolo": "Ra",
+    "nombreES": "Radio",
+    "nombreEN": "Radium",
+    "familia": "Metales Alcalinotérreos",
+    "periodo": 7,
+    "grupo": 2,
+    "masaAtomica": 226,
+    "estado25C": "Sólido",
+    "densidad": 5.5,
+    "puntoFusionC": 700,
+    "puntoEbullicionC": 1737,
+    "configuracionElectronica": "[Rn] 7s²",
+    "electronegatividad": 0.9,
+    "radioAtomico": 283,
+    "energiaIonizacion": 509,
+    "usosES": [
+      "Pinturas luminiscentes (histórico)",
+      "Medicina (histórico)"
+    ],
+    "usosEN": [
+      "Luminous paints (historical)",
+      "Medicine (historical)"
+    ],
+    "curiosidadesES": "Descubierto por Marie y Pierre Curie, el radio es fuertemente radiactivo.",
+    "curiosidadesEN": "Discovered by Marie and Pierre Curie, radium is strongly radioactive."
+  },
+  {
+    "id": 89,
+    "simbolo": "Ac",
+    "nombreES": "Actinio",
+    "nombreEN": "Actinium",
+    "familia": "Actínidos",
+    "periodo": 7,
+    "grupo": 3,
+    "masaAtomica": 227,
+    "estado25C": "Sólido",
+    "densidad": 10.07,
+    "puntoFusionC": 1050,
+    "puntoEbullicionC": 3198,
+    "configuracionElectronica": "[Rn] 6d¹ 7s²",
+    "electronegatividad": 1.1,
+    "radioAtomico": 188,
+    "energiaIonizacion": 499,
+    "usosES": [
+      "Fuentes de neutrones",
+      "Investigación"
+    ],
+    "usosEN": [
+      "Neutron sources",
+      "Research"
+    ],
+    "curiosidadesES": "El actinio es altamente radiactivo y brilla en la oscuridad por ionización del aire.",
+    "curiosidadesEN": "Actinium is highly radioactive and glows in the dark due to air ionization."
+  },
+  {
+    "id": 90,
+    "simbolo": "Th",
+    "nombreES": "Torio",
+    "nombreEN": "Thorium",
+    "familia": "Actínidos",
+    "periodo": 7,
+    "grupo": 3,
+    "masaAtomica": 232.0377,
+    "estado25C": "Sólido",
+    "densidad": 11.72,
+    "puntoFusionC": 1750,
+    "puntoEbullicionC": 4788,
+    "configuracionElectronica": "[Rn] 6d² 7s²",
+    "electronegatividad": 1.3,
+    "radioAtomico": 179,
+    "energiaIonizacion": 587,
+    "usosES": [
+      "Combustible nuclear (ciclo del torio)",
+      "Aleaciones",
+      "Electrodos TIG (histórico)"
+    ],
+    "usosEN": [
+      "Nuclear fuel (thorium cycle)",
+      "Alloys",
+      "TIG electrodes (historical)"
+    ],
+    "curiosidadesES": "El torio es fértil y puede convertirse en uranio-233 en reactores.",
+    "curiosidadesEN": "Thorium is fertile and can be bred to uranium-233 in reactors."
+  },
+  {
+    "id": 91,
+    "simbolo": "Pa",
+    "nombreES": "Protactinio",
+    "nombreEN": "Protactinium",
+    "familia": "Actínidos",
+    "periodo": 7,
+    "grupo": 3,
+    "masaAtomica": 231.03588,
+    "estado25C": "Sólido",
+    "densidad": 15.37,
+    "puntoFusionC": 1572,
+    "puntoEbullicionC": 4000,
+    "configuracionElectronica": "[Rn] 5f² 6d¹ 7s²",
+    "electronegatividad": 1.5,
+    "radioAtomico": 163,
+    "energiaIonizacion": 568,
+    "usosES": [
+      "Investigación",
+      "Geocronología"
+    ],
+    "usosEN": [
+      "Research",
+      "Geochronology"
+    ],
+    "curiosidadesES": "El protactinio es muy raro y altamente radiactivo; se produce como subproducto del uranio.",
+    "curiosidadesEN": "Protactinium is very rare and highly radioactive; produced as a byproduct of uranium."
+  },
+  {
+    "id": 92,
+    "simbolo": "U",
+    "nombreES": "Uranio",
+    "nombreEN": "Uranium",
+    "familia": "Actínidos",
+    "periodo": 7,
+    "grupo": 3,
+    "masaAtomica": 238.02891,
+    "estado25C": "Sólido",
+    "densidad": 19.05,
+    "puntoFusionC": 1132.2,
+    "puntoEbullicionC": 4131,
+    "configuracionElectronica": "[Rn] 5f³ 6d¹ 7s²",
+    "electronegatividad": 1.38,
+    "radioAtomico": 175,
+    "energiaIonizacion": 597,
+    "usosES": [
+      "Combustible nuclear",
+      "Armas nucleares",
+      "Vidrios coloreados (histórico)"
+    ],
+    "usosEN": [
+      "Nuclear fuel",
+      "Nuclear weapons",
+      "Colored glass (historical)"
+    ],
+    "curiosidadesES": "El uranio-235 es fisible y sustenta la mayoría de los reactores nucleares actuales.",
+    "curiosidadesEN": "Uranium-235 is fissile and powers most current nuclear reactors."
+  },
+  {
+    "id": 93,
+    "simbolo": "Np",
+    "nombreES": "Neptunio",
+    "nombreEN": "Neptunium",
+    "familia": "Actínidos",
+    "periodo": 7,
+    "grupo": 3,
+    "masaAtomica": 237,
+    "estado25C": "Sólido",
+    "densidad": 20.45,
+    "puntoFusionC": 644,
+    "puntoEbullicionC": 3902,
+    "configuracionElectronica": "[Rn] 5f⁴ 6d¹ 7s²",
+    "electronegatividad": 1.36,
+    "radioAtomico": 175,
+    "energiaIonizacion": 604,
+    "usosES": [
+      "Investigación",
+      "Generación de Pu-238"
+    ],
+    "usosEN": [
+      "Research",
+      "Pu-238 production"
+    ],
+    "curiosidadesES": "El neptunio fue el primer elemento transuránico sintetizado.",
+    "curiosidadesEN": "Neptunium was the first transuranic element synthesized."
+  },
+  {
+    "id": 94,
+    "simbolo": "Pu",
+    "nombreES": "Plutonio",
+    "nombreEN": "Plutonium",
+    "familia": "Actínidos",
+    "periodo": 7,
+    "grupo": 3,
+    "masaAtomica": 244,
+    "estado25C": "Sólido",
+    "densidad": 19.84,
+    "puntoFusionC": 640,
+    "puntoEbullicionC": 3228,
+    "configuracionElectronica": "[Rn] 5f⁶ 7s²",
+    "electronegatividad": 1.28,
+    "radioAtomico": 159,
+    "energiaIonizacion": 585,
+    "usosES": [
+      "Combustible para generadores termoeléctricos (Pu-238)",
+      "Armas nucleares",
+      "Investigación"
+    ],
+    "usosEN": [
+      "Fuel for radioisotope thermoelectric generators (Pu-238)",
+      "Nuclear weapons",
+      "Research"
+    ],
+    "curiosidadesES": "El plutonio presenta múltiples fases cristalinas con propiedades muy distintas.",
+    "curiosidadesEN": "Plutonium exhibits multiple crystalline phases with very different properties."
+  },
+  {
+    "id": 95,
+    "simbolo": "Am",
+    "nombreES": "Americio",
+    "nombreEN": "Americium",
+    "familia": "Actínidos",
+    "periodo": 7,
+    "grupo": 3,
+    "masaAtomica": 243,
+    "estado25C": "Sólido",
+    "densidad": 13.69,
+    "puntoFusionC": 1176,
+    "puntoEbullicionC": 2607,
+    "configuracionElectronica": "[Rn] 5f⁷ 7s²",
+    "electronegatividad": 1.3,
+    "radioAtomico": 173,
+    "energiaIonizacion": 578,
+    "usosES": [
+      "Detectores de humo (Am-241)",
+      "Fuentes de neutrones",
+      "Investigación"
+    ],
+    "usosEN": [
+      "Smoke detectors (Am-241)",
+      "Neutron sources",
+      "Research"
+    ],
+    "curiosidadesES": "El americio fue descubierto en 1944 durante investigaciones del Proyecto Manhattan.",
+    "curiosidadesEN": "Americium was discovered in 1944 during Manhattan Project research."
   }
 ]
