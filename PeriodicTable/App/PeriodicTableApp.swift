@@ -56,7 +56,7 @@ struct ContentView: View {
     
     private var mainTabView: some View {
         TabView(selection: $selectedTab) {
-            HomeView()
+            HomeView(selectedTab: $selectedTab)
                 .tabItem {
                     Label("Inicio", systemImage: "house.fill")
                 }

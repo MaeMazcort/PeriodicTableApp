@@ -11,6 +11,7 @@ struct HomeView: View {
     @EnvironmentObject var dataManager: DataManager
     @EnvironmentObject var progressManager: ProgressManager
     @Environment(\.accessibilityReduceMotion) var reduceMotion
+    @Binding var selectedTab: ContentView.Tab
     
     var body: some View {
         NavigationStack {
@@ -117,7 +118,7 @@ struct HomeView: View {
                     title: "Explorar Tabla",
                     color: .blue
                 ) {
-                    // Navegar a tabla
+                    selectedTab = .table
                 }
                 
                 QuickActionButton(
@@ -125,7 +126,7 @@ struct HomeView: View {
                     title: "Jugar",
                     color: .green
                 ) {
-                    // Navegar a juegos
+                    selectedTab = .games
                 }
                 
                 QuickActionButton(
@@ -133,7 +134,7 @@ struct HomeView: View {
                     title: "Reto Rápido",
                     color: .orange
                 ) {
-                    // Iniciar reto
+                    selectedTab = .games
                 }
                 
                 QuickActionButton(
@@ -141,7 +142,7 @@ struct HomeView: View {
                     title: "Buscar",
                     color: .purple
                 ) {
-                    // Navegar a búsqueda
+                    selectedTab = .search
                 }
             }
         }
@@ -245,7 +246,7 @@ struct ElementMiniCard: View {
 
 // MARK: - Preview
 #Preview {
-    HomeView()
+    HomeView(selectedTab: .constant(.home))
         .environmentObject(DataManager.shared)
         .environmentObject(ProgressManager.shared)
         .environmentObject(TTSManager.shared)
