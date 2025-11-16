@@ -2852,5 +2852,615 @@
     ],
     "curiosidadesES": "El americio fue descubierto en 1944 durante investigaciones del Proyecto Manhattan.",
     "curiosidadesEN": "Americium was discovered in 1944 during Manhattan Project research."
+  },
+  {
+    "id": 96,
+    "simbolo": "Cm",
+    "nombreES": "Curio",
+    "nombreEN": "Curium",
+    "familia": "Actínidos",
+    "periodo": 7,
+    "grupo": 3,
+    "masaAtomica": 247,
+    "estado25C": "Sólido",
+    "densidad": 13.51,
+    "puntoFusionC": 1340,
+    "puntoEbullicionC": 3110,
+    "configuracionElectronica": "[Rn] 5f⁷ 6d¹ 7s²",
+    "electronegatividad": 1.28,
+    "radioAtomico": 174,
+    "energiaIonizacion": 581,
+    "usosES": [
+      "Fuentes de alfa",
+      "Investigación",
+      "Generadores termoeléctricos (histórico)"
+    ],
+    "usosEN": [
+      "Alpha sources",
+      "Research",
+      "Radioisotope thermoelectric generators (historical)"
+    ],
+    "curiosidadesES": "Nombrado en honor a Marie y Pierre Curie; es radiactivo y se produce en reactores nucleares.",
+    "curiosidadesEN": "Named after Marie and Pierre Curie; it is radioactive and produced in nuclear reactors."
+  },
+  {
+    "id": 97,
+    "simbolo": "Bk",
+    "nombreES": "Berkelio",
+    "nombreEN": "Berkelium",
+    "familia": "Actínidos",
+    "periodo": 7,
+    "grupo": 3,
+    "masaAtomica": 247,
+    "estado25C": "Sólido",
+    "densidad": 14.78,
+    "puntoFusionC": 986,
+    "puntoEbullicionC": 2627,
+    "configuracionElectronica": "[Rn] 5f⁹ 7s²",
+    "electronegatividad": 1.3,
+    "radioAtomico": 170,
+    "energiaIonizacion": 601,
+    "usosES": [
+      "Investigación",
+      "Síntesis de elementos más pesados"
+    ],
+    "usosEN": [
+      "Research",
+      "Synthesis of heavier elements"
+    ],
+    "curiosidadesES": "Fue sintetizado por primera vez en la Universidad de California, Berkeley, de donde toma su nombre.",
+    "curiosidadesEN": "First synthesized at the University of California, Berkeley, from which it takes its name."
+  },
+  {
+    "id": 98,
+    "simbolo": "Cf",
+    "nombreES": "Californio",
+    "nombreEN": "Californium",
+    "familia": "Actínidos",
+    "periodo": 7,
+    "grupo": 3,
+    "masaAtomica": 251,
+    "estado25C": "Sólido",
+    "densidad": 15.1,
+    "puntoFusionC": 900,
+    "puntoEbullicionC": 1470,
+    "configuracionElectronica": "[Rn] 5f¹⁰ 7s²",
+    "electronegatividad": 1.3,
+    "radioAtomico": 169,
+    "energiaIonizacion": 608,
+    "usosES": [
+      "Fuentes de neutrones",
+      "Detección de oro y plata",
+      "Investigación"
+    ],
+    "usosEN": [
+      "Neutron sources",
+      "Gold and silver detection",
+      "Research"
+    ],
+    "curiosidadesES": "El Cf-252 es una potente fuente de neutrones usada en aplicaciones industriales y médicas.",
+    "curiosidadesEN": "Cf-252 is a powerful neutron source used in industrial and medical applications."
+  },
+  {
+    "id": 99,
+    "simbolo": "Es",
+    "nombreES": "Einsteinio",
+    "nombreEN": "Einsteinium",
+    "familia": "Actínidos",
+    "periodo": 7,
+    "grupo": 3,
+    "masaAtomica": 252,
+    "estado25C": "Sólido",
+    "densidad": 8.84,
+    "puntoFusionC": 860,
+    "puntoEbullicionC": 996,
+    "configuracionElectronica": "[Rn] 5f¹¹ 7s²",
+    "electronegatividad": 1.3,
+    "radioAtomico": 153,
+    "energiaIonizacion": 619,
+    "usosES": [
+      "Investigación",
+      "Síntesis de nuevos elementos"
+    ],
+    "usosEN": [
+      "Research",
+      "Synthesis of new elements"
+    ],
+    "curiosidadesES": "Nombrado en honor a Albert Einstein; se identificó en los restos de pruebas termonucleares.",
+    "curiosidadesEN": "Named after Albert Einstein; identified in the debris of thermonuclear tests."
+  },
+  {
+    "id": 100,
+    "simbolo": "Fm",
+    "nombreES": "Fermio",
+    "nombreEN": "Fermium",
+    "familia": "Actínidos",
+    "periodo": 7,
+    "grupo": 3,
+    "masaAtomica": 257,
+    "estado25C": "Sólido",
+    "densidad": 9.7,
+    "puntoFusionC": 1527,
+    "puntoEbullicionC": 3000,
+    "configuracionElectronica": "[Rn] 5f¹² 7s²",
+    "electronegatividad": 1.3,
+    "radioAtomico": 152,
+    "energiaIonizacion": 627,
+    "usosES": [
+      "Investigación"
+    ],
+    "usosEN": [
+      "Research"
+    ],
+    "curiosidadesES": "Nombrado por Enrico Fermi; solo se produce en cantidades minúsculas en explosiones o reactores.",
+    "curiosidadesEN": "Named for Enrico Fermi; produced only in minute amounts in explosions or reactors."
+  },
+  {
+    "id": 101,
+    "simbolo": "Md",
+    "nombreES": "Mendelevio",
+    "nombreEN": "Mendelevium",
+    "familia": "Actínidos",
+    "periodo": 7,
+    "grupo": 3,
+    "masaAtomica": 258,
+    "estado25C": "Sólido",
+    "densidad": 10.3,
+    "puntoFusionC": 827,
+    "puntoEbullicionC": 1100,
+    "configuracionElectronica": "[Rn] 5f¹³ 7s²",
+    "electronegatividad": 1.3,
+    "radioAtomico": 151,
+    "energiaIonizacion": 635,
+    "usosES": [
+      "Investigación"
+    ],
+    "usosEN": [
+      "Research"
+    ],
+    "curiosidadesES": "Nombrado por Dmitri Mendeléyev, creador de la tabla periódica.",
+    "curiosidadesEN": "Named after Dmitri Mendeleev, creator of the periodic table."
+  },
+  {
+    "id": 102,
+    "simbolo": "No",
+    "nombreES": "Nobelio",
+    "nombreEN": "Nobelium",
+    "familia": "Actínidos",
+    "periodo": 7,
+    "grupo": 3,
+    "masaAtomica": 259,
+    "estado25C": "Sólido",
+    "densidad": 9.9,
+    "puntoFusionC": 827,
+    "puntoEbullicionC": 1100,
+    "configuracionElectronica": "[Rn] 5f¹⁴ 7s²",
+    "electronegatividad": 1.3,
+    "radioAtomico": 149,
+    "energiaIonizacion": 642,
+    "usosES": [
+      "Investigación"
+    ],
+    "usosEN": [
+      "Research"
+    ],
+    "curiosidadesES": "Nombrado en honor a Alfred Nobel, inventor de la dinamita y fundador de los Premios Nobel.",
+    "curiosidadesEN": "Named after Alfred Nobel, inventor of dynamite and founder of the Nobel Prizes."
+  },
+  {
+    "id": 103,
+    "simbolo": "Lr",
+    "nombreES": "Laurencio",
+    "nombreEN": "Lawrencium",
+    "familia": "Actínidos",
+    "periodo": 7,
+    "grupo": 3,
+    "masaAtomica": 266,
+    "estado25C": "Sólido",
+    "densidad": 15.6,
+    "puntoFusionC": 1627,
+    "puntoEbullicionC": 2627,
+    "configuracionElectronica": "[Rn] 5f¹⁴ 7s² 7p¹",
+    "electronegatividad": 1.3,
+    "radioAtomico": 160,
+    "energiaIonizacion": 470,
+    "usosES": [
+      "Investigación"
+    ],
+    "usosEN": [
+      "Research"
+    ],
+    "curiosidadesES": "Nombrado por Ernest O. Lawrence, pionero del ciclotrón.",
+    "curiosidadesEN": "Named for Ernest O. Lawrence, pioneer of the cyclotron."
+  },
+  {
+    "id": 104,
+    "simbolo": "Rf",
+    "nombreES": "Rutherfordio",
+    "nombreEN": "Rutherfordium",
+    "familia": "Metales de Transición",
+    "periodo": 7,
+    "grupo": 4,
+    "masaAtomica": 267,
+    "estado25C": "Sólido",
+    "densidad": 23.2,
+    "puntoFusionC": 2100,
+    "puntoEbullicionC": 5500,
+    "configuracionElectronica": "[Rn] 5f¹⁴ 6d² 7s²",
+    "electronegatividad": 1.3,
+    "radioAtomico": 150,
+    "energiaIonizacion": 580,
+    "usosES": [
+      "Investigación"
+    ],
+    "usosEN": [
+      "Research"
+    ],
+    "curiosidadesES": "Elemento sintético nombrado por Ernest Rutherford, padre de la física nuclear.",
+    "curiosidadesEN": "Synthetic element named after Ernest Rutherford, father of nuclear physics."
+  },
+  {
+    "id": 105,
+    "simbolo": "Db",
+    "nombreES": "Dubnio",
+    "nombreEN": "Dubnium",
+    "familia": "Metales de Transición",
+    "periodo": 7,
+    "grupo": 5,
+    "masaAtomica": 268,
+    "estado25C": "Sólido",
+    "densidad": 29.3,
+    "puntoFusionC": 1700,
+    "puntoEbullicionC": 5000,
+    "configuracionElectronica": "[Rn] 5f¹⁴ 6d³ 7s²",
+    "electronegatividad": 1.3,
+    "radioAtomico": 149,
+    "energiaIonizacion": 664,
+    "usosES": [
+      "Investigación"
+    ],
+    "usosEN": [
+      "Research"
+    ],
+    "curiosidadesES": "Nombrado por Dubná, Rusia, sede del JINR.",
+    "curiosidadesEN": "Named after Dubna, Russia, home of the JINR."
+  },
+  {
+    "id": 106,
+    "simbolo": "Sg",
+    "nombreES": "Seaborgio",
+    "nombreEN": "Seaborgium",
+    "familia": "Metales de Transición",
+    "periodo": 7,
+    "grupo": 6,
+    "masaAtomica": 269,
+    "estado25C": "Sólido",
+    "densidad": 35.0,
+    "puntoFusionC": 1900,
+    "puntoEbullicionC": 4400,
+    "configuracionElectronica": "[Rn] 5f¹⁴ 6d⁴ 7s²",
+    "electronegatividad": 1.3,
+    "radioAtomico": 148,
+    "energiaIonizacion": 757,
+    "usosES": [
+      "Investigación"
+    ],
+    "usosEN": [
+      "Research"
+    ],
+    "curiosidadesES": "Nombrado por Glenn T. Seaborg, destacado químico de los actínidos.",
+    "curiosidadesEN": "Named after Glenn T. Seaborg, prominent actinide chemist."
+  },
+  {
+    "id": 107,
+    "simbolo": "Bh",
+    "nombreES": "Bohrio",
+    "nombreEN": "Bohrium",
+    "familia": "Metales de Transición",
+    "periodo": 7,
+    "grupo": 7,
+    "masaAtomica": 270,
+    "estado25C": "Sólido",
+    "densidad": 37.1,
+    "puntoFusionC": 1900,
+    "puntoEbullicionC": 4200,
+    "configuracionElectronica": "[Rn] 5f¹⁴ 6d⁵ 7s²",
+    "electronegatividad": 1.3,
+    "radioAtomico": 141,
+    "energiaIonizacion": 740,
+    "usosES": [
+      "Investigación"
+    ],
+    "usosEN": [
+      "Research"
+    ],
+    "curiosidadesES": "Nombrado en honor a Niels Bohr, pionero de la física cuántica.",
+    "curiosidadesEN": "Named after Niels Bohr, a pioneer of quantum physics."
+  },
+  {
+    "id": 108,
+    "simbolo": "Hs",
+    "nombreES": "Hassio",
+    "nombreEN": "Hassium",
+    "familia": "Metales de Transición",
+    "periodo": 7,
+    "grupo": 8,
+    "masaAtomica": 269,
+    "estado25C": "Sólido",
+    "densidad": 41.0,
+    "puntoFusionC": 1800,
+    "puntoEbullicionC": 4400,
+    "configuracionElectronica": "[Rn] 5f¹⁴ 6d⁶ 7s²",
+    "electronegatividad": 1.3,
+    "radioAtomico": 134,
+    "energiaIonizacion": 730,
+    "usosES": [
+      "Investigación"
+    ],
+    "usosEN": [
+      "Research"
+    ],
+    "curiosidadesES": "Nombrado por Hesse (Hessen), estado alemán donde se sintetizó.",
+    "curiosidadesEN": "Named after Hesse (Hessen), the German state where it was synthesized."
+  },
+  {
+    "id": 109,
+    "simbolo": "Mt",
+    "nombreES": "Meitnerio",
+    "nombreEN": "Meitnerium",
+    "familia": "Metales de Transición",
+    "periodo": 7,
+    "grupo": 9,
+    "masaAtomica": 278,
+    "estado25C": "Sólido",
+    "densidad": 37.4,
+    "puntoFusionC": 1100,
+    "puntoEbullicionC": 3500,
+    "configuracionElectronica": "[Rn] 5f¹⁴ 6d⁷ 7s²",
+    "electronegatividad": 1.3,
+    "radioAtomico": 129,
+    "energiaIonizacion": 800,
+    "usosES": [
+      "Investigación"
+    ],
+    "usosEN": [
+      "Research"
+    ],
+    "curiosidadesES": "Nombrado por Lise Meitner, física que contribuyó al descubrimiento de la fisión nuclear.",
+    "curiosidadesEN": "Named after Lise Meitner, physicist who contributed to the discovery of nuclear fission."
+  },
+  {
+    "id": 110,
+    "simbolo": "Ds",
+    "nombreES": "Darmstatio",
+    "nombreEN": "Darmstadtium",
+    "familia": "Metales de Transición",
+    "periodo": 7,
+    "grupo": 10,
+    "masaAtomica": 281,
+    "estado25C": "Sólido",
+    "densidad": 34.8,
+    "puntoFusionC": 1000,
+    "puntoEbullicionC": 3200,
+    "configuracionElectronica": "[Rn] 5f¹⁴ 6d⁹ 7s¹",
+    "electronegatividad": 1.3,
+    "radioAtomico": 128,
+    "energiaIonizacion": 800,
+    "usosES": [
+      "Investigación"
+    ],
+    "usosEN": [
+      "Research"
+    ],
+    "curiosidadesES": "Nombrado por Darmstadt, Alemania, donde fue descubierto.",
+    "curiosidadesEN": "Named after Darmstadt, Germany, where it was discovered."
+  },
+  {
+    "id": 111,
+    "simbolo": "Rg",
+    "nombreES": "Roentgenio",
+    "nombreEN": "Roentgenium",
+    "familia": "Metales de Transición",
+    "periodo": 7,
+    "grupo": 11,
+    "masaAtomica": 282,
+    "estado25C": "Sólido",
+    "densidad": 28.7,
+    "puntoFusionC": 650,
+    "puntoEbullicionC": 2800,
+    "configuracionElectronica": "[Rn] 5f¹⁴ 6d¹⁰ 7s¹",
+    "electronegatividad": 2.1,
+    "radioAtomico": 121,
+    "energiaIonizacion": 1020,
+    "usosES": [
+      "Investigación"
+    ],
+    "usosEN": [
+      "Research"
+    ],
+    "curiosidadesES": "Nombrado por Wilhelm Röntgen, descubridor de los rayos X.",
+    "curiosidadesEN": "Named after Wilhelm Röntgen, discoverer of X-rays."
+  },
+  {
+    "id": 112,
+    "simbolo": "Cn",
+    "nombreES": "Copernicio",
+    "nombreEN": "Copernicium",
+    "familia": "Metales de Transición",
+    "periodo": 7,
+    "grupo": 12,
+    "masaAtomica": 285,
+    "estado25C": "Desconocido",
+    "densidad": 23.7,
+    "puntoFusionC": 283,
+    "puntoEbullicionC": 357,
+    "configuracionElectronica": "[Rn] 5f¹⁴ 6d¹⁰ 7s²",
+    "electronegatividad": 1.9,
+    "radioAtomico": 122,
+    "energiaIonizacion": 1150,
+    "usosES": [
+      "Investigación"
+    ],
+    "usosEN": [
+      "Research"
+    ],
+    "curiosidadesES": "Nombrado por Nicolás Copérnico; podría comportarse como un gas noble pesado por efectos relativistas.",
+    "curiosidadesEN": "Named after Nicolaus Copernicus; may behave like a heavy noble gas due to relativistic effects."
+  },
+  {
+    "id": 113,
+    "simbolo": "Nh",
+    "nombreES": "Nihonio",
+    "nombreEN": "Nihonium",
+    "familia": "Metales del Bloque p",
+    "periodo": 7,
+    "grupo": 13,
+    "masaAtomica": 286,
+    "estado25C": "Sólido",
+    "densidad": 16.0,
+    "puntoFusionC": 430,
+    "puntoEbullicionC": 1130,
+    "configuracionElectronica": "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p¹",
+    "electronegatividad": 1.36,
+    "radioAtomico": 170,
+    "energiaIonizacion": 704,
+    "usosES": [
+      "Investigación"
+    ],
+    "usosEN": [
+      "Research"
+    ],
+    "curiosidadesES": "El nombre proviene de 'Nihon', una forma de decir Japón en japonés.",
+    "curiosidadesEN": "The name comes from 'Nihon', a way to say Japan in Japanese."
+  },
+  {
+    "id": 114,
+    "simbolo": "Fl",
+    "nombreES": "Flerovio",
+    "nombreEN": "Flerovium",
+    "familia": "Metales del Bloque p",
+    "periodo": 7,
+    "grupo": 14,
+    "masaAtomica": 289,
+    "estado25C": "Sólido",
+    "densidad": 14.0,
+    "puntoFusionC": 200,
+    "puntoEbullicionC": 400,
+    "configuracionElectronica": "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p²",
+    "electronegatividad": 2.0,
+    "radioAtomico": 180,
+    "energiaIonizacion": 823,
+    "usosES": [
+      "Investigación"
+    ],
+    "usosEN": [
+      "Research"
+    ],
+    "curiosidadesES": "Nombrado por el Laboratorio Flerov de Reacciones Nucleares en Dubná.",
+    "curiosidadesEN": "Named after the Flerov Laboratory of Nuclear Reactions in Dubna."
+  },
+  {
+    "id": 115,
+    "simbolo": "Mc",
+    "nombreES": "Moscovio",
+    "nombreEN": "Moscovium",
+    "familia": "Metales del Bloque p",
+    "periodo": 7,
+    "grupo": 15,
+    "masaAtomica": 290,
+    "estado25C": "Sólido",
+    "densidad": 13.5,
+    "puntoFusionC": 400,
+    "puntoEbullicionC": 1100,
+    "configuracionElectronica": "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p³",
+    "electronegatividad": 1.9,
+    "radioAtomico": 176,
+    "energiaIonizacion": 538,
+    "usosES": [
+      "Investigación"
+    ],
+    "usosEN": [
+      "Research"
+    ],
+    "curiosidadesES": "Nombrado por el Óblast de Moscú, región donde se sitúa el JINR.",
+    "curiosidadesEN": "Named after Moscow Oblast, the region where the JINR is located."
+  },
+  {
+    "id": 116,
+    "simbolo": "Lv",
+    "nombreES": "Livermorio",
+    "nombreEN": "Livermorium",
+    "familia": "Metales del Bloque p",
+    "periodo": 7,
+    "grupo": 16,
+    "masaAtomica": 293,
+    "estado25C": "Sólido",
+    "densidad": 12.9,
+    "puntoFusionC": 350,
+    "puntoEbullicionC": 1100,
+    "configuracionElectronica": "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁴",
+    "electronegatividad": 2.0,
+    "radioAtomico": 175,
+    "energiaIonizacion": 663,
+    "usosES": [
+      "Investigación"
+    ],
+    "usosEN": [
+      "Research"
+    ],
+    "curiosidadesES": "Nombrado por el Lawrence Livermore National Laboratory (EE. UU.).",
+    "curiosidadesEN": "Named after Lawrence Livermore National Laboratory (USA)."
+  },
+  {
+    "id": 117,
+    "simbolo": "Ts",
+    "nombreES": "Teneso",
+    "nombreEN": "Tennessine",
+    "familia": "Halógenos",
+    "periodo": 7,
+    "grupo": 17,
+    "masaAtomica": 294,
+    "estado25C": "Sólido",
+    "densidad": 7.2,
+    "puntoFusionC": 300,
+    "puntoEbullicionC": 600,
+    "configuracionElectronica": "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁵",
+    "electronegatividad": 2.6,
+    "radioAtomico": 165,
+    "energiaIonizacion": 742,
+    "usosES": [
+      "Investigación"
+    ],
+    "usosEN": [
+      "Research"
+    ],
+    "curiosidadesES": "Nombrado por Tennessee (EE. UU.), reconociendo contribuciones regionales a su descubrimiento.",
+    "curiosidadesEN": "Named after Tennessee (USA), recognizing regional contributions to its discovery."
+  },
+  {
+    "id": 118,
+    "simbolo": "Og",
+    "nombreES": "Oganesón",
+    "nombreEN": "Oganesson",
+    "familia": "Gases Nobles",
+    "periodo": 7,
+    "grupo": 18,
+    "masaAtomica": 294,
+    "estado25C": "Desconocido",
+    "densidad": 13.65,
+    "puntoFusionC": null,
+    "puntoEbullicionC": null,
+    "configuracionElectronica": "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁶",
+    "electronegatividad": null,
+    "radioAtomico": 152,
+    "energiaIonizacion": 860,
+    "usosES": [
+      "Investigación"
+    ],
+    "usosEN": [
+      "Research"
+    ],
+    "curiosidadesES": "Nombrado por Yuri Oganessian; podría no comportarse como un gas noble típico debido a efectos relativistas.",
+    "curiosidadesEN": "Named after Yuri Oganessian; may not behave like a typical noble gas due to relativistic effects."
   }
 ]
