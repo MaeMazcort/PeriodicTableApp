@@ -248,4 +248,5 @@ struct ElementMiniCard: View {
     HomeView()
         .environmentObject(DataManager.shared)
         .environmentObject(ProgressManager.shared)
+        .environmentObject(TTSManager.shared)
 }
