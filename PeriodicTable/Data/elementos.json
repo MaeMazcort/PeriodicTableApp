@@ -23,13 +23,13 @@
       "Pilas de combustible"
     ],
     "usosEN": [
-      "Rocket fuel",
-      "Ammonia production",
-      "Petroleum refining",
-      "Fuel cells"
-    ],
-    "curiosidadesES": "El hidrógeno es el elemento más abundante del universo, constituye aproximadamente el 75% de toda la materia. Es el combustible de las estrellas.",
-    "curiosidadesEN": "Hydrogen is the most abundant element in the universe, making up about 75% of all matter. It is the fuel of stars."
+        "Rocket fuel",
+        "Ammonia production",
+        "Petroleum refining"],
+    "curiosidadesES": "El hidrógeno es el elemento más abundante del universo, constituye aproximadamente el 75% de toda la materia.",
+    "curiosidadesEN": "Hydrogen is the most abundant element in the universe, making up about 75% of all matter.",
+    "seguridadES": null,
+    "seguridadEN": null
   },
   {
     "id": 2,
@@ -46,22 +46,14 @@
     "puntoEbullicionC": -268.93,
     "configuracionElectronica": "1s²",
     "electronegatividad": null,
-    "radioAtomico": 31,
+    "radioAtomico": null,
     "energiaIonizacion": 2372,
-    "usosES": [
-      "Globos aerostáticos",
-      "Helio líquido para enfriamiento criogénico",
-      "Atmósferas protectoras en soldadura",
-      "Respiración en buceo profundo"
-    ],
-    "usosEN": [
-      "Balloons and airships",
-      "Liquid helium for cryogenic cooling",
-      "Protective atmospheres in welding",
-      "Deep-sea diving breathing mixtures"
-    ],
-    "curiosidadesES": "El helio fue descubierto primero en el Sol antes de ser encontrado en la Tierra. Su nombre viene del griego 'helios' que significa Sol.",
-    "curiosidadesEN": "Helium was first discovered in the Sun before being found on Earth. Its name comes from the Greek 'helios' meaning Sun."
+    "usosES": ["Globos", "Helio líquido para enfriamiento", "Atmósferas protectoras"],
+    "usosEN": ["Balloons", "Liquid helium for cooling", "Protective atmospheres"],
+    "curiosidadesES": "El helio es el segundo elemento más abundante del universo después del hidrógeno.",
+    "curiosidadesEN": "Helium is the second most abundant element in the universe after hydrogen.",
+    "seguridadES": null,
+    "seguridadEN": null
   },
   {
     "id": 3,
@@ -80,20 +72,12 @@
     "electronegatividad": 0.98,
     "radioAtomico": 152,
     "energiaIonizacion": 520,
-    "usosES": [
-      "Baterías recargables (celulares, laptops, autos eléctricos)",
-      "Medicamentos psiquiátricos",
-      "Cerámica y vidrio",
-      "Lubricantes de alta temperatura"
-    ],
-    "usosEN": [
-      "Rechargeable batteries (phones, laptops, electric cars)",
-      "Psychiatric medication",
-      "Ceramics and glass",
-      "High-temperature lubricants"
-    ],
-    "curiosidadesES": "El litio es el metal sólido más ligero. Su demanda ha aumentado dramáticamente debido a las baterías de vehículos eléctricos.",
-    "curiosidadesEN": "Lithium is the lightest solid metal. Its demand has increased dramatically due to electric vehicle batteries."
+    "usosES": ["Baterías recargables", "Medicamentos psiquiátricos", "Cerámica y vidrio"],
+    "usosEN": ["Rechargeable batteries", "Psychiatric medication", "Ceramics and glass"],
+    "curiosidadesES": "El litio es el metal sólido más ligero y el elemento sólido menos denso.",
+    "curiosidadesEN": "Lithium is the lightest solid metal and the least dense solid element.",
+    "seguridadES": null,
+    "seguridadEN": null
   },
   {
     "id": 4,
@@ -107,25 +91,17 @@
     "estado25C": "Sólido",
     "densidad": 1.85,
     "puntoFusionC": 1287,
-    "puntoEbullicionC": 2469,
+    "puntoEbullicionC": 2470,
     "configuracionElectronica": "[He] 2s²",
     "electronegatividad": 1.57,
     "radioAtomico": 112,
     "energiaIonizacion": 899,
-    "usosES": [
-      "Aleaciones aeroespaciales",
-      "Equipos de rayos X",
-      "Ventanas de tubos de rayos X",
-      "Componentes electrónicos"
-    ],
-    "usosEN": [
-      "Aerospace alloys",
-      "X-ray equipment",
-      "X-ray tube windows",
-      "Electronic components"
-    ],
-    "curiosidadesES": "El berilio es tóxico y su polvo puede causar enfermedades graves. Sin embargo, es extremadamente útil en aplicaciones aeroespaciales por su ligereza.",
-    "curiosidadesEN": "Beryllium is toxic and its dust can cause serious diseases. However, it is extremely useful in aerospace applications due to its lightness."
+    "usosES": ["Aleaciones aeroespaciales", "Rayos X", "Herramientas no magnéticas"],
+    "usosEN": ["Aerospace alloys", "X-rays", "Non-magnetic tools"],
+    "curiosidadesES": "El berilio es uno de los metales más ligeros y tiene uno de los puntos de fusión más altos entre los metales ligeros.",
+    "curiosidadesEN": "Beryllium is one of the lightest metals and has one of the highest melting points among light metals.",
+    "seguridadES": "Tóxico si se inhala en forma de polvo",
+    "seguridadEN": "Toxic if inhaled as dust"
   },
   {
     "id": 5,
@@ -144,20 +120,12 @@
     "electronegatividad": 2.04,
     "radioAtomico": 85,
     "energiaIonizacion": 801,
-    "usosES": [
-      "Fibra de vidrio",
-      "Detergentes",
-      "Semiconductores",
-      "Control de reactores nucleares"
-    ],
-    "usosEN": [
-      "Fiberglass",
-      "Detergents",
-      "Semiconductors",
-      "Nuclear reactor control"
-    ],
-    "curiosidadesES": "El boro es esencial para el crecimiento de las plantas. También se usa en varillas de control de reactores nucleares porque absorbe neutrones.",
-    "curiosidadesEN": "Boron is essential for plant growth. It is also used in nuclear reactor control rods because it absorbs neutrons."
+    "usosES": ["Vidrio borosilicato", "Detergentes", "Fibra de vidrio"],
+    "usosEN": ["Borosilicate glass", "Detergents", "Fiberglass"],
+    "curiosidadesES": "El boro es esencial para el crecimiento de las plantas.",
+    "curiosidadesEN": "Boron is essential for plant growth.",
+    "seguridadES": null,
+    "seguridadEN": null
   },
   {
     "id": 6,
@@ -176,22 +144,12 @@
     "electronegatividad": 2.55,
     "radioAtomico": 77,
     "energiaIonizacion": 1086,
-    "usosES": [
-      "Base de todos los organismos vivos",
-      "Grafito en lápices",
-      "Diamantes (joyería y herramientas de corte)",
-      "Fibra de carbono",
-      "Acero"
-    ],
-    "usosEN": [
-      "Basis of all living organisms",
-      "Graphite in pencils",
-      "Diamonds (jewelry and cutting tools)",
-      "Carbon fiber",
-      "Steel"
-    ],
-    "curiosidadesES": "El carbono es único porque forma más compuestos que cualquier otro elemento. Existe en varias formas: diamante (el material natural más duro), grafito (muy blando) y grafeno.",
-    "curiosidadesEN": "Carbon is unique because it forms more compounds than any other element. It exists in several forms: diamond (the hardest natural material), graphite (very soft), and graphene."
+    "usosES": ["Combustibles", "Acero", "Plásticos", "Toda la vida orgánica"],
+    "usosEN": ["Fuels", "Steel", "Plastics", "All organic life"],
+    "curiosidadesES": "El carbono es la base de toda la vida en la Tierra y forma más compuestos que cualquier otro elemento.",
+    "curiosidadesEN": "Carbon is the basis of all life on Earth and forms more compounds than any other element.",
+    "seguridadES": null,
+    "seguridadEN": null
   },
   {
     "id": 7,
@@ -203,27 +161,19 @@
     "grupo": 15,
     "masaAtomica": 14.007,
     "estado25C": "Gas",
-    "densidad": 0.0012506,
-    "puntoFusionC": -210.0,
-    "puntoEbullicionC": -195.79,
+    "densidad": 0.001251,
+    "puntoFusionC": -210,
+    "puntoEbullicionC": -195.8,
     "configuracionElectronica": "[He] 2s² 2p³",
     "electronegatividad": 3.04,
     "radioAtomico": 75,
     "energiaIonizacion": 1402,
-    "usosES": [
-      "Constituye el 78% del aire",
-      "Fertilizantes (amoníaco)",
-      "Conservación de alimentos",
-      "Criogenia (nitrógeno líquido)"
-    ],
-    "usosEN": [
-      "Makes up 78% of air",
-      "Fertilizers (ammonia)",
-      "Food preservation",
-      "Cryogenics (liquid nitrogen)"
-    ],
-    "curiosidadesES": "Aunque el nitrógeno es abundante en el aire, las plantas no pueden usarlo directamente. Necesitan que bacterias lo conviertan en formas utilizables.",
-    "curiosidadesEN": "Although nitrogen is abundant in air, plants cannot use it directly. They need bacteria to convert it into usable forms."
+    "usosES": ["Fertilizantes", "Refrigeración", "Atmósferas inertes"],
+    "usosEN": ["Fertilizers", "Refrigeration", "Inert atmospheres"],
+    "curiosidadesES": "El nitrógeno constituye aproximadamente el 78% de la atmósfera terrestre.",
+    "curiosidadesEN": "Nitrogen makes up approximately 78% of Earth's atmosphere.",
+    "seguridadES": null,
+    "seguridadEN": null
   },
   {
     "id": 8,
@@ -236,26 +186,18 @@
     "masaAtomica": 15.999,
     "estado25C": "Gas",
     "densidad": 0.001429,
-    "puntoFusionC": -218.79,
-    "puntoEbullicionC": -182.95,
+    "puntoFusionC": -218.4,
+    "puntoEbullicionC": -183,
     "configuracionElectronica": "[He] 2s² 2p⁴",
     "electronegatividad": 3.44,
     "radioAtomico": 73,
     "energiaIonizacion": 1314,
-    "usosES": [
-      "Respiración (21% del aire)",
-      "Medicina (oxígeno medicinal)",
-      "Soldadura y corte de metales",
-      "Tratamiento de aguas residuales"
-    ],
-    "usosEN": [
-      "Breathing (21% of air)",
-      "Medicine (medical oxygen)",
-      "Welding and metal cutting",
-      "Wastewater treatment"
-    ],
-    "curiosidadesES": "El oxígeno es el tercer elemento más abundante del universo. Sin él, no existiría la vida tal como la conocemos.",
-    "curiosidadesEN": "Oxygen is the third most abundant element in the universe. Without it, life as we know it would not exist."
+    "usosES": ["Respiración", "Combustión", "Oxidación", "Medicina"],
+    "usosEN": ["Respiration", "Combustion", "Oxidation", "Medicine"],
+    "curiosidadesES": "El oxígeno es el tercer elemento más abundante del universo y esencial para la vida.",
+    "curiosidadesEN": "Oxygen is the third most abundant element in the universe and essential for life.",
+    "seguridadES": null,
+    "seguridadEN": null
   },
   {
     "id": 9,
@@ -268,26 +210,18 @@
     "masaAtomica": 18.998,
     "estado25C": "Gas",
     "densidad": 0.001696,
-    "puntoFusionC": -219.67,
-    "puntoEbullicionC": -188.11,
+    "puntoFusionC": -220,
+    "puntoEbullicionC": -188.1,
     "configuracionElectronica": "[He] 2s² 2p⁵",
     "electronegatividad": 3.98,
-    "radioAtomico": 71,
+    "radioAtomico": 72,
     "energiaIonizacion": 1681,
-    "usosES": [
-      "Pasta dental (previene caries)",
-      "Teflón (sartenes antiadherentes)",
-      "Refrigerantes",
-      "Enriquecimiento de uranio"
-    ],
-    "usosEN": [
-      "Toothpaste (prevents cavities)",
-      "Teflon (non-stick pans)",
-      "Refrigerants",
-      "Uranium enrichment"
-    ],
-    "curiosidadesES": "El flúor es el elemento más reactivo y electronegativo. Puede reaccionar incluso con gases nobles, lo cual es muy raro.",
-    "curiosidadesEN": "Fluorine is the most reactive and electronegative element. It can even react with noble gases, which is very rare."
+    "usosES": ["Pasta dental", "Teflón", "Refrigerantes"],
+    "usosEN": ["Toothpaste", "Teflon", "Refrigerants"],
+    "curiosidadesES": "El flúor es el elemento más electronegativo y reactivo de todos.",
+    "curiosidadesEN": "Fluorine is the most electronegative and reactive of all elements.",
+    "seguridadES": "Altamente tóxico y corrosivo",
+    "seguridadEN": "Highly toxic and corrosive"
   },
   {
     "id": 10,
@@ -299,327 +233,19 @@
     "grupo": 18,
     "masaAtomica": 20.180,
     "estado25C": "Gas",
-    "densidad": 0.0008999,
-    "puntoFusionC": -248.59,
-    "puntoEbullicionC": -246.08,
+    "densidad": 0.0009002,
+    "puntoFusionC": -248.6,
+    "puntoEbullicionC": -246.1,
     "configuracionElectronica": "[He] 2s² 2p⁶",
     "electronegatividad": null,
-    "radioAtomico": 69,
+    "radioAtomico": null,
     "energiaIonizacion": 2081,
-    "usosES": [
-      "Letreros luminosos (neones)",
-      "Láseres de helio-neón",
-      "Iluminación de alta intensidad",
-      "Tubos de televisión"
-    ],
-    "usosEN": [
-      "Neon signs",
-      "Helium-neon lasers",
-      "High-intensity lighting",
-      "Television tubes"
-    ],
-    "curiosidadesES": "El neón produce una luz roja-naranja característica cuando se excita con electricidad, lo que lo hace perfecto para anuncios luminosos.",
-    "curiosidadesEN": "Neon produces a characteristic red-orange light when excited with electricity, making it perfect for bright signs."
-  },
-  {
-    "id": 11,
-    "simbolo": "Na",
-    "nombreES": "Sodio",
-    "nombreEN": "Sodium",
-    "familia": "Metales Alcalinos",
-    "periodo": 3,
-    "grupo": 1,
-    "masaAtomica": 22.990,
-    "estado25C": "Sólido",
-    "densidad": 0.971,
-    "puntoFusionC": 97.79,
-    "puntoEbullicionC": 883,
-    "configuracionElectronica": "[Ne] 3s¹",
-    "electronegatividad": 0.93,
-    "radioAtomico": 186,
-    "energiaIonizacion": 496,
-    "usosES": [
-      "Lámparas de vapor de sodio",
-      "Sales (NaCl)",
-      "Agentes reductores en síntesis química"
-    ],
-    "usosEN": [
-      "Sodium vapor lamps",
-      "Salts (NaCl)",
-      "Reducing agents in chemical synthesis"
-    ],
-    "curiosidadesES": "El sodio metálico reacciona violentamente con el agua, produciendo hidrógeno y calor suficiente para encenderlo.",
-    "curiosidadesEN": "Metallic sodium reacts violently with water, producing hydrogen and enough heat to ignite it."
-  },
-  {
-    "id": 12,
-    "simbolo": "Mg",
-    "nombreES": "Magnesio",
-    "nombreEN": "Magnesium",
-    "familia": "Metales Alcalinotérreos",
-    "periodo": 3,
-    "grupo": 2,
-    "masaAtomica": 24.305,
-    "estado25C": "Sólido",
-    "densidad": 1.738,
-    "puntoFusionC": 650,
-    "puntoEbullicionC": 1090,
-    "configuracionElectronica": "[Ne] 3s²",
-    "electronegatividad": 1.31,
-    "radioAtomico": 160,
-    "energiaIonizacion": 738,
-    "usosES": [
-      "Aleaciones ligeras",
-      "Pirotecnia",
-      "Suplementos dietéticos"
-    ],
-    "usosEN": [
-      "Lightweight alloys",
-      "Pyrotechnics",
-      "Dietary supplements"
-    ],
-    "curiosidadesES": "El magnesio arde con una llama blanca muy brillante; se usaba en flash de cámaras antiguas.",
-    "curiosidadesEN": "Magnesium burns with a very bright white flame; it was used in old camera flashes."
-  },
-  {
-    "id": 13,
-    "simbolo": "Al",
-    "nombreES": "Aluminio",
-    "nombreEN": "Aluminum",
-    "familia": "Metales del Bloque p",
-    "periodo": 3,
-    "grupo": 13,
-    "masaAtomica": 26.982,
-    "estado25C": "Sólido",
-    "densidad": 2.70,
-    "puntoFusionC": 660.32,
-    "puntoEbullicionC": 2519,
-    "configuracionElectronica": "[Ne] 3s² 3p¹",
-    "electronegatividad": 1.61,
-    "radioAtomico": 143,
-    "energiaIonizacion": 578,
-    "usosES": [
-      "Aeroespacial",
-      "Construcción",
-      "Envases y embalajes"
-    ],
-    "usosEN": [
-      "Aerospace",
-      "Construction",
-      "Packaging"
-    ],
-    "curiosidadesES": "El aluminio es el metal más abundante en la corteza terrestre, pero nunca se encuentra puro en la naturaleza.",
-    "curiosidadesEN": "Aluminum is the most abundant metal in the Earth's crust, but it is never found pure in nature."
-  },
-  {
-    "id": 14,
-    "simbolo": "Si",
-    "nombreES": "Silicio",
-    "nombreEN": "Silicon",
-    "familia": "Metaloides",
-    "periodo": 3,
-    "grupo": 14,
-    "masaAtomica": 28.085,
-    "estado25C": "Sólido",
-    "densidad": 2.329,
-    "puntoFusionC": 1414,
-    "puntoEbullicionC": 3265,
-    "configuracionElectronica": "[Ne] 3s² 3p²",
-    "electronegatividad": 1.90,
-    "radioAtomico": 111,
-    "energiaIonizacion": 786,
-    "usosES": [
-      "Microchips",
-      "Paneles solares",
-      "Vidrio y cemento"
-    ],
-    "usosEN": [
-      "Microchips",
-      "Solar panels",
-      "Glass and cement"
-    ],
-    "curiosidadesES": "El silicio es el segundo elemento más abundante en la corteza terrestre y la base de la electrónica moderna.",
-    "curiosidadesEN": "Silicon is the second most abundant element in Earth's crust and the foundation of modern electronics."
-  },
-  {
-    "id": 15,
-    "simbolo": "P",
-    "nombreES": "Fósforo",
-    "nombreEN": "Phosphorus",
-    "familia": "No Metales",
-    "periodo": 3,
-    "grupo": 15,
-    "masaAtomica": 30.974,
-    "estado25C": "Sólido",
-    "densidad": 1.823,
-    "puntoFusionC": 44.15,
-    "puntoEbullicionC": 280.5,
-    "configuracionElectronica": "[Ne] 3s² 3p³",
-    "electronegatividad": 2.19,
-    "radioAtomico": 98,
-    "energiaIonizacion": 1012,
-    "usosES": [
-      "Fertilizantes",
-      "Detergentes",
-      "Fósforos"
-    ],
-    "usosEN": [
-      "Fertilizers",
-      "Detergents",
-      "Matches"
-    ],
-    "curiosidadesES": "El fósforo existe en varias formas alótropas: blanco, rojo y negro, con propiedades muy diferentes.",
-    "curiosidadesEN": "Phosphorus exists in several allotropes: white, red, and black, with very different properties."
-  },
-  {
-    "id": 16,
-    "simbolo": "S",
-    "nombreES": "Azufre",
-    "nombreEN": "Sulfur",
-    "familia": "No Metales",
-    "periodo": 3,
-    "grupo": 16,
-    "masaAtomica": 32.06,
-    "estado25C": "Sólido",
-    "densidad": 2.07,
-    "puntoFusionC": 115.21,
-    "puntoEbullicionC": 444.6,
-    "configuracionElectronica": "[Ne] 3s² 3p⁴",
-    "electronegatividad": 2.58,
-    "radioAtomico": 88,
-    "energiaIonizacion": 1000,
-    "usosES": [
-      "Ácido sulfúrico",
-      "Vulcanización del caucho",
-      "Fungicidas"
-    ],
-    "usosEN": [
-      "Sulfuric acid",
-      "Rubber vulcanization",
-      "Fungicides"
-    ],
-    "curiosidadesES": "Conocido desde la antigüedad, el azufre se asocia con el 'fuego y azufre' en textos antiguos.",
-    "curiosidadesEN": "Known since antiquity, sulfur is associated with 'fire and brimstone' in ancient texts."
-  },
-  {
-    "id": 17,
-    "simbolo": "Cl",
-    "nombreES": "Cloro",
-    "nombreEN": "Chlorine",
-    "familia": "Halógenos",
-    "periodo": 3,
-    "grupo": 17,
-    "masaAtomica": 35.45,
-    "estado25C": "Gas",
-    "densidad": 0.003214,
-    "puntoFusionC": -101.5,
-    "puntoEbullicionC": -34.04,
-    "configuracionElectronica": "[Ne] 3s² 3p⁵",
-    "electronegatividad": 3.16,
-    "radioAtomico": 79,
-    "energiaIonizacion": 1251,
-    "usosES": [
-      "Desinfección de agua",
-      "Plásticos (PVC)",
-      "Blanqueadores"
-    ],
-    "usosEN": [
-      "Water disinfection",
-      "Plastics (PVC)",
-      "Bleaches"
-    ],
-    "curiosidadesES": "El cloro gaseoso se usó tristemente como arma química en la Primera Guerra Mundial.",
-    "curiosidadesEN": "Chlorine gas was infamously used as a chemical weapon in World War I."
-  },
-  {
-    "id": 18,
-    "simbolo": "Ar",
-    "nombreES": "Argón",
-    "nombreEN": "Argon",
-    "familia": "Gases Nobles",
-    "periodo": 3,
-    "grupo": 18,
-    "masaAtomica": 39.948,
-    "estado25C": "Gas",
-    "densidad": 0.001784,
-    "puntoFusionC": -189.34,
-    "puntoEbullicionC": -185.85,
-    "configuracionElectronica": "[Ne] 3s² 3p⁶",
-    "electronegatividad": null,
-    "radioAtomico": 71,
-    "energiaIonizacion": 1521,
-    "usosES": [
-      "Atmósferas inertes",
-      "Soldadura",
-      "Bombillas"
-    ],
-    "usosEN": [
-      "Inert atmospheres",
-      "Welding",
-      "Light bulbs"
-    ],
-    "curiosidadesES": "El argón constituye alrededor del 0.93% del aire y es químicamente muy inerte.",
-    "curiosidadesEN": "Argon makes up about 0.93% of air and is highly inert."
-  },
-  {
-    "id": 19,
-    "simbolo": "K",
-    "nombreES": "Potasio",
-    "nombreEN": "Potassium",
-    "familia": "Metales Alcalinos",
-    "periodo": 4,
-    "grupo": 1,
-    "masaAtomica": 39.098,
-    "estado25C": "Sólido",
-    "densidad": 0.862,
-    "puntoFusionC": 63.38,
-    "puntoEbullicionC": 759,
-    "configuracionElectronica": "[Ar] 4s¹",
-    "electronegatividad": 0.82,
-    "radioAtomico": 227,
-    "energiaIonizacion": 419,
-    "usosES": [
-      "Fertilizantes (KCl, K2SO4)",
-      "Agentes reductores",
-      "Fuegos artificiales (color violeta)"
-    ],
-    "usosEN": [
-      "Fertilizers (KCl, K2SO4)",
-      "Reducing agents",
-      "Fireworks (violet color)"
-    ],
-    "curiosidadesES": "El potasio es esencial para la función nerviosa y muscular en los seres vivos.",
-    "curiosidadesEN": "Potassium is essential for nerve and muscle function in living organisms."
-  },
-  {
-    "id": 20,
-    "simbolo": "Ca",
-    "nombreES": "Calcio",
-    "nombreEN": "Calcium",
-    "familia": "Metales Alcalinotérreos",
-    "periodo": 4,
-    "grupo": 2,
-    "masaAtomica": 40.078,
-    "estado25C": "Sólido",
-    "densidad": 1.55,
-    "puntoFusionC": 842,
-    "puntoEbullicionC": 1484,
-    "configuracionElectronica": "[Ar] 4s²",
-    "electronegatividad": 1.00,
-    "radioAtomico": 197,
-    "energiaIonizacion": 590,
-    "usosES": [
-      "Construcción (cemento, cal)",
-      "Suplementos nutricionales",
-      "Metalurgia"
-    ],
-    "usosEN": [
-      "Construction (cement, lime)",
-      "Nutritional supplements",
-      "Metallurgy"
-    ],
-    "curiosidadesES": "El calcio es el quinto elemento más abundante en la corteza terrestre y clave en huesos y dientes.",
-    "curiosidadesEN": "Calcium is the fifth most abundant element in the Earth's crust and key in bones and teeth."
+    "usosES": ["Letreros luminosos", "Láseres", "Refrigerante criogénico"],
+    "usosEN": ["Neon signs", "Lasers", "Cryogenic refrigerant"],
+    "curiosidadesES": "El neón produce una luz roja-naranja brillante cuando se excita eléctricamente.",
+    "curiosidadesEN": "Neon produces a bright red-orange light when electrically excited.",
+    "seguridadES": null,
+    "seguridadEN": null
   },
   {
     "id": 21,
@@ -629,7 +255,7 @@
     "familia": "Metales de Transición",
     "periodo": 4,
     "grupo": 3,
-    "masaAtomica": 44.955908,
+    "masaAtomica": 44.956,
     "estado25C": "Sólido",
     "densidad": 2.985,
     "puntoFusionC": 1541,
@@ -638,18 +264,12 @@
     "electronegatividad": 1.36,
     "radioAtomico": 162,
     "energiaIonizacion": 633,
-    "usosES": [
-      "Aleaciones de aluminio-escandio",
-      "Lámparas de halogenuros metálicos",
-      "Investigación"
-    ],
-    "usosEN": [
-      "Aluminum-scandium alloys",
-      "Metal halide lamps",
-      "Research"
-    ],
-    "curiosidadesES": "El escandio mejora significativamente las propiedades mecánicas del aluminio en pequeñas cantidades.",
-    "curiosidadesEN": "Scandium significantly improves aluminum's mechanical properties in small amounts."
+    "usosES": ["Aleaciones de aluminio-escandio", "Iluminación (halogenuros de escandio)", "Investigación"],
+    "usosEN": ["Aluminum-scandium alloys", "Lighting (scandium halides)", "Research"],
+    "curiosidadesES": "Pequeñas cantidades de escandio mejoran notablemente la resistencia de las aleaciones de aluminio.",
+    "curiosidadesEN": "Small amounts of scandium significantly strengthen aluminum alloys.",
+    "seguridadES": null,
+    "seguridadEN": null
   },
   {
     "id": 22,
@@ -667,19 +287,13 @@
     "configuracionElectronica": "[Ar] 3d² 4s²",
     "electronegatividad": 1.54,
     "radioAtomico": 147,
-    "energiaIonizacion": 658,
-    "usosES": [
-      "Implantes biomédicos",
-      "Aeroespacial",
-      "Pigmento dióxido de titanio (TiO2)"
-    ],
-    "usosEN": [
-      "Biomedical implants",
-      "Aerospace",
-      "Pigment titanium dioxide (TiO2)"
-    ],
-    "curiosidadesES": "El titanio tiene una alta relación resistencia-peso y excelente resistencia a la corrosión.",
-    "curiosidadesEN": "Titanium has a high strength-to-weight ratio and excellent corrosion resistance."
+    "energiaIonizacion": 659,
+    "usosES": ["Aeroespacial", "Implantes médicos", "Pigmento dióxido de titanio"],
+    "usosEN": ["Aerospace", "Medical implants", "Titanium dioxide pigment"],
+    "curiosidadesES": "Tiene una alta relación resistencia-peso y excelente resistencia a la corrosión.",
+    "curiosidadesEN": "It has a high strength-to-weight ratio and excellent corrosion resistance.",
+    "seguridadES": null,
+    "seguridadEN": null
   },
   {
     "id": 23,
@@ -689,7 +303,7 @@
     "familia": "Metales de Transición",
     "periodo": 4,
     "grupo": 5,
-    "masaAtomica": 50.9415,
+    "masaAtomica": 50.942,
     "estado25C": "Sólido",
     "densidad": 6.11,
     "puntoFusionC": 1910,
@@ -698,18 +312,12 @@
     "electronegatividad": 1.63,
     "radioAtomico": 134,
     "energiaIonizacion": 651,
-    "usosES": [
-      "Acero al vanadio",
-      "Catalizadores",
-      "Baterías de flujo de vanadio"
-    ],
-    "usosEN": [
-      "Vanadium steel",
-      "Catalysts",
-      "Vanadium redox flow batteries"
-    ],
-    "curiosidadesES": "El vanadio mejora la dureza y resistencia del acero incluso en pequeñas cantidades.",
-    "curiosidadesEN": "Vanadium improves steel hardness and strength even in small amounts."
+    "usosES": ["Acero para herramientas", "Aleaciones", "Catalizadores"],
+    "usosEN": ["Tool steel", "Alloys", "Catalysts"],
+    "curiosidadesES": "Pequeñas cantidades de vanadio aumentan la dureza del acero.",
+    "curiosidadesEN": "Small amounts of vanadium increase steel hardness.",
+    "seguridadES": null,
+    "seguridadEN": null
   },
   {
     "id": 24,
@@ -719,7 +327,7 @@
     "familia": "Metales de Transición",
     "periodo": 4,
     "grupo": 6,
-    "masaAtomica": 51.9961,
+    "masaAtomica": 51.996,
     "estado25C": "Sólido",
     "densidad": 7.19,
     "puntoFusionC": 1907,
@@ -727,19 +335,13 @@
     "configuracionElectronica": "[Ar] 3d⁵ 4s¹",
     "electronegatividad": 1.66,
     "radioAtomico": 128,
-    "energiaIonizacion": 653,
-    "usosES": [
-      "Acero inoxidable",
-      "Galvanoplastia (cromado)",
-      "Pigmentos"
-    ],
-    "usosEN": [
-      "Stainless steel",
-      "Electroplating (chrome plating)",
-      "Pigments"
-    ],
-    "curiosidadesES": "El cromo confiere resistencia a la corrosión al acero inoxidable.",
-    "curiosidadesEN": "Chromium imparts corrosion resistance to stainless steel."
+    "energiaIonizacion": 652,
+    "usosES": ["Acero inoxidable", "Recubrimientos", "Pigmentos"],
+    "usosEN": ["Stainless steel", "Plating", "Pigments"],
+    "curiosidadesES": "El acero inoxidable debe su resistencia a la corrosión al cromo.",
+    "curiosidadesEN": "Stainless steel owes its corrosion resistance to chromium.",
+    "seguridadES": "Algunos compuestos de cromo(VI) son tóxicos y carcinógenos",
+    "seguridadEN": "Some chromium(VI) compounds are toxic and carcinogenic"
   },
   {
     "id": 25,
@@ -749,7 +351,7 @@
     "familia": "Metales de Transición",
     "periodo": 4,
     "grupo": 7,
-    "masaAtomica": 54.938044,
+    "masaAtomica": 54.938,
     "estado25C": "Sólido",
     "densidad": 7.21,
     "puntoFusionC": 1246,
@@ -758,18 +360,12 @@
     "electronegatividad": 1.55,
     "radioAtomico": 127,
     "energiaIonizacion": 717,
-    "usosES": [
-      "Aceros y aleaciones",
-      "Baterías alcalinas",
-      "Pigmentos (permanganato)"
-    ],
-    "usosEN": [
-      "Steels and alloys",
-      "Alkaline batteries",
-      "Pigments (permanganate)"
-    ],
-    "curiosidadesES": "El manganeso es esencial en pequeñas cantidades para organismos vivos, pero tóxico en exceso.",
-    "curiosidadesEN": "Manganese is essential in small amounts for living organisms, but toxic in excess."
+    "usosES": ["Aceros y fundiciones", "Baterías", "Pigmentos"],
+    "usosEN": ["Steels and cast iron", "Batteries", "Pigments"],
+    "curiosidadesES": "El manganeso es esencial en pequeñas cantidades para organismos vivos.",
+    "curiosidadesEN": "Manganese is essential in small amounts for living organisms.",
+    "seguridadES": null,
+    "seguridadEN": null
   },
   {
     "id": 26,
@@ -786,20 +382,14 @@
     "puntoEbullicionC": 2862,
     "configuracionElectronica": "[Ar] 3d⁶ 4s²",
     "electronegatividad": 1.83,
-    "radioAtomico": 156,
-    "energiaIonizacion": 763,
-    "usosES": [
-      "Acero",
-      "Construcción",
-      "Herramientas"
-    ],
-    "usosEN": [
-      "Steel",
-      "Construction",
-      "Tools"
-    ],
-    "curiosidadesES": "El núcleo de la Tierra está compuesto principalmente de hierro y níquel.",
-    "curiosidadesEN": "Earth's core is composed primarily of iron and nickel."
+    "radioAtomico": 126,
+    "energiaIonizacion": 762,
+    "usosES": ["Acero", "Construcción", "Herramientas"],
+    "usosEN": ["Steel", "Construction", "Tools"],
+    "curiosidadesES": "El hierro es el metal más usado y el núcleo de la Tierra es rico en hierro.",
+    "curiosidadesEN": "Iron is the most used metal and Earth's core is rich in iron.",
+    "seguridadES": null,
+    "seguridadEN": null
   },
   {
     "id": 27,
@@ -809,27 +399,21 @@
     "familia": "Metales de Transición",
     "periodo": 4,
     "grupo": 9,
-    "masaAtomica": 58.933194,
+    "masaAtomica": 58.933,
     "estado25C": "Sólido",
     "densidad": 8.90,
     "puntoFusionC": 1495,
     "puntoEbullicionC": 2927,
     "configuracionElectronica": "[Ar] 3d⁷ 4s²",
     "electronegatividad": 1.88,
-    "radioAtomico": 152,
+    "radioAtomico": 125,
     "energiaIonizacion": 760,
-    "usosES": [
-      "Aleaciones resistentes al calor",
-      "Baterías recargables (Li-ion)",
-      "Pigmentos azules (azul cobalto)"
-    ],
-    "usosEN": [
-      "Heat-resistant alloys",
-      "Rechargeable batteries (Li-ion)",
-      "Blue pigments (cobalt blue)"
-    ],
-    "curiosidadesES": "El cobalto es ferromagnético y forma parte de imanes potentes junto con neodimio y hierro.",
-    "curiosidadesEN": "Cobalt is ferromagnetic and part of strong magnets together with neodymium and iron."
+    "usosES": ["Baterías recargables", "Imanes", "Aleaciones resistentes"],
+    "usosEN": ["Rechargeable batteries", "Magnets", "High-strength alloys"],
+    "curiosidadesES": "El cobalto da color azul intenso a vidrios y esmaltes.",
+    "curiosidadesEN": "Cobalt imparts a deep blue color to glass and enamels.",
+    "seguridadES": "Algunos compuestos son tóxicos; riesgo ocupacional",
+    "seguridadEN": "Some compounds are toxic; occupational hazard"
   },
   {
     "id": 28,
@@ -839,27 +423,21 @@
     "familia": "Metales de Transición",
     "periodo": 4,
     "grupo": 10,
-    "masaAtomica": 58.6934,
+    "masaAtomica": 58.693,
     "estado25C": "Sólido",
     "densidad": 8.908,
     "puntoFusionC": 1455,
     "puntoEbullicionC": 2913,
     "configuracionElectronica": "[Ar] 3d⁸ 4s²",
     "electronegatividad": 1.91,
-    "radioAtomico": 149,
-    "energiaIonizacion": 736,
-    "usosES": [
-      "Acero inoxidable",
-      "Monedas",
-      "Catalizadores de hidrogenación"
-    ],
-    "usosEN": [
-      "Stainless steel",
-      "Coins",
-      "Hydrogenation catalysts"
-    ],
-    "curiosidadesES": "El níquel es resistente a la corrosión y se usa para recubrimientos (niquelado).",
-    "curiosidadesEN": "Nickel is corrosion-resistant and used for coatings (nickel plating)."
+    "radioAtomico": 124,
+    "energiaIonizacion": 737,
+    "usosES": ["Acero inoxidable", "Monedas", "Catalizadores"],
+    "usosEN": ["Stainless steel", "Coins", "Catalysts"],
+    "curiosidadesES": "Frecuente en meteoritos; a menudo aleado con hierro.",
+    "curiosidadesEN": "Common in meteorites; often alloyed with iron.",
+    "seguridadES": "Puede causar alergias por contacto",
+    "seguridadEN": "May cause contact allergies"
   },
   {
     "id": 29,
@@ -876,20 +454,14 @@
     "puntoEbullicionC": 2562,
     "configuracionElectronica": "[Ar] 3d¹⁰ 4s¹",
     "electronegatividad": 1.90,
-    "radioAtomico": 145,
+    "radioAtomico": 128,
     "energiaIonizacion": 745,
-    "usosES": [
-      "Conductores eléctricos",
-      "Tuberías",
-      "Aleaciones (bronce, latón)"
-    ],
-    "usosEN": [
-      "Electrical conductors",
-      "Pipes",
-      "Alloys (bronze, brass)"
-    ],
-    "curiosidadesES": "El cobre fue uno de los primeros metales usados por la humanidad y desarrolla pátina verde (verdigrís).",
-    "curiosidadesEN": "Copper was one of the first metals used by humans and develops green patina (verdigris)."
+    "usosES": ["Conductores eléctricos", "Tuberías", "Aleaciones (bronce, latón)"],
+    "usosEN": ["Electrical conductors", "Pipes", "Alloys (bronze, brass)"],
+    "curiosidadesES": "El cobre tiene alta conductividad eléctrica y térmica.",
+    "curiosidadesEN": "Copper has high electrical and thermal conductivity.",
+    "seguridadES": null,
+    "seguridadEN": null
   },
   {
     "id": 30,
@@ -901,2566 +473,18 @@
     "grupo": 12,
     "masaAtomica": 65.38,
     "estado25C": "Sólido",
-    "densidad": 7.134,
+    "densidad": 7.14,
     "puntoFusionC": 419.53,
     "puntoEbullicionC": 907,
     "configuracionElectronica": "[Ar] 3d¹⁰ 4s²",
     "electronegatividad": 1.65,
-    "radioAtomico": 142,
-    "energiaIonizacion": 906,
-    "usosES": [
-      "Galvanizado",
-      "Aleaciones (latón)",
-      "Baterías"
-    ],
-    "usosEN": [
-      "Galvanization",
-      "Alloys (brass)",
-      "Batteries"
-    ],
-    "curiosidadesES": "El zinc protege al acero de la corrosión mediante galvanizado.",
-    "curiosidadesEN": "Zinc protects steel from corrosion through galvanization."
-  },
-  {
-    "id": 31,
-    "simbolo": "Ga",
-    "nombreES": "Galio",
-    "nombreEN": "Gallium",
-    "familia": "Metales del Bloque p",
-    "periodo": 4,
-    "grupo": 13,
-    "masaAtomica": 69.723,
-    "estado25C": "Sólido",
-    "densidad": 5.904,
-    "puntoFusionC": 29.76,
-    "puntoEbullicionC": 2204,
-    "configuracionElectronica": "[Ar] 3d¹⁰ 4s² 4p¹",
-    "electronegatividad": 1.81,
-    "radioAtomico": 136,
-    "energiaIonizacion": 579,
-    "usosES": [
-      "Semiconductores (GaAs)",
-      "Termómetros de alta precisión",
-      "LEDs"
-    ],
-    "usosEN": [
-      "Semiconductors (GaAs)",
-      "High-precision thermometers",
-      "LEDs"
-    ],
-    "curiosidadesES": "El galio se derrite en la mano, ya que su punto de fusión es ~30 °C.",
-    "curiosidadesEN": "Gallium melts in your hand, as its melting point is ~30 °C."
-  },
-  {
-    "id": 32,
-    "simbolo": "Ge",
-    "nombreES": "Germanio",
-    "nombreEN": "Germanium",
-    "familia": "Metaloides",
-    "periodo": 4,
-    "grupo": 14,
-    "masaAtomica": 72.630,
-    "estado25C": "Sólido",
-    "densidad": 5.323,
-    "puntoFusionC": 938.3,
-    "puntoEbullicionC": 2820,
-    "configuracionElectronica": "[Ar] 3d¹⁰ 4s² 4p²",
-    "electronegatividad": 2.01,
-    "radioAtomico": 125,
-    "energiaIonizacion": 762,
-    "usosES": [
-      "Fibra óptica",
-      "Semiconductores",
-      "Infrarrojo"
-    ],
-    "usosEN": [
-      "Optical fiber",
-      "Semiconductors",
-      "Infrared optics"
-    ],
-    "curiosidadesES": "El germanio fue predicho por Mendeleiev como eka-silicón antes de su descubrimiento.",
-    "curiosidadesEN": "Germanium was predicted by Mendeleev as eka-silicon before its discovery."
-  },
-  {
-    "id": 33,
-    "simbolo": "As",
-    "nombreES": "Arsénico",
-    "nombreEN": "Arsenic",
-    "familia": "Metaloides",
-    "periodo": 4,
-    "grupo": 15,
-    "masaAtomica": 74.921595,
-    "estado25C": "Sólido",
-    "densidad": 5.727,
-    "puntoFusionC": 817,
-    "puntoEbullicionC": 614,
-    "configuracionElectronica": "[Ar] 3d¹⁰ 4s² 4p³",
-    "electronegatividad": 2.18,
-    "radioAtomico": 114,
-    "energiaIonizacion": 947,
-    "usosES": [
-      "Semiconductores",
-      "Conservantes de madera (histórico)",
-      "Aleaciones"
-    ],
-    "usosEN": [
-      "Semiconductors",
-      "Wood preservatives (historical)",
-      "Alloys"
-    ],
-    "curiosidadesES": "El arsénico es notorio como veneno; algunos compuestos fueron usados en medicina.",
-    "curiosidadesEN": "Arsenic is notorious as a poison; some compounds were used in medicine."
-  },
-  {
-    "id": 34,
-    "simbolo": "Se",
-    "nombreES": "Selenio",
-    "nombreEN": "Selenium",
-    "familia": "No Metales",
-    "periodo": 4,
-    "grupo": 16,
-    "masaAtomica": 78.971,
-    "estado25C": "Sólido",
-    "densidad": 4.81,
-    "puntoFusionC": 221,
-    "puntoEbullicionC": 685,
-    "configuracionElectronica": "[Ar] 3d¹⁰ 4s² 4p⁴",
-    "electronegatividad": 2.55,
-    "radioAtomico": 103,
-    "energiaIonizacion": 941,
-    "usosES": [
-      "Fotocélulas",
-      "Vidrio descolorante",
-      "Suplemento nutricional"
-    ],
-    "usosEN": [
-      "Photocells",
-      "Glass decolorizer",
-      "Nutritional supplement"
-    ],
-    "curiosidadesES": "El selenio es foto-conductor; su conductividad aumenta con la luz.",
-    "curiosidadesEN": "Selenium is photoconductive; its conductivity increases with light."
-  },
-  {
-    "id": 35,
-    "simbolo": "Br",
-    "nombreES": "Bromo",
-    "nombreEN": "Bromine",
-    "familia": "Halógenos",
-    "periodo": 4,
-    "grupo": 17,
-    "masaAtomica": 79.904,
-    "estado25C": "Líquido",
-    "densidad": 3.12,
-    "puntoFusionC": -7.2,
-    "puntoEbullicionC": 58.8,
-    "configuracionElectronica": "[Ar] 3d¹⁰ 4s² 4p⁵",
-    "electronegatividad": 2.96,
-    "radioAtomico": 114,
-    "energiaIonizacion": 1140,
-    "usosES": [
-      "Retardantes de llama",
-      "Productos farmacéuticos",
-      "Fotografía (histórico)"
-    ],
-    "usosEN": [
-      "Flame retardants",
-      "Pharmaceuticals",
-      "Photography (historical)"
-    ],
-    "curiosidadesES": "El bromo es uno de los dos elementos líquidos a temperatura ambiente.",
-    "curiosidadesEN": "Bromine is one of only two elements liquid at room temperature."
-  },
-  {
-    "id": 36,
-    "simbolo": "Kr",
-    "nombreES": "Kriptón",
-    "nombreEN": "Krypton",
-    "familia": "Gases Nobles",
-    "periodo": 4,
-    "grupo": 18,
-    "masaAtomica": 83.798,
-    "estado25C": "Gas",
-    "densidad": 0.003733,
-    "puntoFusionC": -157.36,
-    "puntoEbullicionC": -153.22,
-    "configuracionElectronica": "[Ar] 3d¹⁰ 4s² 4p⁶",
-    "electronegatividad": null,
-    "radioAtomico": 112,
-    "energiaIonizacion": 1351,
-    "usosES": [
-      "Iluminación",
-      "Láseres",
-      "Aislamiento térmico"
-    ],
-    "usosEN": [
-      "Lighting",
-      "Lasers",
-      "Thermal insulation"
-    ],
-    "curiosidadesES": "El kriptón se usa en lámparas de destello fotográfico de alta velocidad.",
-    "curiosidadesEN": "Krypton is used in high-speed photographic flash lamps."
-  },
-  {
-    "id": 37,
-    "simbolo": "Rb",
-    "nombreES": "Rubidio",
-    "nombreEN": "Rubidium",
-    "familia": "Metales Alcalinos",
-    "periodo": 5,
-    "grupo": 1,
-    "masaAtomica": 85.4678,
-    "estado25C": "Sólido",
-    "densidad": 1.532,
-    "puntoFusionC": 39.31,
-    "puntoEbullicionC": 688,
-    "configuracionElectronica": "[Kr] 5s¹",
-    "electronegatividad": 0.82,
-    "radioAtomico": 303,
-    "energiaIonizacion": 403,
-    "usosES": [
-      "Células atómicas (relojes atómicos)",
-      "Investigación",
-      "Catalizadores"
-    ],
-    "usosEN": [
-      "Atomic cells (atomic clocks)",
-      "Research",
-      "Catalysts"
-    ],
-    "curiosidadesES": "El rubidio reacciona violentamente con el agua y el aire.",
-    "curiosidadesEN": "Rubidium reacts violently with water and air."
-  },
-  {
-    "id": 38,
-    "simbolo": "Sr",
-    "nombreES": "Estroncio",
-    "nombreEN": "Strontium",
-    "familia": "Metales Alcalinotérreos",
-    "periodo": 5,
-    "grupo": 2,
-    "masaAtomica": 87.62,
-    "estado25C": "Sólido",
-    "densidad": 2.64,
-    "puntoFusionC": 777,
-    "puntoEbullicionC": 1377,
-    "configuracionElectronica": "[Kr] 5s²",
-    "electronegatividad": 0.95,
-    "radioAtomico": 249,
-    "energiaIonizacion": 550,
-    "usosES": [
-      "Fuegos artificiales (rojo)",
-      "Cerámica",
-      "Imanes de ferrita"
-    ],
-    "usosEN": [
-      "Fireworks (red)",
-      "Ceramics",
-      "Ferrite magnets"
-    ],
-    "curiosidadesES": "El estroncio produce un color rojo intenso en fuegos artificiales.",
-    "curiosidadesEN": "Strontium produces an intense red color in fireworks."
-  },
-  {
-    "id": 39,
-    "simbolo": "Y",
-    "nombreES": "Itrio",
-    "nombreEN": "Yttrium",
-    "familia": "Metales de Transición",
-    "periodo": 5,
-    "grupo": 3,
-    "masaAtomica": 88.90584,
-    "estado25C": "Sólido",
-    "densidad": 4.469,
-    "puntoFusionC": 1526,
-    "puntoEbullicionC": 3337,
-    "configuracionElectronica": "[Kr] 4d¹ 5s²",
-    "electronegatividad": 1.22,
-    "radioAtomico": 212,
-    "energiaIonizacion": 600,
-    "usosES": [
-      "Fosforos para pantallas",
-      "Superconductores",
-      "Aleaciones"
-    ],
-    "usosEN": [
-      "Phosphors for displays",
-      "Superconductors",
-      "Alloys"
-    ],
-    "curiosidadesES": "El itrio se usa en láseres YAG (granate de itrio y aluminio).",
-    "curiosidadesEN": "Yttrium is used in YAG lasers (yttrium aluminum garnet)."
-  },
-  {
-    "id": 40,
-    "simbolo": "Zr",
-    "nombreES": "Circonio",
-    "nombreEN": "Zirconium",
-    "familia": "Metales de Transición",
-    "periodo": 5,
-    "grupo": 4,
-    "masaAtomica": 91.224,
-    "estado25C": "Sólido",
-    "densidad": 6.52,
-    "puntoFusionC": 1855,
-    "puntoEbullicionC": 4409,
-    "configuracionElectronica": "[Kr] 4d² 5s²",
-    "electronegatividad": 1.33,
-    "radioAtomico": 206,
-    "energiaIonizacion": 640,
-    "usosES": [
-      "Revestimientos de reactores nucleares",
-      "Cerámica",
-      "Aleaciones resistentes a la corrosión"
-    ],
-    "usosEN": [
-      "Nuclear reactor cladding",
-      "Ceramics",
-      "Corrosion-resistant alloys"
-    ]
-  },
-  {
-    "id": 41,
-    "simbolo": "Nb",
-    "nombreES": "Niobio",
-    "nombreEN": "Niobium",
-    "familia": "Metales de Transición",
-    "periodo": 5,
-    "grupo": 5,
-    "masaAtomica": 92.906,
-    "estado25C": "Sólido",
-    "densidad": 8.57,
-    "puntoFusionC": 2477,
-    "puntoEbullicionC": 4744,
-    "configuracionElectronica": "[Kr] 4d⁴ 5s¹",
-    "electronegatividad": 1.6,
-    "radioAtomico": 198,
-    "energiaIonizacion": 652,
-    "usosES": [
-      "Superaleaciones para motores de aviones",
-      "Material para superconductores",
-      "Acero inoxidable"
-    ],
-    "usosEN": [
-      "Superalloys for jet engines",
-      "Superconductor material",
-      "Stainless steel"
-    ],
-    "curiosidadesES": "El niobio mejora la resistencia a la corrosión y la conductividad eléctrica.",
-    "curiosidadesEN": "Niobium improves corrosion resistance and electrical conductivity."
-  },
-  {
-    "id": 42,
-    "simbolo": "Mo",
-    "nombreES": "Molibdeno",
-    "nombreEN": "Molybdenum",
-    "familia": "Metales de Transición",
-    "periodo": 5,
-    "grupo": 6,
-    "masaAtomica": 95.95,
-    "estado25C": "Sólido",
-    "densidad": 10.28,
-    "puntoFusionC": 2623,
-    "puntoEbullicionC": 4639,
-    "configuracionElectronica": "[Kr] 4d⁵ 5s¹",
-    "electronegatividad": 2.16,
-    "radioAtomico": 190,
-    "energiaIonizacion": 684,
-    "usosES": [
-      "Aleaciones de acero",
-      "Catalizadores",
-      "Componentes electrónicos"
-    ],
-    "usosEN": [
-      "Steel alloys",
-      "Catalysts",
-      "Electronic components"
-    ],
-    "curiosidadesES": "El molibdeno tiene un punto de fusión muy alto y es resistente a la corrosión.",
-    "curiosidadesEN": "Molybdenum has a very high melting point and is corrosion resistant."
-  },
-  {
-    "id": 43,
-    "simbolo": "Tc",
-    "nombreES": "Tecnecio",
-    "nombreEN": "Technetium",
-    "familia": "Metales de Transición",
-    "periodo": 5,
-    "grupo": 7,
-    "masaAtomica": 98,
-    "estado25C": "Sólido",
-    "densidad": 11.5,
-    "puntoFusionC": 2157,
-    "puntoEbullicionC": 4265,
-    "configuracionElectronica": "[Kr] 4d⁵ 5s²",
-    "electronegatividad": 1.9,
-    "radioAtomico": 170,
-    "energiaIonizacion": 702,
-    "usosES": [
-      "Medicina nuclear",
-      "Marcadores radioactivos",
-      "Investigación científica"
-    ],
-    "usosEN": [
-      "Nuclear medicine",
-      "Radioactive tracers",
-      "Scientific research"
-    ],
-    "curiosidadesES": "El tecnecio fue el primer elemento sintetizado artificialmente.",
-    "curiosidadesEN": "Technetium was the first artificially synthesized element."
-  },
-  {
-    "id": 44,
-    "simbolo": "Ru",
-    "nombreES": "Rutenio",
-    "nombreEN": "Ruthenium",
-    "familia": "Metales de Transición",
-    "periodo": 5,
-    "grupo": 8,
-    "masaAtomica": 101.07,
-    "estado25C": "Sólido",
-    "densidad": 12.37,
-    "puntoFusionC": 2334,
-    "puntoEbullicionC": 4150,
-    "configuracionElectronica": "[Kr] 4d⁷ 5s¹",
-    "electronegatividad": 2.2,
-    "radioAtomico": 178,
-    "energiaIonizacion": 710,
-    "usosES": [
-      "Catalizadores",
-      "Contactos eléctricos",
-      "Aleaciones duras"
-    ],
-    "usosEN": [
-      "Catalysts",
-      "Electrical contacts",
-      "Hard alloys"
-    ],
-    "curiosidadesES": "El rutenio mejora la dureza y resistencia al desgaste de aleaciones.",
-    "curiosidadesEN": "Ruthenium enhances hardness and wear resistance of alloys."
-  },
-  {
-    "id": 45,
-    "simbolo": "Rh",
-    "nombreES": "Rodio",
-    "nombreEN": "Rhodium",
-    "familia": "Metales de Transición",
-    "periodo": 5,
-    "grupo": 9,
-    "masaAtomica": 102.91,
-    "estado25C": "Sólido",
-    "densidad": 12.41,
-    "puntoFusionC": 1964,
-    "puntoEbullicionC": 3727,
-    "configuracionElectronica": "[Kr] 4d⁸ 5s¹",
-    "electronegatividad": 2.28,
-    "radioAtomico": 173,
-    "energiaIonizacion": 720,
-    "usosES": [
-      "Catalizadores de convertidores catalíticos",
-      "Joyas",
-      "Revestimientos antidesgaste"
-    ],
-    "usosEN": [
-      "Catalytic converters",
-      "Jewelry",
-      "Wear-resistant coatings"
-    ],
-    "curiosidadesES": "El rodio es uno de los metales más raros y caros.",
-    "curiosidadesEN": "Rhodium is one of the rarest and most expensive metals."
-  },
-  {
-    "id": 46,
-    "simbolo": "Pd",
-    "nombreES": "Paladio",
-    "nombreEN": "Palladium",
-    "familia": "Metales de Transición",
-    "periodo": 5,
-    "grupo": 10,
-    "masaAtomica": 106.42,
-    "estado25C": "Sólido",
-    "densidad": 12.02,
-    "puntoFusionC": 1554,
-    "puntoEbullicionC": 2963,
-    "configuracionElectronica": "[Kr] 4d¹⁰",
-    "electronegatividad": 2.20,
-    "radioAtomico": 169,
-    "energiaIonizacion": 804,
-    "usosES": [
-      "Catalizadores",
-      "Joyas",
-      "Electrónica"
-    ],
-    "usosEN": [
-      "Catalysts",
-      "Jewelry",
-      "Electronics"
-    ],
-    "curiosidadesES": "El paladio puede absorber grandes cantidades de hidrógeno.",
-    "curiosidadesEN": "Palladium can absorb large amounts of hydrogen."
-  },
-  {
-    "id": 47,
-    "simbolo": "Ag",
-    "nombreES": "Plata",
-    "nombreEN": "Silver",
-    "familia": "Metales de Transición",
-    "periodo": 5,
-    "grupo": 11,
-    "masaAtomica": 107.8682,
-    "estado25C": "Sólido",
-    "densidad": 10.49,
-    "puntoFusionC": 961.78,
-    "puntoEbullicionC": 2162,
-    "configuracionElectronica": "[Kr] 4d¹⁰ 5s¹",
-    "electronegatividad": 1.93,
-    "radioAtomico": 160,
-    "energiaIonizacion": 731,
-    "usosES": [
-      "Joyas",
-      "Monedas",
-      "Electrónica",
-      "Antibacteriano"
-    ],
-    "usosEN": [
-      "Jewelry",
-      "Coins",
-      "Electronics",
-      "Antibacterial"
-    ],
-    "curiosidadesES": "La plata tiene la conductividad eléctrica más alta de todos los metales.",
-    "curiosidadesEN": "Silver has the highest electrical conductivity of all metals."
-  },
-  {
-    "id": 48,
-    "simbolo": "Cd",
-    "nombreES": "Cadmio",
-    "nombreEN": "Cadmium",
-    "familia": "Metales de Transición",
-    "periodo": 5,
-    "grupo": 12,
-    "masaAtomica": 112.414,
-    "estado25C": "Sólido",
-    "densidad": 8.65,
-    "puntoFusionC": 321.07,
-    "puntoEbullicionC": 767,
-    "configuracionElectronica": "[Kr] 4d¹⁰ 5s²",
-    "electronegatividad": 1.69,
-    "radioAtomico": 161,
-    "energiaIonizacion": 868,
-    "usosES": [
-      "Baterías de níquel-cadmio (histórico)",
-      "Pigmentos",
-      "Recubrimientos"
-    ],
-    "usosEN": [
-      "Nickel-cadmium batteries (historical)",
-      "Pigments",
-      "Coatings"
-    ],
-    "curiosidadesES": "El cadmio es tóxico; su uso se ha reducido por regulaciones ambientales.",
-    "curiosidadesEN": "Cadmium is toxic; its use has been reduced due to environmental regulations."
-  },
-  {
-    "id": 49,
-    "simbolo": "In",
-    "nombreES": "Indio",
-    "nombreEN": "Indium",
-    "familia": "Metales del Bloque p",
-    "periodo": 5,
-    "grupo": 13,
-    "masaAtomica": 114.818,
-    "estado25C": "Sólido",
-    "densidad": 7.31,
-    "puntoFusionC": 156.6,
-    "puntoEbullicionC": 2072,
-    "configuracionElectronica": "[Kr] 4d¹⁰ 5s² 5p¹",
-    "electronegatividad": 1.78,
-    "radioAtomico": 156,
-    "energiaIonizacion": 558,
-    "usosES": [
-      "Óxido de indio y estaño (ITO) para pantallas",
-      "Soldaduras de baja fusión",
-      "Semiconductores"
-    ],
-    "usosEN": [
-      "Indium tin oxide (ITO) for displays",
-      "Low-melting solders",
-      "Semiconductors"
-    ],
-    "curiosidadesES": "El indio es suave y puede deformarse con los dedos; emite un crujido al doblarse.",
-    "curiosidadesEN": "Indium is soft and can be deformed by fingers; it 'cries' when bent."
-  },
-  {
-    "id": 50,
-    "simbolo": "Sn",
-    "nombreES": "Estaño",
-    "nombreEN": "Tin",
-    "familia": "Metales del Bloque p",
-    "periodo": 5,
-    "grupo": 14,
-    "masaAtomica": 118.710,
-    "estado25C": "Sólido",
-    "densidad": 7.31,
-    "puntoFusionC": 231.93,
-    "puntoEbullicionC": 2602,
-    "configuracionElectronica": "[Kr] 4d¹⁰ 5s² 5p²",
-    "electronegatividad": 1.96,
-    "radioAtomico": 145,
-    "energiaIonizacion": 709,
-    "usosES": [
-      "Soldaduras",
-      "Recubrimientos de latas",
-      "Aleaciones (bronce)"
-    ],
-    "usosEN": [
-      "Solders",
-      "Tinplate coatings",
-      "Alloys (bronze)"
-    ],
-    "curiosidadesES": "El estaño sufre 'peste del estaño' a bajas temperaturas, transformándose a una forma frágil.",
-    "curiosidadesEN": "Tin suffers 'tin pest' at low temperatures, transforming into a brittle form."
-  },
-  {
-    "id": 51,
-    "simbolo": "Sb",
-    "nombreES": "Antimonio",
-    "nombreEN": "Antimony",
-    "familia": "Metaloides",
-    "periodo": 5,
-    "grupo": 15,
-    "masaAtomica": 121.760,
-    "estado25C": "Sólido",
-    "densidad": 6.697,
-    "puntoFusionC": 630.63,
-    "puntoEbullicionC": 1587,
-    "configuracionElectronica": "[Kr] 4d¹⁰ 5s² 5p³",
-    "electronegatividad": 2.05,
-    "radioAtomico": 145,
-    "energiaIonizacion": 834,
-    "usosES": [
-      "Retardantes de llama",
-      "Aleaciones",
-      "Semiconductores"
-    ],
-    "usosEN": [
-      "Flame retardants",
-      "Alloys",
-      "Semiconductors"
-    ],
-    "curiosidadesES": "El antimonio se ha usado desde la antigüedad en cosméticos como el kohl.",
-    "curiosidadesEN": "Antimony has been used since antiquity in cosmetics such as kohl."
-  },
-  {
-    "id": 52,
-    "simbolo": "Te",
-    "nombreES": "Telurio",
-    "nombreEN": "Tellurium",
-    "familia": "Metaloides",
-    "periodo": 5,
-    "grupo": 16,
-    "masaAtomica": 127.60,
-    "estado25C": "Sólido",
-    "densidad": 6.24,
-    "puntoFusionC": 449.51,
-    "puntoEbullicionC": 988,
-    "configuracionElectronica": "[Kr] 4d¹⁰ 5s² 5p⁴",
-    "electronegatividad": 2.10,
-    "radioAtomico": 140,
-    "energiaIonizacion": 869,
-    "usosES": [
-      "Aleaciones",
-      "Semiconductores",
-      "Paneles solares (CdTe)"
-    ],
-    "usosEN": [
-      "Alloys",
-      "Semiconductors",
-      "Solar panels (CdTe)"
-    ],
-    "curiosidadesES": "El telurio puede causar un olor a ajo en el aliento tras exposición.",
-    "curiosidadesEN": "Tellurium exposure can cause a garlic-like odor on the breath."
-  },
-  {
-    "id": 53,
-    "simbolo": "I",
-    "nombreES": "Yodo",
-    "nombreEN": "Iodine",
-    "familia": "Halógenos",
-    "periodo": 5,
-    "grupo": 17,
-    "masaAtomica": 126.90447,
-    "estado25C": "Sólido",
-    "densidad": 4.933,
-    "puntoFusionC": 113.7,
-    "puntoEbullicionC": 184.3,
-    "configuracionElectronica": "[Kr] 4d¹⁰ 5s² 5p⁵",
-    "electronegatividad": 2.66,
-    "radioAtomico": 133,
-    "energiaIonizacion": 1008,
-    "usosES": [
-      "Antisépticos",
-      "Nutrición (sal yodada)",
-      "Imagenología médica"
-    ],
-    "usosEN": [
-      "Antiseptics",
-      "Nutrition (iodized salt)",
-      "Medical imaging"
-    ],
-    "curiosidadesES": "El yodo sublima fácilmente formando vapores púrpuras intensos.",
-    "curiosidadesEN": "Iodine readily sublimes forming deep purple vapors."
-  },
-  {
-    "id": 54,
-    "simbolo": "Xe",
-    "nombreES": "Xenón",
-    "nombreEN": "Xenon",
-    "familia": "Gases Nobles",
-    "periodo": 5,
-    "grupo": 18,
-    "masaAtomica": 131.293,
-    "estado25C": "Gas",
-    "densidad": 0.005894,
-    "puntoFusionC": -111.75,
-    "puntoEbullicionC": -108.1,
-    "configuracionElectronica": "[Kr] 4d¹⁰ 5s² 5p⁶",
-    "electronegatividad": null,
-    "radioAtomico": 108,
-    "energiaIonizacion": 1170,
-    "usosES": [
-      "Lámparas de destello",
-      "Anestesia",
-      "Láseres"
-    ],
-    "usosEN": [
-      "Flash lamps",
-      "Anesthesia",
-      "Lasers"
-    ],
-    "curiosidadesES": "Aunque es un gas noble, forma compuestos como el hexafluoroplatinato de xenón.",
-    "curiosidadesEN": "Although a noble gas, xenon forms compounds such as xenon hexafluoroplatinate."
-  },
-  {
-    "id": 55,
-    "simbolo": "Cs",
-    "nombreES": "Cesio",
-    "nombreEN": "Cesium",
-    "familia": "Metales Alcalinos",
-    "periodo": 6,
-    "grupo": 1,
-    "masaAtomica": 132.90545196,
-    "estado25C": "Sólido",
-    "densidad": 1.873,
-    "puntoFusionC": 28.5,
-    "puntoEbullicionC": 671,
-    "configuracionElectronica": "[Xe] 6s¹",
-    "electronegatividad": 0.79,
-    "radioAtomico": 343,
-    "energiaIonizacion": 376,
-    "usosES": [
-      "Relojes atómicos",
-      "Celdas fotoeléctricas",
-      "Investigación"
-    ],
-    "usosEN": [
-      "Atomic clocks",
-      "Photoelectric cells",
-      "Research"
-    ],
-    "curiosidadesES": "El cesio es altamente reactivo y puede incendiarse espontáneamente en aire húmedo.",
-    "curiosidadesEN": "Cesium is highly reactive and can spontaneously ignite in moist air."
-  },
-  {
-    "id": 56,
-    "simbolo": "Ba",
-    "nombreES": "Bario",
-    "nombreEN": "Barium",
-    "familia": "Metales Alcalinotérreos",
-    "periodo": 6,
-    "grupo": 2,
-    "masaAtomica": 137.327,
-    "estado25C": "Sólido",
-    "densidad": 3.62,
-    "puntoFusionC": 727,
-    "puntoEbullicionC": 1870,
-    "configuracionElectronica": "[Xe] 6s²",
-    "electronegatividad": 0.89,
-    "radioAtomico": 268,
-    "energiaIonizacion": 503,
-    "usosES": [
-      "Medicina (suspensión de sulfato de bario)",
-      "Fuegos artificiales (verde)",
-      "Vacío en tubos electrónicos"
-    ],
-    "usosEN": [
-      "Medicine (barium sulfate suspension)",
-      "Fireworks (green)",
-      "Getter in vacuum tubes"
-    ],
-    "curiosidadesES": "El sulfato de bario es radiopaco y se usa en estudios de rayos X.",
-    "curiosidadesEN": "Barium sulfate is radiopaque and used in X-ray studies."
-  },
-  {
-    "id": 57,
-    "simbolo": "La",
-    "nombreES": "Lantano",
-    "nombreEN": "Lanthanum",
-    "familia": "Lantánidos",
-    "periodo": 6,
-    "grupo": 3,
-    "masaAtomica": 138.90547,
-    "estado25C": "Sólido",
-    "densidad": 6.145,
-    "puntoFusionC": 920,
-    "puntoEbullicionC": 3464,
-    "configuracionElectronica": "[Xe] 5d¹ 6s²",
-    "electronegatividad": 1.10,
-    "radioAtomico": 187,
-    "energiaIonizacion": 538,
-    "usosES": [
-      "Lentes ópticos",
-      "Baterías NiMH",
-      "Catalizadores"
-    ],
-    "usosEN": [
-      "Optical lenses",
-      "NiMH batteries",
-      "Catalysts"
-    ],
-    "curiosidadesES": "El lantano mejora el índice de refracción de vidrios ópticos.",
-    "curiosidadesEN": "Lanthanum improves the refractive index of optical glasses."
-  },
-  {
-    "id": 58,
-    "simbolo": "Ce",
-    "nombreES": "Cerio",
-    "nombreEN": "Cerium",
-    "familia": "Lantánidos",
-    "periodo": 6,
-    "grupo": 3,
-    "masaAtomica": 140.116,
-    "estado25C": "Sólido",
-    "densidad": 6.77,
-    "puntoFusionC": 795,
-    "puntoEbullicionC": 3443,
-    "configuracionElectronica": "[Xe] 4f¹ 5d¹ 6s²",
-    "electronegatividad": 1.12,
-    "radioAtomico": 182,
-    "energiaIonizacion": 534,
-    "usosES": [
-      "Pedernales para encendedores",
-      "Agentes pulidores",
-      "Catalizadores"
-    ],
-    "usosEN": [
-      "Lighter flints",
-      "Polishing agents",
-      "Catalysts"
-    ],
-    "curiosidadesES": "El cerio es pirofórico en forma de aleación mischmetal.",
-    "curiosidadesEN": "Cerium is pyrophoric when in mischmetal alloy form."
-  },
-  {
-    "id": 59,
-    "simbolo": "Pr",
-    "nombreES": "Praseodimio",
-    "nombreEN": "Praseodymium",
-    "familia": "Lantánidos",
-    "periodo": 6,
-    "grupo": 3,
-    "masaAtomica": 140.90766,
-    "estado25C": "Sólido",
-    "densidad": 6.77,
-    "puntoFusionC": 931,
-    "puntoEbullicionC": 3520,
-    "configuracionElectronica": "[Xe] 4f³ 6s²",
-    "electronegatividad": 1.13,
-    "radioAtomico": 182,
-    "energiaIonizacion": 527,
-    "usosES": [
-      "Imanes",
-      "Colorantes para vidrio",
-      "Lásers"
-    ],
-    "usosEN": [
-      "Magnets",
-      "Glass colorants",
-      "Lasers"
-    ],
-    "curiosidadesES": "El praseodimio aporta un color amarillo-verde a vidrios y esmaltes.",
-    "curiosidadesEN": "Praseodymium gives a yellow-green color to glasses and enamels."
-  },
-  {
-    "id": 60,
-    "simbolo": "Nd",
-    "nombreES": "Neodimio",
-    "nombreEN": "Neodymium",
-    "familia": "Lantánidos",
-    "periodo": 6,
-    "grupo": 3,
-    "masaAtomica": 144.242,
-    "estado25C": "Sólido",
-    "densidad": 7.01,
-    "puntoFusionC": 1024,
-    "puntoEbullicionC": 3074,
-    "configuracionElectronica": "[Xe] 4f⁴ 6s²",
-    "electronegatividad": 1.14,
-    "radioAtomico": 181,
-    "energiaIonizacion": 533,
-    "usosES": [
-      "Imanes de neodimio",
-      "Láseres",
-      "Vidrios dopados"
-    ],
-    "usosEN": [
-      "Neodymium magnets",
-      "Lasers",
-      "Doped glasses"
-    ],
-    "curiosidadesES": "Los imanes de neodimio son de los más potentes disponibles comercialmente.",
-    "curiosidadesEN": "Neodymium magnets are among the strongest commercially available."
-  },
-  {
-    "id": 61,
-    "simbolo": "Pm",
-    "nombreES": "Prometio",
-    "nombreEN": "Promethium",
-    "familia": "Lantánidos",
-    "periodo": 6,
-    "grupo": 3,
-    "masaAtomica": 145,
-    "estado25C": "Sólido",
-    "densidad": 7.26,
-    "puntoFusionC": 1100,
-    "puntoEbullicionC": 3000,
-    "configuracionElectronica": "[Xe] 4f⁵ 6s²",
-    "electronegatividad": 1.13,
-    "radioAtomico": 183,
-    "energiaIonizacion": 540,
-    "usosES": [
-      "Fuentes beta para medidores",
-      "Investigación",
-      "Luminiscencia"
-    ],
-    "usosEN": [
-      "Beta sources for gauges",
-      "Research",
-      "Luminescence"
-    ],
-    "curiosidadesES": "El prometio es radiactivo y no tiene isótopos estables.",
-    "curiosidadesEN": "Promethium is radioactive and has no stable isotopes."
-  },
-  {
-    "id": 62,
-    "simbolo": "Sm",
-    "nombreES": "Samario",
-    "nombreEN": "Samarium",
-    "familia": "Lantánidos",
-    "periodo": 6,
-    "grupo": 3,
-    "masaAtomica": 150.36,
-    "estado25C": "Sólido",
-    "densidad": 7.52,
-    "puntoFusionC": 1072,
-    "puntoEbullicionC": 1794,
-    "configuracionElectronica": "[Xe] 4f⁶ 6s²",
-    "electronegatividad": 1.17,
-    "radioAtomico": 180,
-    "energiaIonizacion": 544,
-    "usosES": [
-      "Imanes SmCo",
-      "Reactores nucleares",
-      "Catalizadores"
-    ],
-    "usosEN": [
-      "SmCo magnets",
-      "Nuclear reactors",
-      "Catalysts"
-    ],
-    "curiosidadesES": "Los imanes de samario-cobalto mantienen su magnetismo a altas temperaturas.",
-    "curiosidadesEN": "Samarium-cobalt magnets retain magnetism at high temperatures."
-  },
-  {
-    "id": 63,
-    "simbolo": "Eu",
-    "nombreES": "Europio",
-    "nombreEN": "Europium",
-    "familia": "Lantánidos",
-    "periodo": 6,
-    "grupo": 3,
-    "masaAtomica": 151.964,
-    "estado25C": "Sólido",
-    "densidad": 5.24,
-    "puntoFusionC": 822,
-    "puntoEbullicionC": 1529,
-    "configuracionElectronica": "[Xe] 4f⁷ 6s²",
-    "electronegatividad": 1.20,
-    "radioAtomico": 199,
-    "energiaIonizacion": 547,
-    "usosES": [
-      "Fosforescentes rojos en pantallas",
-      "Billetes de euro (seguridad)",
-      "Láseres"
-    ],
-    "usosEN": [
-      "Red phosphors in displays",
-      "Euro banknotes (security)",
-      "Lasers"
-    ],
-    "curiosidadesES": "El europio es altamente eficiente como dopante para luminiscencia roja.",
-    "curiosidadesEN": "Europium is highly efficient as a dopant for red luminescence."
-  },
-  {
-    "id": 64,
-    "simbolo": "Gd",
-    "nombreES": "Gadolinio",
-    "nombreEN": "Gadolinium",
-    "familia": "Lantánidos",
-    "periodo": 6,
-    "grupo": 3,
-    "masaAtomica": 157.25,
-    "estado25C": "Sólido",
-    "densidad": 7.90,
-    "puntoFusionC": 1312,
-    "puntoEbullicionC": 3273,
-    "configuracionElectronica": "[Xe] 4f⁷ 5d¹ 6s²",
-    "electronegatividad": 1.20,
-    "radioAtomico": 180,
-    "energiaIonizacion": 593,
-    "usosES": [
-      "Agentes de contraste en RM",
-      "Barras de control en reactores",
-      "Imanes"
-    ],
-    "usosEN": [
-      "MRI contrast agents",
-      "Reactor control rods",
-      "Magnets"
-    ],
-    "curiosidadesES": "El gadolinio tiene una gran sección eficaz de captura de neutrones.",
-    "curiosidadesEN": "Gadolinium has a large neutron capture cross-section."
-  },
-  {
-    "id": 65,
-    "simbolo": "Tb",
-    "nombreES": "Terbio",
-    "nombreEN": "Terbium",
-    "familia": "Lantánidos",
-    "periodo": 6,
-    "grupo": 3,
-    "masaAtomica": 158.92535,
-    "estado25C": "Sólido",
-    "densidad": 8.23,
-    "puntoFusionC": 1356,
-    "puntoEbullicionC": 3230,
-    "configuracionElectronica": "[Xe] 4f⁹ 6s²",
-    "electronegatividad": 1.20,
-    "radioAtomico": 177,
-    "energiaIonizacion": 566,
-    "usosES": [
-      "Fosforescentes verdes",
-      "Aleaciones magnetoestrictivas (Terfenol-D)",
-      "Dispositivos electrónicos"
-    ],
-    "usosEN": [
-      "Green phosphors",
-      "Magnetostrictive alloys (Terfenol-D)",
-      "Electronic devices"
-    ],
-    "curiosidadesES": "El terbio muestra fuertes propiedades magnetoópticas y magnetoestrictivas.",
-    "curiosidadesEN": "Terbium exhibits strong magneto-optic and magnetostrictive properties."
-  },
-  {
-    "id": 66,
-    "simbolo": "Dy",
-    "nombreES": "Disprosio",
-    "nombreEN": "Dysprosium",
-    "familia": "Lantánidos",
-    "periodo": 6,
-    "grupo": 3,
-    "masaAtomica": 162.500,
-    "estado25C": "Sólido",
-    "densidad": 8.54,
-    "puntoFusionC": 1412,
-    "puntoEbullicionC": 2567,
-    "configuracionElectronica": "[Xe] 4f¹⁰ 6s²",
-    "electronegatividad": 1.22,
-    "radioAtomico": 178,
-    "energiaIonizacion": 573,
-    "usosES": [
-      "Imanes de alta temperatura",
-      "Láseres",
-      "Barras de control en reactores"
-    ],
-    "usosEN": [
-      "High-temperature magnets",
-      "Lasers",
-      "Reactor control rods"
-    ],
-    "curiosidadesES": "El disprosio mejora la estabilidad térmica de imanes de neodimio.",
-    "curiosidadesEN": "Dysprosium improves the thermal stability of neodymium magnets."
-  },
-  {
-    "id": 67,
-    "simbolo": "Ho",
-    "nombreES": "Holmio",
-    "nombreEN": "Holmium",
-    "familia": "Lantánidos",
-    "periodo": 6,
-    "grupo": 3,
-    "masaAtomica": 164.93033,
-    "estado25C": "Sólido",
-    "densidad": 8.79,
-    "puntoFusionC": 1474,
-    "puntoEbullicionC": 2700,
-    "configuracionElectronica": "[Xe] 4f¹¹ 6s²",
-    "electronegatividad": 1.23,
-    "radioAtomico": 176,
-    "energiaIonizacion": 581,
-    "usosES": [
-      "Imanes",
-      "Fibras ópticas dopadas",
-      "Resonancia magnética"
-    ],
-    "usosEN": [
-      "Magnets",
-      "Doped optical fibers",
-      "Magnetic resonance"
-    ],
-    "curiosidadesES": "El holmio tiene el mayor momento magnético de todos los elementos.",
-    "curiosidadesEN": "Holmium has the highest magnetic moment of any element."
-  },
-  {
-    "id": 68,
-    "simbolo": "Er",
-    "nombreES": "Erbio",
-    "nombreEN": "Erbium",
-    "familia": "Lantánidos",
-    "periodo": 6,
-    "grupo": 3,
-    "masaAtomica": 167.259,
-    "estado25C": "Sólido",
-    "densidad": 9.07,
-    "puntoFusionC": 1529,
-    "puntoEbullicionC": 2868,
-    "configuracionElectronica": "[Xe] 4f¹² 6s²",
-    "electronegatividad": 1.24,
-    "radioAtomico": 175,
-    "energiaIonizacion": 589,
-    "usosES": [
-      "Amplificadores ópticos (EDFA)",
-      "Láseres médicos",
-      "Coloración de vidrio"
-    ],
-    "usosEN": [
-      "Optical amplifiers (EDFA)",
-      "Medical lasers",
-      "Glass coloring"
-    ],
-    "curiosidadesES": "El erbio emite luz rosa al excitarse y se usa en telecomunicaciones de 1.55 μm.",
-    "curiosidadesEN": "Erbium emits pink light when excited and is used at 1.55 μm in telecom."
-  },
-  {
-    "id": 69,
-    "simbolo": "Tm",
-    "nombreES": "Tulio",
-    "nombreEN": "Thulium",
-    "familia": "Lantánidos",
-    "periodo": 6,
-    "grupo": 3,
-    "masaAtomica": 168.93422,
-    "estado25C": "Sólido",
-    "densidad": 9.32,
-    "puntoFusionC": 1545,
-    "puntoEbullicionC": 1950,
-    "configuracionElectronica": "[Xe] 4f¹³ 6s²",
-    "electronegatividad": 1.25,
-    "radioAtomico": 174,
-    "energiaIonizacion": 597,
-    "usosES": [
-      "Fuentes de rayos X portátiles",
-      "Láseres",
-      "Investigación"
-    ],
-    "usosEN": [
-      "Portable X-ray sources",
-      "Lasers",
-      "Research"
-    ],
-    "curiosidadesES": "El tulio es uno de los lantánidos más raros y costosos.",
-    "curiosidadesEN": "Thulium is one of the rarest and most expensive lanthanides."
-  },
-  {
-    "id": 70,
-    "simbolo": "Yb",
-    "nombreES": "Iterbio",
-    "nombreEN": "Ytterbium",
-    "familia": "Lantánidos",
-    "periodo": 6,
-    "grupo": 3,
-    "masaAtomica": 173.045,
-    "estado25C": "Sólido",
-    "densidad": 6.97,
-    "puntoFusionC": 824,
-    "puntoEbullicionC": 1196,
-    "configuracionElectronica": "[Xe] 4f¹⁴ 6s²",
-    "electronegatividad": 1.10,
-    "radioAtomico": 194,
-    "energiaIonizacion": 603,
-    "usosES": [
-      "Fibras ópticas dopadas",
-      "Láseres de alta potencia",
-      "Aleaciones"
-    ],
-    "usosEN": [
-      "Doped optical fibers",
-      "High-power lasers",
-      "Alloys"
-    ],
-    "curiosidadesES": "El iterbio se usa en estándares de frecuencia de alta precisión.",
-    "curiosidadesEN": "Ytterbium is used in high-precision frequency standards."
-  },
-  {
-    "id": 71,
-    "simbolo": "Lu",
-    "nombreES": "Lutecio",
-    "nombreEN": "Lutetium",
-    "familia": "Lantánidos",
-    "periodo": 6,
-    "grupo": 3,
-    "masaAtomica": 174.9668,
-    "estado25C": "Sólido",
-    "densidad": 9.84,
-    "puntoFusionC": 1663,
-    "puntoEbullicionC": 3402,
-    "configuracionElectronica": "[Xe] 4f¹⁴ 5d¹ 6s²",
-    "electronegatividad": 1.27,
-    "radioAtomico": 175,
-    "energiaIonizacion": 524,
-    "usosES": [
-      "Catalizadores",
-      "Tomografía por emisión de positrones (Lu-177)",
-      "Investigación"
-    ],
-    "usosEN": [
-      "Catalysts",
-      "Positron emission tomography (Lu-177)",
-      "Research"
-    ],
-    "curiosidadesES": "El lutecio es el más pesado y duro de los lantánidos.",
-    "curiosidadesEN": "Lutetium is the heaviest and hardest lanthanide."
-  },
-  {
-    "id": 72,
-    "simbolo": "Hf",
-    "nombreES": "Hafnio",
-    "nombreEN": "Hafnium",
-    "familia": "Metales de Transición",
-    "periodo": 6,
-    "grupo": 4,
-    "masaAtomica": 178.49,
-    "estado25C": "Sólido",
-    "densidad": 13.31,
-    "puntoFusionC": 2233,
-    "puntoEbullicionC": 4603,
-    "configuracionElectronica": "[Xe] 4f¹⁴ 5d² 6s²",
-    "electronegatividad": 1.30,
-    "radioAtomico": 159,
-    "energiaIonizacion": 659,
-    "usosES": [
-      "Barras de control en reactores",
-      "Electrodos de plasma",
-      "Dieléctricos de alta k"
-    ],
-    "usosEN": [
-      "Reactor control rods",
-      "Plasma electrodes",
-      "High-k dielectrics"
-    ],
-    "curiosidadesES": "El hafnio absorbe neutrones de manera eficiente, útil en reactores nucleares.",
-    "curiosidadesEN": "Hafnium efficiently absorbs neutrons, useful in nuclear reactors."
-  },
-  {
-    "id": 73,
-    "simbolo": "Ta",
-    "nombreES": "Tantalio",
-    "nombreEN": "Tantalum",
-    "familia": "Metales de Transición",
-    "periodo": 6,
-    "grupo": 5,
-    "masaAtomica": 180.94788,
-    "estado25C": "Sólido",
-    "densidad": 16.69,
-    "puntoFusionC": 3017,
-    "puntoEbullicionC": 5458,
-    "configuracionElectronica": "[Xe] 4f¹⁴ 5d³ 6s²",
-    "electronegatividad": 1.50,
-    "radioAtomico": 146,
-    "energiaIonizacion": 761,
-    "usosES": [
-      "Condensadores",
-      "Instrumentos quirúrgicos",
-      "Aleaciones resistentes a la corrosión"
-    ],
-    "usosEN": [
-      "Capacitors",
-      "Surgical instruments",
-      "Corrosion-resistant alloys"
-    ],
-    "curiosidadesES": "El tantalio es muy resistente a la corrosión y biocompatible.",
-    "curiosidadesEN": "Tantalum is highly corrosion-resistant and biocompatible."
-  },
-  {
-    "id": 74,
-    "simbolo": "W",
-    "nombreES": "Wolframio",
-    "nombreEN": "Tungsten",
-    "familia": "Metales de Transición",
-    "periodo": 6,
-    "grupo": 6,
-    "masaAtomica": 183.84,
-    "estado25C": "Sólido",
-    "densidad": 19.25,
-    "puntoFusionC": 3422,
-    "puntoEbullicionC": 5555,
-    "configuracionElectronica": "[Xe] 4f¹⁴ 5d⁴ 6s²",
-    "electronegatividad": 2.36,
-    "radioAtomico": 139,
-    "energiaIonizacion": 770,
-    "usosES": [
-      "Filamentos de lámparas",
-      "Herramientas de corte (carburos)",
-      "Blindajes"
-    ],
-    "usosEN": [
-      "Lamp filaments",
-      "Cutting tools (carbides)",
-      "Armor"
-    ],
-    "curiosidadesES": "Tiene el punto de fusión más alto de todos los metales.",
-    "curiosidadesEN": "It has the highest melting point of all metals."
-  },
-  {
-    "id": 75,
-    "simbolo": "Re",
-    "nombreES": "Renio",
-    "nombreEN": "Rhenium",
-    "familia": "Metales de Transición",
-    "periodo": 6,
-    "grupo": 7,
-    "masaAtomica": 186.207,
-    "estado25C": "Sólido",
-    "densidad": 21.02,
-    "puntoFusionC": 3186,
-    "puntoEbullicionC": 5596,
-    "configuracionElectronica": "[Xe] 4f¹⁴ 5d⁵ 6s²",
-    "electronegatividad": 1.9,
-    "radioAtomico": 137,
-    "energiaIonizacion": 760,
-    "usosES": [
-      "Superaleaciones de turbinas",
-      "Catalizadores (reformado)",
-      "Termopares"
-    ],
-    "usosEN": [
-      "Turbine superalloys",
-      "Catalysts (reforming)",
-      "Thermocouples"
-    ],
-    "curiosidadesES": "El renio es uno de los metales más densos y con altos puntos de fusión.",
-    "curiosidadesEN": "Rhenium is among the densest metals and has very high melting points."
-  },
-  {
-    "id": 76,
-    "simbolo": "Os",
-    "nombreES": "Osmio",
-    "nombreEN": "Osmium",
-    "familia": "Metales de Transición",
-    "periodo": 6,
-    "grupo": 8,
-    "masaAtomica": 190.23,
-    "estado25C": "Sólido",
-    "densidad": 22.59,
-    "puntoFusionC": 3033,
-    "puntoEbullicionC": 5012,
-    "configuracionElectronica": "[Xe] 4f¹⁴ 5d⁶ 6s²",
-    "electronegatividad": 2.2,
-    "radioAtomico": 135,
-    "energiaIonizacion": 840,
-    "usosES": [
-      "Puntas de instrumentos",
-      "Contactos eléctricos",
-      "Catalizadores"
-    ],
-    "usosEN": [
-      "Instrument tips",
-      "Electrical contacts",
-      "Catalysts"
-    ],
-    "curiosidadesES": "El osmio metálico forma el volátil y tóxico tetróxido de osmio al oxidarse.",
-    "curiosidadesEN": "Metallic osmium forms volatile, toxic osmium tetroxide when oxidized."
-  },
-  {
-    "id": 77,
-    "simbolo": "Ir",
-    "nombreES": "Iridio",
-    "nombreEN": "Iridium",
-    "familia": "Metales de Transición",
-    "periodo": 6,
-    "grupo": 9,
-    "masaAtomica": 192.217,
-    "estado25C": "Sólido",
-    "densidad": 22.56,
-    "puntoFusionC": 2446,
-    "puntoEbullicionC": 4428,
-    "configuracionElectronica": "[Xe] 4f¹⁴ 5d⁷ 6s²",
-    "electronegatividad": 2.20,
-    "radioAtomico": 136,
-    "energiaIonizacion": 880,
-    "usosES": [
-      "Crisoles y boquillas a alta temperatura",
-      "Contactos eléctricos",
-      "Catalizadores"
-    ],
-    "usosEN": [
-      "High-temperature crucibles and nozzles",
-      "Electrical contacts",
-      "Catalysts"
-    ],
-    "curiosidadesES": "El iridio es extremadamente resistente a la corrosión y al ataque químico.",
-    "curiosidadesEN": "Iridium is extremely resistant to corrosion and chemical attack."
-  },
-  {
-    "id": 78,
-    "simbolo": "Pt",
-    "nombreES": "Platino",
-    "nombreEN": "Platinum",
-    "familia": "Metales de Transición",
-    "periodo": 6,
-    "grupo": 10,
-    "masaAtomica": 195.084,
-    "estado25C": "Sólido",
-    "densidad": 21.45,
-    "puntoFusionC": 1768.3,
-    "puntoEbullicionC": 3825,
-    "configuracionElectronica": "[Xe] 4f¹⁴ 5d⁹ 6s¹",
-    "electronegatividad": 2.28,
-    "radioAtomico": 139,
-    "energiaIonizacion": 867,
-    "usosES": [
-      "Catalizadores automotrices",
-      "Joyas",
-      "Electrodos"
-    ],
-    "usosEN": [
-      "Automotive catalysts",
-      "Jewelry",
-      "Electrodes"
-    ],
-    "curiosidadesES": "El platino es noble, denso y muy resistente a la corrosión.",
-    "curiosidadesEN": "Platinum is noble, dense, and highly corrosion-resistant."
-  },
-  {
-    "id": 79,
-    "simbolo": "Au",
-    "nombreES": "Oro",
-    "nombreEN": "Gold",
-    "familia": "Metales de Transición",
-    "periodo": 6,
-    "grupo": 11,
-    "masaAtomica": 196.966569,
-    "estado25C": "Sólido",
-    "densidad": 19.32,
-    "puntoFusionC": 1064.18,
-    "puntoEbullicionC": 2856,
-    "configuracionElectronica": "[Xe] 4f¹⁴ 5d¹⁰ 6s¹",
-    "electronegatividad": 2.54,
-    "radioAtomico": 144,
-    "energiaIonizacion": 890,
-    "usosES": [
-      "Joyas y monedas",
-      "Electrónica",
-      "Inversión"
-    ],
-    "usosEN": [
-      "Jewelry and coins",
-      "Electronics",
-      "Investment"
-    ],
-    "curiosidadesES": "El oro es extremadamente maleable y un excelente conductor eléctrico.",
-    "curiosidadesEN": "Gold is extremely malleable and an excellent electrical conductor."
-  },
-  {
-    "id": 80,
-    "simbolo": "Hg",
-    "nombreES": "Mercurio",
-    "nombreEN": "Mercury",
-    "familia": "Metales de Transición",
-    "periodo": 6,
-    "grupo": 12,
-    "masaAtomica": 200.592,
-    "estado25C": "Líquido",
-    "densidad": 13.534,
-    "puntoFusionC": -38.83,
-    "puntoEbullicionC": 356.73,
-    "configuracionElectronica": "[Xe] 4f¹⁴ 5d¹⁰ 6s²",
-    "electronegatividad": 2.00,
-    "radioAtomico": 151,
-    "energiaIonizacion": 1007,
-    "usosES": [
-      "Termómetros (histórico)",
-      "Interruptores de mercurio",
-      "Lámparas fluorescentes"
-    ],
-    "usosEN": [
-      "Thermometers (historical)",
-      "Mercury switches",
-      "Fluorescent lamps"
-    ],
-    "curiosidadesES": "El mercurio es uno de los dos elementos líquidos a temperatura ambiente y es tóxico.",
-    "curiosidadesEN": "Mercury is one of two elements liquid at room temperature and is toxic."
-  },
-  {
-    "id": 81,
-    "simbolo": "Tl",
-    "nombreES": "Talio",
-    "nombreEN": "Thallium",
-    "familia": "Metales del Bloque p",
-    "periodo": 6,
-    "grupo": 13,
-    "masaAtomica": 204.38,
-    "estado25C": "Sólido",
-    "densidad": 11.85,
-    "puntoFusionC": 304,
-    "puntoEbullicionC": 1473,
-    "configuracionElectronica": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p¹",
-    "electronegatividad": 1.62,
-    "radioAtomico": 145,
-    "energiaIonizacion": 589,
-    "usosES": [
-      "Electrónica",
-      "Vidrios especiales",
-      "Investigación"
-    ],
-    "usosEN": [
-      "Electronics",
-      "Specialty glasses",
-      "Research"
-    ],
-    "curiosidadesES": "El talio es altamente tóxico; históricamente se usó en venenos para ratas.",
-    "curiosidadesEN": "Thallium is highly toxic; it was historically used in rat poisons."
-  },
-  {
-    "id": 82,
-    "simbolo": "Pb",
-    "nombreES": "Plomo",
-    "nombreEN": "Lead",
-    "familia": "Metales del Bloque p",
-    "periodo": 6,
-    "grupo": 14,
-    "masaAtomica": 207.2,
-    "estado25C": "Sólido",
-    "densidad": 11.34,
-    "puntoFusionC": 327.46,
-    "puntoEbullicionC": 1749,
-    "configuracionElectronica": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p²",
-    "electronegatividad": 2.33,
-    "radioAtomico": 154,
-    "energiaIonizacion": 716,
-    "usosES": [
-      "Baterías de plomo-ácido",
-      "Blindaje contra radiación",
-      "Aleaciones"
-    ],
-    "usosEN": [
-      "Lead-acid batteries",
-      "Radiation shielding",
-      "Alloys"
-    ],
-    "curiosidadesES": "El plomo es tóxico; su uso en gasolina y pinturas ha sido eliminado en muchos países.",
-    "curiosidadesEN": "Lead is toxic; its use in gasoline and paints has been phased out in many countries."
-  },
-  {
-    "id": 83,
-    "simbolo": "Bi",
-    "nombreES": "Bismuto",
-    "nombreEN": "Bismuth",
-    "familia": "Metales del Bloque p",
-    "periodo": 6,
-    "grupo": 15,
-    "masaAtomica": 208.98,
-    "estado25C": "Sólido",
-    "densidad": 9.78,
-    "puntoFusionC": 271.4,
-    "puntoEbullicionC": 1564,
-    "configuracionElectronica": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p³",
-    "electronegatividad": 2.02,
-    "radioAtomico": 143,
-    "energiaIonizacion": 703,
-    "usosES": [
-      "Fármacos",
-      "Aleaciones de bajo punto de fusión",
-      "Cosméticos"
-    ],
-    "usosEN": [
-      "Pharmaceuticals",
-      "Low-melting alloys",
-      "Cosmetics"
-    ],
-    "curiosidadesES": "El bismuto es relativamente no tóxico y forma cristales con colores iridiscentes.",
-    "curiosidadesEN": "Bismuth is relatively non-toxic and forms iridescent-colored crystals."
-  },
-  {
-    "id": 84,
-    "simbolo": "Po",
-    "nombreES": "Polonio",
-    "nombreEN": "Polonium",
-    "familia": "Metales del Bloque p",
-    "periodo": 6,
-    "grupo": 16,
-    "masaAtomica": 209,
-    "estado25C": "Sólido",
-    "densidad": 9.2,
-    "puntoFusionC": 254,
-    "puntoEbullicionC": 962,
-    "configuracionElectronica": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁴",
-    "electronegatividad": 2.0,
-    "radioAtomico": 135,
-    "energiaIonizacion": 812,
-    "usosES": [
-      "Fuentes de calor para sondas espaciales (histórico)",
-      "Investigación"
-    ],
-    "usosEN": [
-      "Heat sources for space probes (historical)",
-      "Research"
-    ],
-    "curiosidadesES": "El polonio es extremadamente radiactivo; el Po-210 es notorio por envenenamientos.",
-    "curiosidadesEN": "Polonium is extremely radioactive; Po-210 is notorious for poisonings."
-  },
-  {
-    "id": 85,
-    "simbolo": "At",
-    "nombreES": "Astato",
-    "nombreEN": "Astatine",
-    "familia": "Halógenos",
-    "periodo": 6,
-    "grupo": 17,
-    "masaAtomica": 210,
-    "estado25C": "Sólido",
-    "densidad": 7.0,
-    "puntoFusionC": 302,
-    "puntoEbullicionC": 337,
-    "configuracionElectronica": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁵",
-    "electronegatividad": 2.2,
-    "radioAtomico": 127,
-    "energiaIonizacion": 920,
-    "usosES": [
-      "Medicina nuclear (At-211)",
-      "Investigación"
-    ],
-    "usosEN": [
-      "Nuclear medicine (At-211)",
-      "Research"
-    ],
-    "curiosidadesES": "El astato es extremadamente raro y radiactivo; se estima que solo hay trazas en la corteza terrestre.",
-    "curiosidadesEN": "Astatine is extremely rare and radioactive; only trace amounts exist in Earth's crust."
-  },
-  {
-    "id": 86,
-    "simbolo": "Rn",
-    "nombreES": "Radón",
-    "nombreEN": "Radon",
-    "familia": "Gases Nobles",
-    "periodo": 6,
-    "grupo": 18,
-    "masaAtomica": 222,
-    "estado25C": "Gas",
-    "densidad": 0.00973,
-    "puntoFusionC": -71,
-    "puntoEbullicionC": -61.7,
-    "configuracionElectronica": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁶",
-    "electronegatividad": null,
-    "radioAtomico": 120,
-    "energiaIonizacion": 1037,
-    "usosES": [
-      "Terapias médicas (histórico)",
-      "Investigación"
-    ],
-    "usosEN": [
-      "Medical therapies (historical)",
-      "Research"
-    ],
-    "curiosidadesES": "El radón es un gas radiactivo que puede acumularse en edificios y es un riesgo para la salud.",
-    "curiosidadesEN": "Radon is a radioactive gas that can accumulate in buildings and poses health risks."
-  },
-  {
-    "id": 87,
-    "simbolo": "Fr",
-    "nombreES": "Francio",
-    "nombreEN": "Francium",
-    "familia": "Metales Alcalinos",
-    "periodo": 7,
-    "grupo": 1,
-    "masaAtomica": 223,
-    "estado25C": "Sólido",
-    "densidad": 1.87,
-    "puntoFusionC": 27,
-    "puntoEbullicionC": 677,
-    "configuracionElectronica": "[Rn] 7s¹",
-    "electronegatividad": 0.7,
-    "radioAtomico": 348,
-    "energiaIonizacion": 380,
-    "usosES": [
-      "Investigación"
-    ],
-    "usosEN": [
-      "Research"
-    ],
-    "curiosidadesES": "El francio es extremadamente raro y radiactivo; casi no existe en forma macroscópica.",
-    "curiosidadesEN": "Francium is extremely rare and radioactive; it scarcely exists in macroscopic form."
-  },
-  {
-    "id": 88,
-    "simbolo": "Ra",
-    "nombreES": "Radio",
-    "nombreEN": "Radium",
-    "familia": "Metales Alcalinotérreos",
-    "periodo": 7,
-    "grupo": 2,
-    "masaAtomica": 226,
-    "estado25C": "Sólido",
-    "densidad": 5.5,
-    "puntoFusionC": 700,
-    "puntoEbullicionC": 1737,
-    "configuracionElectronica": "[Rn] 7s²",
-    "electronegatividad": 0.9,
-    "radioAtomico": 283,
-    "energiaIonizacion": 509,
-    "usosES": [
-      "Pinturas luminiscentes (histórico)",
-      "Medicina (histórico)"
-    ],
-    "usosEN": [
-      "Luminous paints (historical)",
-      "Medicine (historical)"
-    ],
-    "curiosidadesES": "Descubierto por Marie y Pierre Curie, el radio es fuertemente radiactivo.",
-    "curiosidadesEN": "Discovered by Marie and Pierre Curie, radium is strongly radioactive."
-  },
-  {
-    "id": 89,
-    "simbolo": "Ac",
-    "nombreES": "Actinio",
-    "nombreEN": "Actinium",
-    "familia": "Actínidos",
-    "periodo": 7,
-    "grupo": 3,
-    "masaAtomica": 227,
-    "estado25C": "Sólido",
-    "densidad": 10.07,
-    "puntoFusionC": 1050,
-    "puntoEbullicionC": 3198,
-    "configuracionElectronica": "[Rn] 6d¹ 7s²",
-    "electronegatividad": 1.1,
-    "radioAtomico": 188,
-    "energiaIonizacion": 499,
-    "usosES": [
-      "Fuentes de neutrones",
-      "Investigación"
-    ],
-    "usosEN": [
-      "Neutron sources",
-      "Research"
-    ],
-    "curiosidadesES": "El actinio es altamente radiactivo y brilla en la oscuridad por ionización del aire.",
-    "curiosidadesEN": "Actinium is highly radioactive and glows in the dark due to air ionization."
-  },
-  {
-    "id": 90,
-    "simbolo": "Th",
-    "nombreES": "Torio",
-    "nombreEN": "Thorium",
-    "familia": "Actínidos",
-    "periodo": 7,
-    "grupo": 3,
-    "masaAtomica": 232.0377,
-    "estado25C": "Sólido",
-    "densidad": 11.72,
-    "puntoFusionC": 1750,
-    "puntoEbullicionC": 4788,
-    "configuracionElectronica": "[Rn] 6d² 7s²",
-    "electronegatividad": 1.3,
-    "radioAtomico": 179,
-    "energiaIonizacion": 587,
-    "usosES": [
-      "Combustible nuclear (ciclo del torio)",
-      "Aleaciones",
-      "Electrodos TIG (histórico)"
-    ],
-    "usosEN": [
-      "Nuclear fuel (thorium cycle)",
-      "Alloys",
-      "TIG electrodes (historical)"
-    ],
-    "curiosidadesES": "El torio es fértil y puede convertirse en uranio-233 en reactores.",
-    "curiosidadesEN": "Thorium is fertile and can be bred to uranium-233 in reactors."
-  },
-  {
-    "id": 91,
-    "simbolo": "Pa",
-    "nombreES": "Protactinio",
-    "nombreEN": "Protactinium",
-    "familia": "Actínidos",
-    "periodo": 7,
-    "grupo": 3,
-    "masaAtomica": 231.03588,
-    "estado25C": "Sólido",
-    "densidad": 15.37,
-    "puntoFusionC": 1572,
-    "puntoEbullicionC": 4000,
-    "configuracionElectronica": "[Rn] 5f² 6d¹ 7s²",
-    "electronegatividad": 1.5,
-    "radioAtomico": 163,
-    "energiaIonizacion": 568,
-    "usosES": [
-      "Investigación",
-      "Geocronología"
-    ],
-    "usosEN": [
-      "Research",
-      "Geochronology"
-    ],
-    "curiosidadesES": "El protactinio es muy raro y altamente radiactivo; se produce como subproducto del uranio.",
-    "curiosidadesEN": "Protactinium is very rare and highly radioactive; produced as a byproduct of uranium."
-  },
-  {
-    "id": 92,
-    "simbolo": "U",
-    "nombreES": "Uranio",
-    "nombreEN": "Uranium",
-    "familia": "Actínidos",
-    "periodo": 7,
-    "grupo": 3,
-    "masaAtomica": 238.02891,
-    "estado25C": "Sólido",
-    "densidad": 19.05,
-    "puntoFusionC": 1132.2,
-    "puntoEbullicionC": 4131,
-    "configuracionElectronica": "[Rn] 5f³ 6d¹ 7s²",
-    "electronegatividad": 1.38,
-    "radioAtomico": 175,
-    "energiaIonizacion": 597,
-    "usosES": [
-      "Combustible nuclear",
-      "Armas nucleares",
-      "Vidrios coloreados (histórico)"
-    ],
-    "usosEN": [
-      "Nuclear fuel",
-      "Nuclear weapons",
-      "Colored glass (historical)"
-    ],
-    "curiosidadesES": "El uranio-235 es fisible y sustenta la mayoría de los reactores nucleares actuales.",
-    "curiosidadesEN": "Uranium-235 is fissile and powers most current nuclear reactors."
-  },
-  {
-    "id": 93,
-    "simbolo": "Np",
-    "nombreES": "Neptunio",
-    "nombreEN": "Neptunium",
-    "familia": "Actínidos",
-    "periodo": 7,
-    "grupo": 3,
-    "masaAtomica": 237,
-    "estado25C": "Sólido",
-    "densidad": 20.45,
-    "puntoFusionC": 644,
-    "puntoEbullicionC": 3902,
-    "configuracionElectronica": "[Rn] 5f⁴ 6d¹ 7s²",
-    "electronegatividad": 1.36,
-    "radioAtomico": 175,
-    "energiaIonizacion": 604,
-    "usosES": [
-      "Investigación",
-      "Generación de Pu-238"
-    ],
-    "usosEN": [
-      "Research",
-      "Pu-238 production"
-    ],
-    "curiosidadesES": "El neptunio fue el primer elemento transuránico sintetizado.",
-    "curiosidadesEN": "Neptunium was the first transuranic element synthesized."
-  },
-  {
-    "id": 94,
-    "simbolo": "Pu",
-    "nombreES": "Plutonio",
-    "nombreEN": "Plutonium",
-    "familia": "Actínidos",
-    "periodo": 7,
-    "grupo": 3,
-    "masaAtomica": 244,
-    "estado25C": "Sólido",
-    "densidad": 19.84,
-    "puntoFusionC": 640,
-    "puntoEbullicionC": 3228,
-    "configuracionElectronica": "[Rn] 5f⁶ 7s²",
-    "electronegatividad": 1.28,
-    "radioAtomico": 159,
-    "energiaIonizacion": 585,
-    "usosES": [
-      "Combustible para generadores termoeléctricos (Pu-238)",
-      "Armas nucleares",
-      "Investigación"
-    ],
-    "usosEN": [
-      "Fuel for radioisotope thermoelectric generators (Pu-238)",
-      "Nuclear weapons",
-      "Research"
-    ],
-    "curiosidadesES": "El plutonio presenta múltiples fases cristalinas con propiedades muy distintas.",
-    "curiosidadesEN": "Plutonium exhibits multiple crystalline phases with very different properties."
-  },
-  {
-    "id": 95,
-    "simbolo": "Am",
-    "nombreES": "Americio",
-    "nombreEN": "Americium",
-    "familia": "Actínidos",
-    "periodo": 7,
-    "grupo": 3,
-    "masaAtomica": 243,
-    "estado25C": "Sólido",
-    "densidad": 13.69,
-    "puntoFusionC": 1176,
-    "puntoEbullicionC": 2607,
-    "configuracionElectronica": "[Rn] 5f⁷ 7s²",
-    "electronegatividad": 1.3,
-    "radioAtomico": 173,
-    "energiaIonizacion": 578,
-    "usosES": [
-      "Detectores de humo (Am-241)",
-      "Fuentes de neutrones",
-      "Investigación"
-    ],
-    "usosEN": [
-      "Smoke detectors (Am-241)",
-      "Neutron sources",
-      "Research"
-    ],
-    "curiosidadesES": "El americio fue descubierto en 1944 durante investigaciones del Proyecto Manhattan.",
-    "curiosidadesEN": "Americium was discovered in 1944 during Manhattan Project research."
-  },
-  {
-    "id": 96,
-    "simbolo": "Cm",
-    "nombreES": "Curio",
-    "nombreEN": "Curium",
-    "familia": "Actínidos",
-    "periodo": 7,
-    "grupo": 3,
-    "masaAtomica": 247,
-    "estado25C": "Sólido",
-    "densidad": 13.51,
-    "puntoFusionC": 1340,
-    "puntoEbullicionC": 3110,
-    "configuracionElectronica": "[Rn] 5f⁷ 6d¹ 7s²",
-    "electronegatividad": 1.28,
-    "radioAtomico": 174,
-    "energiaIonizacion": 581,
-    "usosES": [
-      "Fuentes de alfa",
-      "Investigación",
-      "Generadores termoeléctricos (histórico)"
-    ],
-    "usosEN": [
-      "Alpha sources",
-      "Research",
-      "Radioisotope thermoelectric generators (historical)"
-    ],
-    "curiosidadesES": "Nombrado en honor a Marie y Pierre Curie; es radiactivo y se produce en reactores nucleares.",
-    "curiosidadesEN": "Named after Marie and Pierre Curie; it is radioactive and produced in nuclear reactors."
-  },
-  {
-    "id": 97,
-    "simbolo": "Bk",
-    "nombreES": "Berkelio",
-    "nombreEN": "Berkelium",
-    "familia": "Actínidos",
-    "periodo": 7,
-    "grupo": 3,
-    "masaAtomica": 247,
-    "estado25C": "Sólido",
-    "densidad": 14.78,
-    "puntoFusionC": 986,
-    "puntoEbullicionC": 2627,
-    "configuracionElectronica": "[Rn] 5f⁹ 7s²",
-    "electronegatividad": 1.3,
-    "radioAtomico": 170,
-    "energiaIonizacion": 601,
-    "usosES": [
-      "Investigación",
-      "Síntesis de elementos más pesados"
-    ],
-    "usosEN": [
-      "Research",
-      "Synthesis of heavier elements"
-    ],
-    "curiosidadesES": "Fue sintetizado por primera vez en la Universidad de California, Berkeley, de donde toma su nombre.",
-    "curiosidadesEN": "First synthesized at the University of California, Berkeley, from which it takes its name."
-  },
-  {
-    "id": 98,
-    "simbolo": "Cf",
-    "nombreES": "Californio",
-    "nombreEN": "Californium",
-    "familia": "Actínidos",
-    "periodo": 7,
-    "grupo": 3,
-    "masaAtomica": 251,
-    "estado25C": "Sólido",
-    "densidad": 15.1,
-    "puntoFusionC": 900,
-    "puntoEbullicionC": 1470,
-    "configuracionElectronica": "[Rn] 5f¹⁰ 7s²",
-    "electronegatividad": 1.3,
-    "radioAtomico": 169,
-    "energiaIonizacion": 608,
-    "usosES": [
-      "Fuentes de neutrones",
-      "Detección de oro y plata",
-      "Investigación"
-    ],
-    "usosEN": [
-      "Neutron sources",
-      "Gold and silver detection",
-      "Research"
-    ],
-    "curiosidadesES": "El Cf-252 es una potente fuente de neutrones usada en aplicaciones industriales y médicas.",
-    "curiosidadesEN": "Cf-252 is a powerful neutron source used in industrial and medical applications."
-  },
-  {
-    "id": 99,
-    "simbolo": "Es",
-    "nombreES": "Einsteinio",
-    "nombreEN": "Einsteinium",
-    "familia": "Actínidos",
-    "periodo": 7,
-    "grupo": 3,
-    "masaAtomica": 252,
-    "estado25C": "Sólido",
-    "densidad": 8.84,
-    "puntoFusionC": 860,
-    "puntoEbullicionC": 996,
-    "configuracionElectronica": "[Rn] 5f¹¹ 7s²",
-    "electronegatividad": 1.3,
-    "radioAtomico": 153,
-    "energiaIonizacion": 619,
-    "usosES": [
-      "Investigación",
-      "Síntesis de nuevos elementos"
-    ],
-    "usosEN": [
-      "Research",
-      "Synthesis of new elements"
-    ],
-    "curiosidadesES": "Nombrado en honor a Albert Einstein; se identificó en los restos de pruebas termonucleares.",
-    "curiosidadesEN": "Named after Albert Einstein; identified in the debris of thermonuclear tests."
-  },
-  {
-    "id": 100,
-    "simbolo": "Fm",
-    "nombreES": "Fermio",
-    "nombreEN": "Fermium",
-    "familia": "Actínidos",
-    "periodo": 7,
-    "grupo": 3,
-    "masaAtomica": 257,
-    "estado25C": "Sólido",
-    "densidad": 9.7,
-    "puntoFusionC": 1527,
-    "puntoEbullicionC": 3000,
-    "configuracionElectronica": "[Rn] 5f¹² 7s²",
-    "electronegatividad": 1.3,
-    "radioAtomico": 152,
-    "energiaIonizacion": 627,
-    "usosES": [
-      "Investigación"
-    ],
-    "usosEN": [
-      "Research"
-    ],
-    "curiosidadesES": "Nombrado por Enrico Fermi; solo se produce en cantidades minúsculas en explosiones o reactores.",
-    "curiosidadesEN": "Named for Enrico Fermi; produced only in minute amounts in explosions or reactors."
-  },
-  {
-    "id": 101,
-    "simbolo": "Md",
-    "nombreES": "Mendelevio",
-    "nombreEN": "Mendelevium",
-    "familia": "Actínidos",
-    "periodo": 7,
-    "grupo": 3,
-    "masaAtomica": 258,
-    "estado25C": "Sólido",
-    "densidad": 10.3,
-    "puntoFusionC": 827,
-    "puntoEbullicionC": 1100,
-    "configuracionElectronica": "[Rn] 5f¹³ 7s²",
-    "electronegatividad": 1.3,
-    "radioAtomico": 151,
-    "energiaIonizacion": 635,
-    "usosES": [
-      "Investigación"
-    ],
-    "usosEN": [
-      "Research"
-    ],
-    "curiosidadesES": "Nombrado por Dmitri Mendeléyev, creador de la tabla periódica.",
-    "curiosidadesEN": "Named after Dmitri Mendeleev, creator of the periodic table."
-  },
-  {
-    "id": 102,
-    "simbolo": "No",
-    "nombreES": "Nobelio",
-    "nombreEN": "Nobelium",
-    "familia": "Actínidos",
-    "periodo": 7,
-    "grupo": 3,
-    "masaAtomica": 259,
-    "estado25C": "Sólido",
-    "densidad": 9.9,
-    "puntoFusionC": 827,
-    "puntoEbullicionC": 1100,
-    "configuracionElectronica": "[Rn] 5f¹⁴ 7s²",
-    "electronegatividad": 1.3,
-    "radioAtomico": 149,
-    "energiaIonizacion": 642,
-    "usosES": [
-      "Investigación"
-    ],
-    "usosEN": [
-      "Research"
-    ],
-    "curiosidadesES": "Nombrado en honor a Alfred Nobel, inventor de la dinamita y fundador de los Premios Nobel.",
-    "curiosidadesEN": "Named after Alfred Nobel, inventor of dynamite and founder of the Nobel Prizes."
-  },
-  {
-    "id": 103,
-    "simbolo": "Lr",
-    "nombreES": "Laurencio",
-    "nombreEN": "Lawrencium",
-    "familia": "Actínidos",
-    "periodo": 7,
-    "grupo": 3,
-    "masaAtomica": 266,
-    "estado25C": "Sólido",
-    "densidad": 15.6,
-    "puntoFusionC": 1627,
-    "puntoEbullicionC": 2627,
-    "configuracionElectronica": "[Rn] 5f¹⁴ 7s² 7p¹",
-    "electronegatividad": 1.3,
-    "radioAtomico": 160,
-    "energiaIonizacion": 470,
-    "usosES": [
-      "Investigación"
-    ],
-    "usosEN": [
-      "Research"
-    ],
-    "curiosidadesES": "Nombrado por Ernest O. Lawrence, pionero del ciclotrón.",
-    "curiosidadesEN": "Named for Ernest O. Lawrence, pioneer of the cyclotron."
-  },
-  {
-    "id": 104,
-    "simbolo": "Rf",
-    "nombreES": "Rutherfordio",
-    "nombreEN": "Rutherfordium",
-    "familia": "Metales de Transición",
-    "periodo": 7,
-    "grupo": 4,
-    "masaAtomica": 267,
-    "estado25C": "Sólido",
-    "densidad": 23.2,
-    "puntoFusionC": 2100,
-    "puntoEbullicionC": 5500,
-    "configuracionElectronica": "[Rn] 5f¹⁴ 6d² 7s²",
-    "electronegatividad": 1.3,
-    "radioAtomico": 150,
-    "energiaIonizacion": 580,
-    "usosES": [
-      "Investigación"
-    ],
-    "usosEN": [
-      "Research"
-    ],
-    "curiosidadesES": "Elemento sintético nombrado por Ernest Rutherford, padre de la física nuclear.",
-    "curiosidadesEN": "Synthetic element named after Ernest Rutherford, father of nuclear physics."
-  },
-  {
-    "id": 105,
-    "simbolo": "Db",
-    "nombreES": "Dubnio",
-    "nombreEN": "Dubnium",
-    "familia": "Metales de Transición",
-    "periodo": 7,
-    "grupo": 5,
-    "masaAtomica": 268,
-    "estado25C": "Sólido",
-    "densidad": 29.3,
-    "puntoFusionC": 1700,
-    "puntoEbullicionC": 5000,
-    "configuracionElectronica": "[Rn] 5f¹⁴ 6d³ 7s²",
-    "electronegatividad": 1.3,
-    "radioAtomico": 149,
-    "energiaIonizacion": 664,
-    "usosES": [
-      "Investigación"
-    ],
-    "usosEN": [
-      "Research"
-    ],
-    "curiosidadesES": "Nombrado por Dubná, Rusia, sede del JINR.",
-    "curiosidadesEN": "Named after Dubna, Russia, home of the JINR."
-  },
-  {
-    "id": 106,
-    "simbolo": "Sg",
-    "nombreES": "Seaborgio",
-    "nombreEN": "Seaborgium",
-    "familia": "Metales de Transición",
-    "periodo": 7,
-    "grupo": 6,
-    "masaAtomica": 269,
-    "estado25C": "Sólido",
-    "densidad": 35.0,
-    "puntoFusionC": 1900,
-    "puntoEbullicionC": 4400,
-    "configuracionElectronica": "[Rn] 5f¹⁴ 6d⁴ 7s²",
-    "electronegatividad": 1.3,
-    "radioAtomico": 148,
-    "energiaIonizacion": 757,
-    "usosES": [
-      "Investigación"
-    ],
-    "usosEN": [
-      "Research"
-    ],
-    "curiosidadesES": "Nombrado por Glenn T. Seaborg, destacado químico de los actínidos.",
-    "curiosidadesEN": "Named after Glenn T. Seaborg, prominent actinide chemist."
-  },
-  {
-    "id": 107,
-    "simbolo": "Bh",
-    "nombreES": "Bohrio",
-    "nombreEN": "Bohrium",
-    "familia": "Metales de Transición",
-    "periodo": 7,
-    "grupo": 7,
-    "masaAtomica": 270,
-    "estado25C": "Sólido",
-    "densidad": 37.1,
-    "puntoFusionC": 1900,
-    "puntoEbullicionC": 4200,
-    "configuracionElectronica": "[Rn] 5f¹⁴ 6d⁵ 7s²",
-    "electronegatividad": 1.3,
-    "radioAtomico": 141,
-    "energiaIonizacion": 740,
-    "usosES": [
-      "Investigación"
-    ],
-    "usosEN": [
-      "Research"
-    ],
-    "curiosidadesES": "Nombrado en honor a Niels Bohr, pionero de la física cuántica.",
-    "curiosidadesEN": "Named after Niels Bohr, a pioneer of quantum physics."
-  },
-  {
-    "id": 108,
-    "simbolo": "Hs",
-    "nombreES": "Hassio",
-    "nombreEN": "Hassium",
-    "familia": "Metales de Transición",
-    "periodo": 7,
-    "grupo": 8,
-    "masaAtomica": 269,
-    "estado25C": "Sólido",
-    "densidad": 41.0,
-    "puntoFusionC": 1800,
-    "puntoEbullicionC": 4400,
-    "configuracionElectronica": "[Rn] 5f¹⁴ 6d⁶ 7s²",
-    "electronegatividad": 1.3,
     "radioAtomico": 134,
-    "energiaIonizacion": 730,
-    "usosES": [
-      "Investigación"
-    ],
-    "usosEN": [
-      "Research"
-    ],
-    "curiosidadesES": "Nombrado por Hesse (Hessen), estado alemán donde se sintetizó.",
-    "curiosidadesEN": "Named after Hesse (Hessen), the German state where it was synthesized."
-  },
-  {
-    "id": 109,
-    "simbolo": "Mt",
-    "nombreES": "Meitnerio",
-    "nombreEN": "Meitnerium",
-    "familia": "Metales de Transición",
-    "periodo": 7,
-    "grupo": 9,
-    "masaAtomica": 278,
-    "estado25C": "Sólido",
-    "densidad": 37.4,
-    "puntoFusionC": 1100,
-    "puntoEbullicionC": 3500,
-    "configuracionElectronica": "[Rn] 5f¹⁴ 6d⁷ 7s²",
-    "electronegatividad": 1.3,
-    "radioAtomico": 129,
-    "energiaIonizacion": 800,
-    "usosES": [
-      "Investigación"
-    ],
-    "usosEN": [
-      "Research"
-    ],
-    "curiosidadesES": "Nombrado por Lise Meitner, física que contribuyó al descubrimiento de la fisión nuclear.",
-    "curiosidadesEN": "Named after Lise Meitner, physicist who contributed to the discovery of nuclear fission."
-  },
-  {
-    "id": 110,
-    "simbolo": "Ds",
-    "nombreES": "Darmstatio",
-    "nombreEN": "Darmstadtium",
-    "familia": "Metales de Transición",
-    "periodo": 7,
-    "grupo": 10,
-    "masaAtomica": 281,
-    "estado25C": "Sólido",
-    "densidad": 34.8,
-    "puntoFusionC": 1000,
-    "puntoEbullicionC": 3200,
-    "configuracionElectronica": "[Rn] 5f¹⁴ 6d⁹ 7s¹",
-    "electronegatividad": 1.3,
-    "radioAtomico": 128,
-    "energiaIonizacion": 800,
-    "usosES": [
-      "Investigación"
-    ],
-    "usosEN": [
-      "Research"
-    ],
-    "curiosidadesES": "Nombrado por Darmstadt, Alemania, donde fue descubierto.",
-    "curiosidadesEN": "Named after Darmstadt, Germany, where it was discovered."
-  },
-  {
-    "id": 111,
-    "simbolo": "Rg",
-    "nombreES": "Roentgenio",
-    "nombreEN": "Roentgenium",
-    "familia": "Metales de Transición",
-    "periodo": 7,
-    "grupo": 11,
-    "masaAtomica": 282,
-    "estado25C": "Sólido",
-    "densidad": 28.7,
-    "puntoFusionC": 650,
-    "puntoEbullicionC": 2800,
-    "configuracionElectronica": "[Rn] 5f¹⁴ 6d¹⁰ 7s¹",
-    "electronegatividad": 2.1,
-    "radioAtomico": 121,
-    "energiaIonizacion": 1020,
-    "usosES": [
-      "Investigación"
-    ],
-    "usosEN": [
-      "Research"
-    ],
-    "curiosidadesES": "Nombrado por Wilhelm Röntgen, descubridor de los rayos X.",
-    "curiosidadesEN": "Named after Wilhelm Röntgen, discoverer of X-rays."
-  },
-  {
-    "id": 112,
-    "simbolo": "Cn",
-    "nombreES": "Copernicio",
-    "nombreEN": "Copernicium",
-    "familia": "Metales de Transición",
-    "periodo": 7,
-    "grupo": 12,
-    "masaAtomica": 285,
-    "estado25C": "Desconocido",
-    "densidad": 23.7,
-    "puntoFusionC": 283,
-    "puntoEbullicionC": 357,
-    "configuracionElectronica": "[Rn] 5f¹⁴ 6d¹⁰ 7s²",
-    "electronegatividad": 1.9,
-    "radioAtomico": 122,
-    "energiaIonizacion": 1150,
-    "usosES": [
-      "Investigación"
-    ],
-    "usosEN": [
-      "Research"
-    ],
-    "curiosidadesES": "Nombrado por Nicolás Copérnico; podría comportarse como un gas noble pesado por efectos relativistas.",
-    "curiosidadesEN": "Named after Nicolaus Copernicus; may behave like a heavy noble gas due to relativistic effects."
-  },
-  {
-    "id": 113,
-    "simbolo": "Nh",
-    "nombreES": "Nihonio",
-    "nombreEN": "Nihonium",
-    "familia": "Metales del Bloque p",
-    "periodo": 7,
-    "grupo": 13,
-    "masaAtomica": 286,
-    "estado25C": "Sólido",
-    "densidad": 16.0,
-    "puntoFusionC": 430,
-    "puntoEbullicionC": 1130,
-    "configuracionElectronica": "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p¹",
-    "electronegatividad": 1.36,
-    "radioAtomico": 170,
-    "energiaIonizacion": 704,
-    "usosES": [
-      "Investigación"
-    ],
-    "usosEN": [
-      "Research"
-    ],
-    "curiosidadesES": "El nombre proviene de 'Nihon', una forma de decir Japón en japonés.",
-    "curiosidadesEN": "The name comes from 'Nihon', a way to say Japan in Japanese."
-  },
-  {
-    "id": 114,
-    "simbolo": "Fl",
-    "nombreES": "Flerovio",
-    "nombreEN": "Flerovium",
-    "familia": "Metales del Bloque p",
-    "periodo": 7,
-    "grupo": 14,
-    "masaAtomica": 289,
-    "estado25C": "Sólido",
-    "densidad": 14.0,
-    "puntoFusionC": 200,
-    "puntoEbullicionC": 400,
-    "configuracionElectronica": "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p²",
-    "electronegatividad": 2.0,
-    "radioAtomico": 180,
-    "energiaIonizacion": 823,
-    "usosES": [
-      "Investigación"
-    ],
-    "usosEN": [
-      "Research"
-    ],
-    "curiosidadesES": "Nombrado por el Laboratorio Flerov de Reacciones Nucleares en Dubná.",
-    "curiosidadesEN": "Named after the Flerov Laboratory of Nuclear Reactions in Dubna."
-  },
-  {
-    "id": 115,
-    "simbolo": "Mc",
-    "nombreES": "Moscovio",
-    "nombreEN": "Moscovium",
-    "familia": "Metales del Bloque p",
-    "periodo": 7,
-    "grupo": 15,
-    "masaAtomica": 290,
-    "estado25C": "Sólido",
-    "densidad": 13.5,
-    "puntoFusionC": 400,
-    "puntoEbullicionC": 1100,
-    "configuracionElectronica": "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p³",
-    "electronegatividad": 1.9,
-    "radioAtomico": 176,
-    "energiaIonizacion": 538,
-    "usosES": [
-      "Investigación"
-    ],
-    "usosEN": [
-      "Research"
-    ],
-    "curiosidadesES": "Nombrado por el Óblast de Moscú, región donde se sitúa el JINR.",
-    "curiosidadesEN": "Named after Moscow Oblast, the region where the JINR is located."
-  },
-  {
-    "id": 116,
-    "simbolo": "Lv",
-    "nombreES": "Livermorio",
-    "nombreEN": "Livermorium",
-    "familia": "Metales del Bloque p",
-    "periodo": 7,
-    "grupo": 16,
-    "masaAtomica": 293,
-    "estado25C": "Sólido",
-    "densidad": 12.9,
-    "puntoFusionC": 350,
-    "puntoEbullicionC": 1100,
-    "configuracionElectronica": "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁴",
-    "electronegatividad": 2.0,
-    "radioAtomico": 175,
-    "energiaIonizacion": 663,
-    "usosES": [
-      "Investigación"
-    ],
-    "usosEN": [
-      "Research"
-    ],
-    "curiosidadesES": "Nombrado por el Lawrence Livermore National Laboratory (EE. UU.).",
-    "curiosidadesEN": "Named after Lawrence Livermore National Laboratory (USA)."
-  },
-  {
-    "id": 117,
-    "simbolo": "Ts",
-    "nombreES": "Teneso",
-    "nombreEN": "Tennessine",
-    "familia": "Halógenos",
-    "periodo": 7,
-    "grupo": 17,
-    "masaAtomica": 294,
-    "estado25C": "Sólido",
-    "densidad": 7.2,
-    "puntoFusionC": 300,
-    "puntoEbullicionC": 600,
-    "configuracionElectronica": "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁵",
-    "electronegatividad": 2.6,
-    "radioAtomico": 165,
-    "energiaIonizacion": 742,
-    "usosES": [
-      "Investigación"
-    ],
-    "usosEN": [
-      "Research"
-    ],
-    "curiosidadesES": "Nombrado por Tennessee (EE. UU.), reconociendo contribuciones regionales a su descubrimiento.",
-    "curiosidadesEN": "Named after Tennessee (USA), recognizing regional contributions to its discovery."
-  },
-  {
-    "id": 118,
-    "simbolo": "Og",
-    "nombreES": "Oganesón",
-    "nombreEN": "Oganesson",
-    "familia": "Gases Nobles",
-    "periodo": 7,
-    "grupo": 18,
-    "masaAtomica": 294,
-    "estado25C": "Desconocido",
-    "densidad": 13.65,
-    "puntoFusionC": null,
-    "puntoEbullicionC": null,
-    "configuracionElectronica": "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p⁶",
-    "electronegatividad": null,
-    "radioAtomico": 152,
-    "energiaIonizacion": 860,
-    "usosES": [
-      "Investigación"
-    ],
-    "usosEN": [
-      "Research"
-    ],
-    "curiosidadesES": "Nombrado por Yuri Oganessian; podría no comportarse como un gas noble típico debido a efectos relativistas.",
-    "curiosidadesEN": "Named after Yuri Oganessian; may not behave like a typical noble gas due to relativistic effects."
+    "energiaIonizacion": 906,
+    "usosES": ["Galvanizado", "Aleaciones (latón)", "Pilas"],
+    "usosEN": ["Galvanization", "Alloys (brass)", "Batteries"],
+    "curiosidadesES": "El zinc protege al acero de la corrosión mediante galvanizado.",
+    "curiosidadesEN": "Zinc protects steel from corrosion through galvanization.",
+    "seguridadES": null,
+    "seguridadEN": null
   }
 ]
