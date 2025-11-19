@@ -27,6 +27,12 @@ struct PeriodicTableView: View {
                 }
             } else {
                 VStack(spacing: 4) {
+                    // Debug: Print total elements loaded
+                    let _ = print("📊 Total elementos cargados: \(dataManager.elementos.count)")
+                    let _ = dataManager.elementos.filter { $0.id >= 21 && $0.id <= 25 }.map { elemento in
+                        print("🔍 Elemento \(elemento.id) (\(elemento.simbolo)): periodo=\(elemento.periodo), grupo=\(elemento.grupo ?? -999)")
+                    }
+                    
                     // Rows 1-7
                     ForEach(0..<7) { row in
                         HStack(spacing: 4) {
@@ -67,9 +73,20 @@ struct PeriodicTableView: View {
     
     func getElement(periodo: Int, grupo: Int) -> Elemento? {
         // Adjust for special cases in periodic table layout
-        return dataManager.elementos.first { elemento in
+        let elemento = dataManager.elementos.first { elemento in
             elemento.periodo == periodo && elemento.grupo == grupo
         }
+        
+        // Debug: Print what we're looking for and what we found
+        if periodo == 4 && grupo >= 3 && grupo <= 7 {
+            if let found = elemento {
+                print("✅ Encontrado en periodo \(periodo), grupo \(grupo): \(found.simbolo)")
+            } else {
+                print("❌ NO encontrado en periodo \(periodo), grupo \(grupo)")
+            }
+        }
+        
+        return elemento
     }
     
     func getLanthanides() -> [Elemento] {
@@ -87,23 +104,31 @@ struct ElementCard: View {
     let elemento: Elemento
     
     var body: some View {
+        // Temporary: Use Alcalinoterreos color for transition metals until FamiliaTransicion is added to Assets
+        let elementColor: Color = {
+            if elemento.familia == .metalesTransicion {
+                return ColorPalette.colorParaFamilia(.metalesAlcalinoterreos)
+            }
+            return ColorPalette.colorParaFamilia(elemento.familia)
+        }()
+        
         VStack(spacing: 2) {
             Text("\(elemento.id)")
                 .font(.system(size: 10, weight: .medium))
-                .foregroundColor(ColorPalette.colorParaFamilia(elemento.familia))
+                .foregroundColor(elementColor)
             
             Text(elemento.simbolo)
                 .font(.system(size: 22, weight: .bold))
-                .foregroundColor(ColorPalette.colorParaFamilia(elemento.familia))
+                .foregroundColor(elementColor)
             
             Text(elemento.nombreLocalizado)
                 .font(.system(size: 9, weight: .regular))
-                .foregroundColor(ColorPalette.colorParaFamilia(elemento.familia))
+                .foregroundColor(elementColor)
                 .lineLimit(1)
                 .minimumScaleFactor(0.5)
         }
         .frame(width: 70, height: 70)
-        .background(ColorPalette.colorParaFamilia(elemento.familia).opacity(0.15))
+        .background(elementColor.opacity(0.15))
         .cornerRadius(8)
     }
 }
