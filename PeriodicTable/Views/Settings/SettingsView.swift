@@ -1,5 +1,5 @@
 //
-//  MainTabViews.swift
+//  SettingsView.swift
 //  PeriodicTable
 //
 //  Created by Maeva Mazadiego
@@ -7,103 +7,6 @@
 
 import SwiftUI
 
-// MARK: - ProgressView (Estadísticas)
-struct ProgressView: View {
-    @EnvironmentObject var progressManager: ProgressManager
-    
-    var body: some View {
-        NavigationStack {
-            List {
-                Section("Estadísticas Generales") {
-                    StatRow(
-                        icon: "flame.fill",
-                        title: "Racha actual",
-                        value: "\(progressManager.progreso.rachaActual) días",
-                        color: .orange
-                    )
-                    
-                    StatRow(
-                        icon: "trophy.fill",
-                        title: "Mejor racha",
-                        value: "\(progressManager.progreso.mejorRacha) días",
-                        color: .yellow
-                    )
-                    
-                    StatRow(
-                        icon: "checkmark.circle.fill",
-                        title: "Precisión",
-                        value: String(format: "%.1f%%", progressManager.progreso.porcentajePrecision),
-                        color: .green
-                    )
-                    
-                    StatRow(
-                        icon: "clock.fill",
-                        title: "Tiempo de estudio",
-                        value: "\(progressManager.progreso.tiempoTotalEstudioMinutos) min",
-                        color: .blue
-                    )
-                }
-                
-                Section("Elementos") {
-                    StatRow(
-                        icon: "star.fill",
-                        title: "Favoritos",
-                        value: "\(progressManager.progreso.elementosFavoritos.count)",
-                        color: .yellow
-                    )
-                    
-                    StatRow(
-                        icon: "checkmark.circle.fill",
-                        title: "Dominados",
-                        value: "\(elementosDominados)",
-                        color: .green
-                    )
-                }
-                
-                Section("Sesiones de Juego") {
-                    StatRow(
-                        icon: "gamecontroller.fill",
-                        title: "Total de sesiones",
-                        value: "\(progressManager.progreso.sesionesJuego.count)",
-                        color: .purple
-                    )
-                }
-            }
-            .navigationTitle("Progreso")
-        }
-    }
-    
-    private var elementosDominados: Int {
-        progressManager.progreso.elementosEstudiados.values.filter { $0.nivelDominio == .dominado }.count
-    }
-}
-
-struct StatRow: View {
-    let icon: String
-    let title: String
-    let value: String
-    let color: Color
-    
-    var body: some View {
-        HStack {
-            Image(systemName: icon)
-                .foregroundColor(color)
-                .frame(width: 30)
-            
-            Text(title)
-                .font(.body)
-            
-            Spacer()
-            
-            Text(value)
-                .font(.headline)
-                .foregroundColor(.secondary)
-        }
-        .accessibleGroup(label: "\(title): \(value)")
-    }
-}
-
-// MARK: - SettingsView
 struct SettingsView: View {
     @EnvironmentObject var progressManager: ProgressManager
     @EnvironmentObject var ttsManager: TTSManager
@@ -193,12 +96,6 @@ struct SettingsView: View {
             }
         }
     }
-}
-
-// MARK: - Previews
-#Preview("Progreso") {
-    ProgressView()
-        .environmentObject(ProgressManager.shared)
 }
 
 #Preview("Ajustes") {

@@ -92,6 +92,12 @@ struct ColorPalette {
         static let neutro = Color.gray
     }
     
+    // MARK: - Colores de Marca
+    struct Marca {
+        static let primario = Color(hexString: "667eea")
+        static let secundario = Color(hexString: "764ba2")
+    }
+    
     // MARK: - Colores por Estado de Materia
     static func colorParaEstado(_ estado: EstadoMateria) -> Color {
         switch estado {
@@ -132,6 +138,12 @@ struct ColorPalette {
             colors: [Sistema.fondoSecundario, Sistema.fondoTerciario],
             startPoint: .top,
             endPoint: .bottom
+        )
+        
+        static let acento = LinearGradient(
+            colors: [Marca.primario, Marca.secundario],
+            startPoint: .leading,
+            endPoint: .trailing
         )
     }
 }
@@ -192,10 +204,9 @@ extension Color {
     Metales Alcalinos: #87CEEB (claro), #1E90FF (oscuro), #0000FF (HC)
     Metales Alcalinotérreos: #FFA500 (claro), #FF8C00 (oscuro), #FF4500 (HC)
     Lantánidos: #90EE90 (claro), #32CD32 (oscuro), #008000 (HC)
-    Actínidos: #FFB6C1 (claro), #FF69B4 (oscuro), #C71585 (HC)
+    Actínidos: #FFB6C1 (claro), #FF69B4 ( oscuro), #C71585 (HC)
     Metales de Transición: #FFFFE0 (claro), #FFD700 (oscuro), #DAA520 (HC)
     No Metales: #DDA0DD (claro), #BA55D3 (oscuro), #8B008B (HC)
     Halógenos: #FFB6C1 (claro), #DC143C (oscuro), #8B0000 (HC)
     Gases Nobles: #D3D3D3 (claro), #A9A9A9 (oscuro), #696969 (HC)
 */
-

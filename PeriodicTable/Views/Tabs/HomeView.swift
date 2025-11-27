@@ -44,6 +44,7 @@ struct HomeView: View {
     
     @State private var scale: CGFloat = 0.95
     @State private var opacity: Double = 0
+    @State private var isShowingSettings = false
     
     var body: some View {
         NavigationStack {
@@ -79,6 +80,21 @@ struct HomeView: View {
             }
             .navigationTitle("Inicio")
             .navigationBarTitleDisplayMode(.large)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        generateHaptic()
+                        isShowingSettings = true
+                    } label: {
+                        Image(systemName: "gearshape.fill")
+                            .font(.system(size: 20, weight: .semibold))
+                            .foregroundStyle(.primary)
+                    }
+                }
+            }
+            .sheet(isPresented: $isShowingSettings) {
+                SettingsView()
+            }
         }
         .onAppear {
             withAnimation(.spring(response: 0.6, dampingFraction: 0.75)) {

@@ -85,14 +85,8 @@ struct ContentView: View {
                     Label("Progreso", systemImage: "chart.bar.fill")
                 }
                 .tag(Tab.progress)
-            
-            SettingsView()
-                .tabItem {
-                    Label("Ajustes", systemImage: "gearshape.fill")
-                }
-                .tag(Tab.settings)
         }
-        .accentColor(ColorPalette.Sistema.primario)
+        .tint(ColorPalette.Gradientes.acento)
     }
     
     // MARK: - Tab Enum
