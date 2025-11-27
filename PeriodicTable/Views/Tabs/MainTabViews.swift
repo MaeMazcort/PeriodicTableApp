@@ -102,103 +102,9 @@ struct SearchView: View {
     }
 }
 
-// MARK: - GamesHubView
-struct GamesHubView: View {
-    @State private var selectedGame: TipoJuego?
-    
-    var body: some View {
-        NavigationStack {
-            List {
-                ForEach(TipoJuego.allCases, id: \.self) { juego in
-                    Button {
-                        selectedGame = juego
-                    } label: {
-                        GameRowView(tipoJuego: juego)
-                    }
-                    .accessibleButton(
-                        label: juego.nombre,
-                        hint: juego.descripcion
-                    )
-                }
-            }
-            .navigationTitle("Juegos")
-            .sheet(item: $selectedGame) { juego in
-                GameViewPlaceholder(tipoJuego: juego)
-            }
-        }
-    }
-}
-
-struct GameRowView: View {
-    let tipoJuego: TipoJuego
-    
-    var body: some View {
-        HStack(spacing: 16) {
-            Image(systemName: tipoJuego.icono)
-                .font(.title2)
-                .foregroundColor(.accentColor)
-                .frame(width: 44)
-            
-            VStack(alignment: .leading, spacing: 4) {
-                Text(tipoJuego.nombre)
-                    .font(.headline)
-                
-                Text(tipoJuego.descripcion)
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-                    .lineLimit(2)
-            }
-            
-            Spacer()
-            
-            VStack(alignment: .trailing, spacing: 4) {
-                Image(systemName: "clock")
-                    .font(.caption)
-                Text("\(tipoJuego.duracionEstimadaMinutos) min")
-                    .font(.caption2)
-            }
-            .foregroundColor(.secondary)
-        }
-        .padding(.vertical, 4)
-    }
-}
-
-struct GameViewPlaceholder: View {
-    let tipoJuego: TipoJuego
-    @Environment(\.dismiss) var dismiss
-    
-    var body: some View {
-        NavigationStack {
-            VStack(spacing: 20) {
-                Image(systemName: tipoJuego.icono)
-                    .font(.system(size: 60))
-                    .foregroundColor(.accentColor)
-                
-                Text(tipoJuego.nombre)
-                    .font(.title)
-                    .fontWeight(.bold)
-                
-                Text(tipoJuego.descripcion)
-                    .font(.body)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal)
-                
-                Text("(En desarrollo)")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-            }
-            .navigationTitle(tipoJuego.nombre)
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("Cerrar") {
-                        dismiss()
-                    }
-                }
-            }
-        }
-    }
-}
+// MARK: - Games Hub
+// Note: GamesHubView, GameRowView, and GameViewPlaceholder are now in separate files
+// in the Games folder for better organization.
 
 // MARK: - ProgressView (Estadísticas)
 struct ProgressView: View {
@@ -421,10 +327,6 @@ struct FilterChip: View {
         .environmentObject(DataManager.shared)
         .environmentObject(ProgressManager.shared)
         .environmentObject(TTSManager.shared)
-}
-
-#Preview("Juegos") {
-    GamesHubView()
 }
 
 #Preview("Progreso") {
