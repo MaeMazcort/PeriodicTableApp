@@ -147,6 +147,22 @@ class TTSManager: NSObject, ObservableObject {
         let codigoIdioma = idioma == .espanol ? "es" : "en"
         return AVSpeechSynthesisVoice.speechVoices().filter { $0.language.hasPrefix(codigoIdioma) }
     }
+    
+    // MARK: - New speak methods
+    
+    @objc func speak(_ text: String) {
+        hablar(text, idioma: .espanol)
+    }
+    
+    func speak(_ text: String, language: String) {
+        let idioma: Idioma
+        if language.lowercased().hasPrefix("es") {
+            idioma = .espanol
+        } else {
+            idioma = .ingles
+        }
+        hablar(text, idioma: idioma)
+    }
 }
 
 // MARK: - AVSpeechSynthesizerDelegate

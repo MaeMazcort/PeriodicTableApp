@@ -361,6 +361,24 @@ struct FlashcardGameView: View {
                         Text("¿Cuál es el símbolo?")
                             .font(.system(size: 16, weight: .medium))
                             .foregroundStyle(.secondary)
+                        
+                        // TTS button for element name (front side)
+                        Button {
+                            ttsManager.speak(flashcard.question)
+                            generateHaptic(style: .light)
+                        } label: {
+                            HStack(spacing: 8) {
+                                Image(systemName: "speaker.wave.2.fill")
+                                    .font(.system(size: 16, weight: .semibold))
+                                Text("Escuchar pronunciación")
+                                    .font(.system(size: 15, weight: .semibold))
+                            }
+                            .foregroundStyle(ptColor("667eea"))
+                            .padding(.horizontal, 20)
+                            .padding(.vertical, 12)
+                            .background(ptColor("667eea").opacity(0.1), in: Capsule())
+                        }
+                        .buttonStyle(.plain)
                     }
                     .padding(.horizontal, 28)
                 }
@@ -828,17 +846,6 @@ struct FlashcardGameView: View {
     private func generateHaptic(style: UIImpactFeedbackGenerator.FeedbackStyle) {
         let generator = UIImpactFeedbackGenerator(style: style)
         generator.impactOccurred()
-    }
-}
-
-// MARK: - TTS Fallback Helper
-extension TTSManager {
-    // Provide a fallback method name so the call site can use a consistent API.
-    // If your TTSManager already has any of these methods, keep those and remove this extension.
-    @objc func speak(_ text: String) {
-        #if DEBUG
-        print("[TTSManager] speak fallback: \(text)")
-        #endif
     }
 }
 
