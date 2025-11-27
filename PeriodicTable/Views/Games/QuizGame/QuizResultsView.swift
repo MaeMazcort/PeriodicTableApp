@@ -245,7 +245,7 @@ struct QuizResultsView: View {
             
             // Confetti overlay
             if showConfetti {
-                ConfettiView()
+                CelebrationConfettiView()
                     .ignoresSafeArea()
                     .allowsHitTesting(false)
             }
@@ -325,3 +325,4 @@ struct QuizResultsView: View {
         }
     }
 }
+

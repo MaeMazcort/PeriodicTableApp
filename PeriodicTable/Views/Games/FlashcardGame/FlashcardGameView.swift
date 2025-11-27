@@ -46,7 +46,7 @@ struct FlashcardGameView: View {
                 
                 // Confetti overlay for celebrations
                 if showConfetti {
-                    ConfettiView()
+                    CelebrationConfettiView()
                         .ignoresSafeArea()
                         .allowsHitTesting(false)
                 }

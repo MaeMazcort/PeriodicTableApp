@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct ConfettiView: View {
+struct CelebrationConfettiView: View {
     @State private var isAnimating = false
 
     var body: some View {
         ZStack {
             ForEach(0..<50) { index in
-                ConfettiPiece()
+                CelebrationConfettiPiece()
                     .offset(
                         x: CGFloat.random(in: -200...200),
                         y: isAnimating ? 1000 : -100
@@ -32,7 +32,7 @@ struct ConfettiView: View {
     }
 }
 
-struct ConfettiPiece: View {
+struct CelebrationConfettiPiece: View {
     // Merged palette from both previous implementations
     private static let palette: [Color] = [
         Color(hex: "667eea"),
