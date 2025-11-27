@@ -41,7 +41,7 @@ struct QuizQuestionCard: View {
                 .padding(.vertical, 6)
                 .background(
                     LinearGradient(
-                        colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                        colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                         startPoint: .leading,
                         endPoint: .trailing
                     ),
@@ -132,25 +132,25 @@ struct QuizQuestionCard: View {
                 shadowColor = .black.opacity(0.05)
                 shadowRadius = 8
             case .selected:
-                circleFill = Color(hex: "667eea").opacity(0.2)
-                letterColor = Color(hex: "667eea")
-                overlayStroke = Color(hex: "667eea").opacity(0.3)
+                circleFill = Color(hexString: "667eea").opacity(0.2)
+                letterColor = Color(hexString: "667eea")
+                overlayStroke = Color(hexString: "667eea").opacity(0.3)
                 overlayWidth = 1
                 shadowColor = .black.opacity(0.05)
                 shadowRadius = 8
             case .correct:
-                circleFill = Color(hex: "51cf66").opacity(0.2)
-                letterColor = Color(hex: "51cf66")
-                overlayStroke = Color(hex: "51cf66").opacity(0.5)
+                circleFill = Color(hexString: "51cf66").opacity(0.2)
+                letterColor = Color(hexString: "51cf66")
+                overlayStroke = Color(hexString: "51cf66").opacity(0.5)
                 overlayWidth = 2
-                shadowColor = Color(hex: "51cf66").opacity(0.2)
+                shadowColor = Color(hexString: "51cf66").opacity(0.2)
                 shadowRadius = 12
             case .incorrect:
-                circleFill = Color(hex: "ff6b6b").opacity(0.2)
-                letterColor = Color(hex: "ff6b6b")
-                overlayStroke = Color(hex: "ff6b6b").opacity(0.5)
+                circleFill = Color(hexString: "ff6b6b").opacity(0.2)
+                letterColor = Color(hexString: "ff6b6b")
+                overlayStroke = Color(hexString: "ff6b6b").opacity(0.5)
                 overlayWidth = 2
-                shadowColor = Color(hex: "ff6b6b").opacity(0.2)
+                shadowColor = Color(hexString: "ff6b6b").opacity(0.2)
                 shadowRadius = 12
             }
         }
@@ -161,13 +161,13 @@ struct QuizQuestionCard: View {
         switch state {
         case .correct:
             RoundedRectangle(cornerRadius: 18)
-                .fill(Color(hex: "51cf66").opacity(0.1))
+                .fill(Color(hexString: "51cf66").opacity(0.1))
         case .incorrect:
             RoundedRectangle(cornerRadius: 18)
-                .fill(Color(hex: "ff6b6b").opacity(0.1))
+                .fill(Color(hexString: "ff6b6b").opacity(0.1))
         case .selected:
             RoundedRectangle(cornerRadius: 18)
-                .fill(Color(hex: "667eea").opacity(0.08))
+                .fill(Color(hexString: "667eea").opacity(0.08))
         case .normal:
             RoundedRectangle(cornerRadius: 18).fill(.ultraThinMaterial)
         }
@@ -179,12 +179,12 @@ struct QuizQuestionCard: View {
         case .correct:
             Image(systemName: "checkmark.circle.fill")
                 .font(.system(size: 24, weight: .semibold))
-                .foregroundStyle(Color(hex: "51cf66"))
+                .foregroundStyle(Color(hexString: "51cf66"))
                 .transition(.scale.combined(with: .opacity))
         case .incorrect:
             Image(systemName: "xmark.circle.fill")
                 .font(.system(size: 24, weight: .semibold))
-                .foregroundStyle(Color(hex: "ff6b6b"))
+                .foregroundStyle(Color(hexString: "ff6b6b"))
                 .transition(.scale.combined(with: .opacity))
         case .normal, .selected:
             EmptyView()
@@ -262,7 +262,7 @@ struct QuizQuestionCard: View {
         HStack(spacing: 12) {
             Image(systemName: answerState == .correct ? "checkmark.circle.fill" : "xmark.circle.fill")
                 .font(.system(size: 20, weight: .semibold))
-                .foregroundStyle(answerState == .correct ? Color(hex: "51cf66") : Color(hex: "ff6b6b"))
+                .foregroundStyle(answerState == .correct ? Color(hexString: "51cf66") : Color(hexString: "ff6b6b"))
             
             Text(answerState == .correct ? "¡Correcto!" : "Incorrecto")
                 .font(.system(size: 17, weight: .bold))
@@ -279,16 +279,16 @@ struct QuizQuestionCard: View {
         .padding(16)
         .background(
             answerState == .correct
-            ? Color(hex: "51cf66").opacity(0.15)
-            : Color(hex: "ff6b6b").opacity(0.15),
+            ? Color(hexString: "51cf66").opacity(0.15)
+            : Color(hexString: "ff6b6b").opacity(0.15),
             in: RoundedRectangle(cornerRadius: 16)
         )
         .overlay {
             RoundedRectangle(cornerRadius: 16)
                 .stroke(
                     answerState == .correct
-                    ? Color(hex: "51cf66").opacity(0.3)
-                    : Color(hex: "ff6b6b").opacity(0.3),
+                    ? Color(hexString: "51cf66").opacity(0.3)
+                    : Color(hexString: "ff6b6b").opacity(0.3),
                     lineWidth: 1
                 )
         }
@@ -328,11 +328,11 @@ struct QuizQuestionCard: View {
         relatedElementId: 1
     )
     
-    return ZStack {
+    ZStack {
         LinearGradient(
             colors: [
-                Color(hex: "667eea").opacity(0.12),
-                Color(hex: "764ba2").opacity(0.08)
+                Color(hexString: "667eea").opacity(0.12),
+                Color(hexString: "764ba2").opacity(0.08)
             ],
             startPoint: .topLeading,
             endPoint: .bottomTrailing

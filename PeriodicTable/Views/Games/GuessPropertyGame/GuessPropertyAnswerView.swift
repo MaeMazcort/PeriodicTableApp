@@ -44,9 +44,9 @@ struct GuessPropertyAnswerView: View {
         .background(.ultraThickMaterial, in: RoundedRectangle(cornerRadius: 28))
         .overlay {
             RoundedRectangle(cornerRadius: 28)
-                .stroke(Color(hex: accuracy.color).opacity(0.5), lineWidth: 3)
+                .stroke(Color(hexString: accuracy.color).opacity(0.5), lineWidth: 3)
         }
-        .shadow(color: Color(hex: accuracy.color).opacity(0.3), radius: 24, x: 0, y: 12)
+        .shadow(color: Color(hexString: accuracy.color).opacity(0.3), radius: 24, x: 0, y: 12)
         .scaleEffect(scale)
         .opacity(showContent ? 1 : 0)
         .onAppear {
@@ -65,7 +65,7 @@ struct GuessPropertyAnswerView: View {
             
             Text(accuracy.message)
                 .font(.system(size: 22, weight: .bold))
-                .foregroundStyle(Color(hex: accuracy.color))
+                .foregroundStyle(Color(hexString: accuracy.color))
         }
     }
     
@@ -74,7 +74,7 @@ struct GuessPropertyAnswerView: View {
         HStack(spacing: 12) {
             Text(question.elemento.simbolo)
                 .font(.system(size: 32, weight: .bold))
-                .foregroundStyle(Color(hex: question.propertyType.color))
+                .foregroundStyle(Color(hexString: question.propertyType.color))
             
             VStack(alignment: .leading, spacing: 2) {
                 Text(question.elemento.nombreES)
@@ -89,7 +89,7 @@ struct GuessPropertyAnswerView: View {
             Spacer()
         }
         .padding(16)
-        .background(Color(hex: question.propertyType.color).opacity(0.1), in: RoundedRectangle(cornerRadius: 14))
+        .background(Color(hexString: question.propertyType.color).opacity(0.1), in: RoundedRectangle(cornerRadius: 14))
     }
     
     // MARK: - Comparison View
@@ -100,7 +100,7 @@ struct GuessPropertyAnswerView: View {
                 label: "Tu estimación",
                 value: question.userGuess ?? 0,
                 icon: "person.fill",
-                color: Color(hex: "667eea"),
+                color: Color(hexString: "667eea"),
                 isGuess: true
             )
             
@@ -125,7 +125,7 @@ struct GuessPropertyAnswerView: View {
                 label: "Valor real",
                 value: question.correctValue,
                 icon: "checkmark.seal.fill",
-                color: Color(hex: accuracy.color),
+                color: Color(hexString: accuracy.color),
                 isGuess: false
             )
             
@@ -175,7 +175,7 @@ struct GuessPropertyAnswerView: View {
         HStack(spacing: 12) {
             Image(systemName: "arrow.left.and.right")
                 .font(.system(size: 16, weight: .semibold))
-                .foregroundStyle(Color(hex: accuracy.color))
+                .foregroundStyle(Color(hexString: accuracy.color))
             
             VStack(alignment: .leading, spacing: 2) {
                 Text("Diferencia:")
@@ -184,17 +184,17 @@ struct GuessPropertyAnswerView: View {
                 
                 Text(String(format: "±%.1f%%", question.percentError))
                     .font(.system(size: 18, weight: .bold))
-                    .foregroundStyle(Color(hex: accuracy.color))
+                    .foregroundStyle(Color(hexString: accuracy.color))
                     .monospacedDigit()
             }
             
             Spacer()
         }
         .padding(14)
-        .background(Color(hex: accuracy.color).opacity(0.1), in: RoundedRectangle(cornerRadius: 12))
+        .background(Color(hexString: accuracy.color).opacity(0.1), in: RoundedRectangle(cornerRadius: 12))
         .overlay {
             RoundedRectangle(cornerRadius: 12)
-                .stroke(Color(hex: accuracy.color).opacity(0.3), lineWidth: 1)
+                .stroke(Color(hexString: accuracy.color).opacity(0.3), lineWidth: 1)
         }
     }
     
@@ -203,7 +203,7 @@ struct GuessPropertyAnswerView: View {
         HStack(spacing: 12) {
             Image(systemName: "star.fill")
                 .font(.system(size: 20, weight: .semibold))
-                .foregroundStyle(Color(hex: "ffd43b"))
+                .foregroundStyle(Color(hexString: "ffd43b"))
             
             Text("+\(score) puntos")
                 .font(.system(size: 20, weight: .bold))
@@ -213,10 +213,10 @@ struct GuessPropertyAnswerView: View {
             Spacer()
         }
         .padding(16)
-        .background(Color(hex: "ffd43b").opacity(0.15), in: RoundedRectangle(cornerRadius: 14))
+        .background(Color(hexString: "ffd43b").opacity(0.15), in: RoundedRectangle(cornerRadius: 14))
         .overlay {
             RoundedRectangle(cornerRadius: 14)
-                .stroke(Color(hex: "ffd43b").opacity(0.4), lineWidth: 1.5)
+                .stroke(Color(hexString: "ffd43b").opacity(0.4), lineWidth: 1.5)
         }
     }
     
@@ -238,13 +238,13 @@ struct GuessPropertyAnswerView: View {
             .frame(height: 54)
             .background(
                 LinearGradient(
-                    colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                    colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                     startPoint: .leading,
                     endPoint: .trailing
                 ),
                 in: RoundedRectangle(cornerRadius: 16)
             )
-            .shadow(color: Color(hex: "667eea").opacity(0.4), radius: 12, x: 0, y: 6)
+            .shadow(color: Color(hexString: "667eea").opacity(0.4), radius: 12, x: 0, y: 6)
         }
         .buttonStyle(.plain)
     }
@@ -279,8 +279,8 @@ struct GuessPropertyAnswerView_Previews: PreviewProvider {
         ZStack {
             LinearGradient(
                 colors: [
-                    Color(hex: "667eea").opacity(0.12),
-                    Color(hex: "764ba2").opacity(0.08)
+                    Color(hexString: "667eea").opacity(0.12),
+                    Color(hexString: "764ba2").opacity(0.08)
                 ],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing

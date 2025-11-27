@@ -109,8 +109,8 @@ struct FlashcardStackView: View {
                     .fill(
                         LinearGradient(
                             colors: [
-                                Color(hex: "667eea").opacity(0.2),
-                                Color(hex: "764ba2").opacity(0.15)
+                                Color(hexString: "667eea").opacity(0.2),
+                                Color(hexString: "764ba2").opacity(0.15)
                             ],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
@@ -122,7 +122,7 @@ struct FlashcardStackView: View {
                     .font(.system(size: 44, weight: .semibold))
                     .foregroundStyle(
                         LinearGradient(
-                            colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                            colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         )
@@ -155,7 +155,7 @@ struct FlashcardStackView: View {
                 .padding(.vertical, 6)
                 .background(
                     LinearGradient(
-                        colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                        colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                         startPoint: .leading,
                         endPoint: .trailing
                     ),
@@ -167,7 +167,7 @@ struct FlashcardStackView: View {
                 .font(.system(size: 72, weight: .bold))
                 .foregroundStyle(
                     LinearGradient(
-                        colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                        colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                         startPoint: .topLeading,
                         endPoint: .bottomTrailing
                     )
@@ -191,10 +191,10 @@ struct FlashcardStackView: View {
                     Text("Escuchar pronunciación")
                         .font(.system(size: 15, weight: .semibold))
                 }
-                .foregroundStyle(Color(hex: "667eea"))
+                .foregroundStyle(Color(hexString: "667eea"))
                 .padding(.horizontal, 20)
                 .padding(.vertical, 12)
-                .background(Color(hex: "667eea").opacity(0.1), in: Capsule())
+                .background(Color(hexString: "667eea").opacity(0.1), in: Capsule())
             }
             .buttonStyle(.plain)
         }
@@ -255,8 +255,8 @@ struct FlashcardStackView: View {
     return ZStack {
         LinearGradient(
             colors: [
-                Color(hex: "667eea").opacity(0.12),
-                Color(hex: "764ba2").opacity(0.08)
+                Color(hexString: "667eea").opacity(0.12),
+                Color(hexString: "764ba2").opacity(0.08)
             ],
             startPoint: .topLeading,
             endPoint: .bottomTrailing

@@ -33,7 +33,7 @@ struct PairsProgressView: View {
                     Capsule()
                         .fill(
                             LinearGradient(
-                                colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                                colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                                 startPoint: .leading,
                                 endPoint: .trailing
                             )
@@ -50,7 +50,7 @@ struct PairsProgressView: View {
                 HStack(spacing: 8) {
                     Image(systemName: "checkmark.seal.fill")
                         .font(.system(size: 16, weight: .semibold))
-                        .foregroundStyle(Color(hex: "51cf66"))
+                        .foregroundStyle(Color(hexString: "51cf66"))
                     
                     Text("\(matchedPairs)")
                         .font(.system(size: 18, weight: .bold))
@@ -67,10 +67,10 @@ struct PairsProgressView: View {
                 }
                 .padding(.horizontal, 14)
                 .padding(.vertical, 8)
-                .background(Color(hex: "51cf66").opacity(0.12), in: Capsule())
+                .background(Color(hexString: "51cf66").opacity(0.12), in: Capsule())
                 .overlay {
                     Capsule()
-                        .stroke(Color(hex: "51cf66").opacity(0.3), lineWidth: 1)
+                        .stroke(Color(hexString: "51cf66").opacity(0.3), lineWidth: 1)
                 }
                 
                 Spacer()
@@ -79,7 +79,7 @@ struct PairsProgressView: View {
                 HStack(spacing: 6) {
                     Image(systemName: "hand.tap.fill")
                         .font(.system(size: 14, weight: .semibold))
-                        .foregroundStyle(Color(hex: "667eea"))
+                        .foregroundStyle(Color(hexString: "667eea"))
                     
                     Text("\(moves)")
                         .font(.system(size: 17, weight: .bold))
@@ -88,10 +88,10 @@ struct PairsProgressView: View {
                 }
                 .padding(.horizontal, 14)
                 .padding(.vertical, 8)
-                .background(Color(hex: "667eea").opacity(0.12), in: Capsule())
+                .background(Color(hexString: "667eea").opacity(0.12), in: Capsule())
                 .overlay {
                     Capsule()
-                        .stroke(Color(hex: "667eea").opacity(0.3), lineWidth: 1)
+                        .stroke(Color(hexString: "667eea").opacity(0.3), lineWidth: 1)
                 }
                 
                 // Timer
@@ -136,8 +136,8 @@ struct PairsProgressView: View {
     ZStack {
         LinearGradient(
             colors: [
-                Color(hex: "667eea").opacity(0.12),
-                Color(hex: "764ba2").opacity(0.08)
+                Color(hexString: "667eea").opacity(0.12),
+                Color(hexString: "764ba2").opacity(0.08)
             ],
             startPoint: .topLeading,
             endPoint: .bottomTrailing

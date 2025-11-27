@@ -63,7 +63,7 @@ struct GuessPropertyQuestionCard: View {
                 .font(.system(size: 56, weight: .bold))
                 .foregroundStyle(
                     LinearGradient(
-                        colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                        colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                         startPoint: .topLeading,
                         endPoint: .bottomTrailing
                     )
@@ -95,7 +95,7 @@ struct GuessPropertyQuestionCard: View {
             HStack(spacing: 8) {
                 Image(systemName: question.propertyType.icon)
                     .font(.system(size: 18, weight: .semibold))
-                    .foregroundStyle(Color(hex: question.propertyType.color))
+                    .foregroundStyle(Color(hexString: question.propertyType.color))
                 
                 Text("Adivina: \(question.propertyType.rawValue)")
                     .font(.system(size: 18, weight: .bold))
@@ -109,10 +109,10 @@ struct GuessPropertyQuestionCard: View {
                 .padding(.horizontal, 16)
         }
         .padding(16)
-        .background(Color(hex: question.propertyType.color).opacity(0.1), in: RoundedRectangle(cornerRadius: 16))
+        .background(Color(hexString: question.propertyType.color).opacity(0.1), in: RoundedRectangle(cornerRadius: 16))
         .overlay {
             RoundedRectangle(cornerRadius: 16)
-                .stroke(Color(hex: question.propertyType.color).opacity(0.3), lineWidth: 1)
+                .stroke(Color(hexString: question.propertyType.color).opacity(0.3), lineWidth: 1)
         }
     }
     
@@ -123,7 +123,7 @@ struct GuessPropertyQuestionCard: View {
             HStack(spacing: 8) {
                 Text(formatValue(guessValue))
                     .font(.system(size: 36, weight: .bold))
-                    .foregroundStyle(Color(hex: question.propertyType.color))
+                    .foregroundStyle(Color(hexString: question.propertyType.color))
                     .contentTransition(.numericText())
                     .monospacedDigit()
                 
@@ -142,7 +142,7 @@ struct GuessPropertyQuestionCard: View {
                     in: question.propertyType.minValue...question.propertyType.maxValue,
                     step: question.propertyType.step
                 )
-                .tint(Color(hex: question.propertyType.color))
+                .tint(Color(hexString: question.propertyType.color))
                 
                 HStack {
                     Text(formatValue(question.propertyType.minValue))
@@ -162,7 +162,7 @@ struct GuessPropertyQuestionCard: View {
         .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 18))
         .overlay {
             RoundedRectangle(cornerRadius: 18)
-                .stroke(Color(hex: question.propertyType.color).opacity(0.3), lineWidth: 1.5)
+                .stroke(Color(hexString: question.propertyType.color).opacity(0.3), lineWidth: 1.5)
         }
     }
     
@@ -184,13 +184,13 @@ struct GuessPropertyQuestionCard: View {
             .frame(height: 54)
             .background(
                 LinearGradient(
-                    colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                    colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                     startPoint: .leading,
                     endPoint: .trailing
                 ),
                 in: RoundedRectangle(cornerRadius: 16)
             )
-            .shadow(color: Color(hex: "667eea").opacity(0.4), radius: 12, x: 0, y: 6)
+            .shadow(color: Color(hexString: "667eea").opacity(0.4), radius: 12, x: 0, y: 6)
         }
         .buttonStyle(.plain)
     }
@@ -224,8 +224,8 @@ struct GuessPropertyQuestionCard_Previews: PreviewProvider {
         ZStack {
             LinearGradient(
                 colors: [
-                    Color(hex: "667eea").opacity(0.12),
-                    Color(hex: "764ba2").opacity(0.08)
+                    Color(hexString: "667eea").opacity(0.12),
+                    Color(hexString: "764ba2").opacity(0.08)
                 ],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing

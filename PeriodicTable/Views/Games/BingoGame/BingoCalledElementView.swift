@@ -29,12 +29,12 @@ struct BingoCalledElementView: View {
                     RoundedRectangle(cornerRadius: 24)
                         .fill(
                             LinearGradient(
-                                colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                                colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                                 startPoint: .topLeading,
                                 endPoint: .bottomTrailing
                             )
                         )
-                        .shadow(color: Color(hex: "667eea").opacity(0.5), radius: 24, x: 0, y: 12)
+                        .shadow(color: Color(hexString: "667eea").opacity(0.5), radius: 24, x: 0, y: 12)
                     
                     VStack(spacing: 12) {
                         // Symbol - Extra large
@@ -149,7 +149,7 @@ struct BingoCalledHistoryView: View {
             HStack {
                 Image(systemName: "clock.arrow.circlepath")
                     .font(.system(size: 16, weight: .semibold))
-                    .foregroundStyle(Color(hex: "667eea"))
+                    .foregroundStyle(Color(hexString: "667eea"))
                 
                 Text("Últimos Cantados")
                     .font(.system(size: 16, weight: .bold))
@@ -162,7 +162,7 @@ struct BingoCalledHistoryView: View {
                     .foregroundStyle(.white)
                     .padding(.horizontal, 10)
                     .padding(.vertical, 4)
-                    .background(Color(hex: "667eea"), in: Capsule())
+                    .background(Color(hexString: "667eea"), in: Capsule())
             }
             
             ScrollView(.horizontal, showsIndicators: false) {
@@ -194,10 +194,10 @@ struct BingoCalledHistoryView: View {
                 .lineLimit(1)
         }
         .frame(width: 60, height: 60)
-        .background(Color(hex: "667eea").opacity(0.1), in: RoundedRectangle(cornerRadius: 12))
+        .background(Color(hexString: "667eea").opacity(0.1), in: RoundedRectangle(cornerRadius: 12))
         .overlay {
             RoundedRectangle(cornerRadius: 12)
-                .stroke(Color(hex: "667eea").opacity(0.3), lineWidth: 1)
+                .stroke(Color(hexString: "667eea").opacity(0.3), lineWidth: 1)
         }
     }
 }
@@ -208,8 +208,8 @@ struct BingoCalledElementView_Previews: PreviewProvider {
         ZStack {
             LinearGradient(
                 colors: [
-                    Color(hex: "667eea").opacity(0.12),
-                    Color(hex: "764ba2").opacity(0.08)
+                    Color(hexString: "667eea").opacity(0.12),
+                    Color(hexString: "764ba2").opacity(0.08)
                 ],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing

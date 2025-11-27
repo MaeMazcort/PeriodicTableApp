@@ -67,7 +67,7 @@ struct LightningGameView: View {
                         }
                         .foregroundStyle(
                             LinearGradient(
-                                colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                                colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                                 startPoint: .leading,
                                 endPoint: .trailing
                             )
@@ -82,9 +82,9 @@ struct LightningGameView: View {
     private var backgroundGradient: some View {
         LinearGradient(
             colors: [
-                Color(hex: "667eea").opacity(0.12),
-                Color(hex: "764ba2").opacity(0.08),
-                Color(hex: "f093fb").opacity(0.06)
+                Color(hexString: "667eea").opacity(0.12),
+                Color(hexString: "764ba2").opacity(0.08),
+                Color(hexString: "f093fb").opacity(0.06)
             ],
             startPoint: .topLeading,
             endPoint: .bottomTrailing
@@ -102,7 +102,7 @@ struct LightningGameView: View {
                 Circle()
                     .fill(
                         LinearGradient(
-                            colors: [Color(hex: "667eea").opacity(0.2), Color(hex: "764ba2").opacity(0.15)],
+                            colors: [Color(hexString: "667eea").opacity(0.2), Color(hexString: "764ba2").opacity(0.15)],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         )
@@ -113,7 +113,7 @@ struct LightningGameView: View {
                     .font(.system(size: 70, weight: .bold))
                     .foregroundStyle(
                         LinearGradient(
-                            colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                            colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         )
@@ -139,21 +139,21 @@ struct LightningGameView: View {
                     icon: "timer",
                     title: "60 Segundos",
                     description: "Tienes un minuto para responder",
-                    color: Color(hex: "667eea")
+                    color: Color(hexString: "667eea")
                 )
                 
                 instructionCard(
                     icon: "bolt.fill",
                     title: "Responde Rápido",
                     description: "Más rápido = más puntos",
-                    color: Color(hex: "ffd43b")
+                    color: Color(hexString: "ffd43b")
                 )
                 
                 instructionCard(
                     icon: "flame.fill",
                     title: "Mantén la Racha",
                     description: "Respuestas correctas seguidas dan bonus",
-                    color: Color(hex: "ff6b6b")
+                    color: Color(hexString: "ff6b6b")
                 )
             }
             .padding(.horizontal, 20)
@@ -176,13 +176,13 @@ struct LightningGameView: View {
                 .frame(height: 62)
                 .background(
                     LinearGradient(
-                        colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                        colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                         startPoint: .leading,
                         endPoint: .trailing
                     ),
                     in: RoundedRectangle(cornerRadius: 20)
                 )
-                .shadow(color: Color(hex: "667eea").opacity(0.5), radius: 16, x: 0, y: 8)
+                .shadow(color: Color(hexString: "667eea").opacity(0.5), radius: 16, x: 0, y: 8)
             }
             .buttonStyle(.plain)
             .padding(.horizontal, 20)
@@ -272,7 +272,7 @@ struct LightningGameView: View {
                 HStack(spacing: 8) {
                     Image(systemName: "lightbulb.fill")
                         .font(.system(size: 14, weight: .semibold))
-                        .foregroundStyle(Color(hex: "ffd43b"))
+                        .foregroundStyle(Color(hexString: "ffd43b"))
                     
                     Text(tipText)
                         .font(.system(size: 14, weight: .medium))

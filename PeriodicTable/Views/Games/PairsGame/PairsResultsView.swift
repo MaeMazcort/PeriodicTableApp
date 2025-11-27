@@ -59,13 +59,13 @@ struct PairsResultsView: View {
                     Circle()
                         .fill(
                             LinearGradient(
-                                colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                                colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                                 startPoint: .topLeading,
                                 endPoint: .bottomTrailing
                             )
                         )
                         .frame(width: 140, height: 140)
-                        .shadow(color: Color(hex: "667eea").opacity(0.5), radius: 20, x: 0, y: 10)
+                        .shadow(color: Color(hexString: "667eea").opacity(0.5), radius: 20, x: 0, y: 10)
                         .scaleEffect(scale)
                     
                     HStack(spacing: 4) {
@@ -104,7 +104,7 @@ struct PairsResultsView: View {
                         .font(.system(size: 18, weight: .semibold))
                         .foregroundStyle(
                             LinearGradient(
-                                colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                                colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                                 startPoint: .leading,
                                 endPoint: .trailing
                             )
@@ -121,13 +121,13 @@ struct PairsResultsView: View {
                     Text("Dificultad: \(difficulty.rawValue)")
                         .font(.system(size: 16, weight: .semibold))
                 }
-                .foregroundStyle(Color(hex: difficulty.color))
+                .foregroundStyle(Color(hexString: difficulty.color))
                 .padding(.horizontal, 18)
                 .padding(.vertical, 10)
-                .background(Color(hex: difficulty.color).opacity(0.15), in: Capsule())
+                .background(Color(hexString: difficulty.color).opacity(0.15), in: Capsule())
                 .overlay {
                     Capsule()
-                        .stroke(Color(hex: difficulty.color).opacity(0.3), lineWidth: 1)
+                        .stroke(Color(hexString: difficulty.color).opacity(0.3), lineWidth: 1)
                 }
                 .opacity(showContent ? 1 : 0)
                 
@@ -137,28 +137,28 @@ struct PairsResultsView: View {
                         title: "Parejas",
                         value: "\(matchedPairs)",
                         icon: "checkmark.seal.fill",
-                        color: Color(hex: "51cf66")
+                        color: Color(hexString: "51cf66")
                     )
                     
                     statCard(
                         title: "Movimientos",
                         value: "\(totalMoves)",
                         icon: "hand.tap.fill",
-                        color: Color(hex: "667eea")
+                        color: Color(hexString: "667eea")
                     )
                     
                     statCard(
                         title: "Eficiencia",
                         value: "\(Int(efficiency))%",
                         icon: "chart.line.uptrend.xyaxis",
-                        color: Color(hex: "ffa94d")
+                        color: Color(hexString: "ffa94d")
                     )
                     
                     statCard(
                         title: "Tiempo",
                         value: formattedTime,
                         icon: "clock.fill",
-                        color: Color(hex: "ff6b6b")
+                        color: Color(hexString: "ff6b6b")
                     )
                 }
                 .padding(.horizontal, 20)
@@ -185,13 +185,13 @@ struct PairsResultsView: View {
                         .frame(height: 58)
                         .background(
                             LinearGradient(
-                                colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                                colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                                 startPoint: .leading,
                                 endPoint: .trailing
                             ),
                             in: RoundedRectangle(cornerRadius: 18)
                         )
-                        .shadow(color: Color(hex: "667eea").opacity(0.4), radius: 12, x: 0, y: 6)
+                        .shadow(color: Color(hexString: "667eea").opacity(0.4), radius: 12, x: 0, y: 6)
                     }
                     .buttonStyle(.plain)
                     
@@ -285,8 +285,8 @@ struct PairsResultsView: View {
     ZStack {
         LinearGradient(
             colors: [
-                Color(hex: "667eea").opacity(0.12),
-                Color(hex: "764ba2").opacity(0.08)
+                Color(hexString: "667eea").opacity(0.12),
+                Color(hexString: "764ba2").opacity(0.08)
             ],
             startPoint: .topLeading,
             endPoint: .bottomTrailing

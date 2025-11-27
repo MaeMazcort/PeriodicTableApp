@@ -65,7 +65,7 @@ struct FlashcardGameView: View {
                     }
                     .foregroundStyle(
                         LinearGradient(
-                            colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                            colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                             startPoint: .leading,
                             endPoint: .trailing
                         )
@@ -87,9 +87,9 @@ struct FlashcardGameView: View {
     private var backgroundGradient: some View {
         LinearGradient(
             colors: [
-                Color(hex: "667eea").opacity(0.12),
-                Color(hex: "764ba2").opacity(0.08),
-                Color(hex: "f093fb").opacity(0.06)
+                Color(hexString: "667eea").opacity(0.12),
+                Color(hexString: "764ba2").opacity(0.08),
+                Color(hexString: "f093fb").opacity(0.06)
             ],
             startPoint: .topLeading,
             endPoint: .bottomTrailing
@@ -106,7 +106,7 @@ struct FlashcardGameView: View {
                     .font(.system(size: 16, weight: .semibold))
                     .foregroundStyle(
                         LinearGradient(
-                            colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                            colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         )
@@ -141,13 +141,13 @@ struct FlashcardGameView: View {
                 scoreIndicator(
                     icon: "checkmark.circle.fill",
                     count: viewModel.correctCount,
-                    color: Color(hex: "51cf66")
+                    color: Color(hexString: "51cf66")
                 )
                 
                 scoreIndicator(
                     icon: "xmark.circle.fill",
                     count: viewModel.incorrectCount,
-                    color: Color(hex: "ff6b6b")
+                    color: Color(hexString: "ff6b6b")
                 )
             }
         }
@@ -189,7 +189,7 @@ struct FlashcardGameView: View {
                 Capsule()
                     .fill(
                         LinearGradient(
-                            colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                            colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                             startPoint: .leading,
                             endPoint: .trailing
                         )
@@ -330,8 +330,8 @@ struct FlashcardGameView: View {
                                 .fill(
                                     LinearGradient(
                                         colors: [
-                                            Color(hex: "667eea").opacity(0.2),
-                                            Color(hex: "764ba2").opacity(0.15)
+                                            Color(hexString: "667eea").opacity(0.2),
+                                            Color(hexString: "764ba2").opacity(0.15)
                                         ],
                                         startPoint: .topLeading,
                                         endPoint: .bottomTrailing
@@ -343,7 +343,7 @@ struct FlashcardGameView: View {
                                 .font(.system(size: 44, weight: .semibold))
                                 .foregroundStyle(
                                     LinearGradient(
-                                        colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                                        colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                                         startPoint: .topLeading,
                                         endPoint: .bottomTrailing
                                     )
@@ -373,10 +373,10 @@ struct FlashcardGameView: View {
                                 Text("Escuchar pronunciación")
                                     .font(.system(size: 15, weight: .semibold))
                             }
-                            .foregroundStyle(Color(hex: "667eea"))
+                            .foregroundStyle(Color(hexString: "667eea"))
                             .padding(.horizontal, 20)
                             .padding(.vertical, 12)
-                            .background(Color(hex: "667eea").opacity(0.1), in: Capsule())
+                            .background(Color(hexString: "667eea").opacity(0.1), in: Capsule())
                         }
                         .buttonStyle(.plain)
                     }
@@ -399,7 +399,7 @@ struct FlashcardGameView: View {
                             .padding(.vertical, 6)
                             .background(
                                 LinearGradient(
-                                    colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                                    colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                                     startPoint: .leading,
                                     endPoint: .trailing
                                 ),
@@ -411,7 +411,7 @@ struct FlashcardGameView: View {
                             .font(.system(size: 72, weight: .bold))
                             .foregroundStyle(
                                 LinearGradient(
-                                    colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                                    colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                                     startPoint: .topLeading,
                                     endPoint: .bottomTrailing
                                 )
@@ -435,10 +435,10 @@ struct FlashcardGameView: View {
                             Text("Escuchar pronunciación")
                                 .font(.system(size: 15, weight: .semibold))
                         }
-                        .foregroundStyle(Color(hex: "667eea"))
+                        .foregroundStyle(Color(hexString: "667eea"))
                         .padding(.horizontal, 20)
                         .padding(.vertical, 12)
-                        .background(Color(hex: "667eea").opacity(0.1), in: Capsule())
+                        .background(Color(hexString: "667eea").opacity(0.1), in: Capsule())
                     }
                     .buttonStyle(.plain)
                 }
@@ -477,10 +477,10 @@ struct FlashcardGameView: View {
                 VStack(spacing: 8) {
                     Image(systemName: "xmark.circle.fill")
                         .font(.system(size: 44))
-                        .foregroundStyle(Color(hex: "ff6b6b"))
+                        .foregroundStyle(Color(hexString: "ff6b6b"))
                     Text("No lo sé")
                         .font(.system(size: 14, weight: .bold))
-                        .foregroundStyle(Color(hex: "ff6b6b"))
+                        .foregroundStyle(Color(hexString: "ff6b6b"))
                 }
                 .opacity(swipeProgress)
                 .scaleEffect(0.8 + (swipeProgress * 0.2))
@@ -494,10 +494,10 @@ struct FlashcardGameView: View {
                 VStack(spacing: 8) {
                     Image(systemName: "checkmark.circle.fill")
                         .font(.system(size: 44))
-                        .foregroundStyle(Color(hex: "51cf66"))
+                        .foregroundStyle(Color(hexString: "51cf66"))
                     Text("Lo sé")
                         .font(.system(size: 14, weight: .bold))
-                        .foregroundStyle(Color(hex: "51cf66"))
+                        .foregroundStyle(Color(hexString: "51cf66"))
                 }
                 .opacity(swipeProgress)
                 .scaleEffect(0.8 + (swipeProgress * 0.2))
@@ -582,13 +582,13 @@ struct FlashcardGameView: View {
                 .frame(height: 56)
                 .background(
                     LinearGradient(
-                        colors: [Color(hex: "ff6b6b"), Color(hex: "ee5a52")],
+                        colors: [Color(hexString: "ff6b6b"), Color(hexString: "ee5a52")],
                         startPoint: .leading,
                         endPoint: .trailing
                     ),
                     in: RoundedRectangle(cornerRadius: 16)
                 )
-                .shadow(color: Color(hex: "ff6b6b").opacity(0.4), radius: 12, x: 0, y: 6)
+                .shadow(color: Color(hexString: "ff6b6b").opacity(0.4), radius: 12, x: 0, y: 6)
             }
             .buttonStyle(.plain)
             
@@ -616,13 +616,13 @@ struct FlashcardGameView: View {
                 .frame(height: 56)
                 .background(
                     LinearGradient(
-                        colors: [Color(hex: "51cf66"), Color(hex: "37b24d")],
+                        colors: [Color(hexString: "51cf66"), Color(hexString: "37b24d")],
                         startPoint: .leading,
                         endPoint: .trailing
                     ),
                     in: RoundedRectangle(cornerRadius: 16)
                 )
-                .shadow(color: Color(hex: "51cf66").opacity(0.4), radius: 12, x: 0, y: 6)
+                .shadow(color: Color(hexString: "51cf66").opacity(0.4), radius: 12, x: 0, y: 6)
             }
             .buttonStyle(.plain)
         }
@@ -641,13 +641,13 @@ struct FlashcardGameView: View {
                 Circle()
                     .fill(
                         LinearGradient(
-                            colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                            colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         )
                     )
                     .frame(width: 120, height: 120)
-                    .shadow(color: Color(hex: "667eea").opacity(0.5), radius: 20, x: 0, y: 10)
+                    .shadow(color: Color(hexString: "667eea").opacity(0.5), radius: 20, x: 0, y: 10)
                 
                 Image(systemName: "checkmark")
                     .font(.system(size: 50, weight: .bold))
@@ -679,14 +679,14 @@ struct FlashcardGameView: View {
                     title: "Correctas",
                     value: "\(viewModel.correctCount)",
                     icon: "checkmark.circle.fill",
-                    color: Color(hex: "51cf66")
+                    color: Color(hexString: "51cf66")
                 )
                 
                 statCard(
                     title: "Incorrectas",
                     value: "\(viewModel.incorrectCount)",
                     icon: "xmark.circle.fill",
-                    color: Color(hex: "ff6b6b")
+                    color: Color(hexString: "ff6b6b")
                 )
             }
             .padding(.horizontal, 20)
@@ -698,7 +698,7 @@ struct FlashcardGameView: View {
                 HStack(spacing: 8) {
                     Image(systemName: "chart.bar.fill")
                         .font(.system(size: 16, weight: .semibold))
-                        .foregroundStyle(Color(hex: "667eea"))
+                        .foregroundStyle(Color(hexString: "667eea"))
                     
                     Text("Precisión: \(Int(accuracy))%")
                         .font(.system(size: 17, weight: .semibold))
@@ -745,13 +745,13 @@ struct FlashcardGameView: View {
                     .frame(height: 58)
                     .background(
                         LinearGradient(
-                            colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                            colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                             startPoint: .leading,
                             endPoint: .trailing
                         ),
                         in: RoundedRectangle(cornerRadius: 16)
                     )
-                    .shadow(color: Color(hex: "667eea").opacity(0.4), radius: 12, x: 0, y: 6)
+                    .shadow(color: Color(hexString: "667eea").opacity(0.4), radius: 12, x: 0, y: 6)
                 }
                 .buttonStyle(.plain)
                 

@@ -36,7 +36,7 @@ struct BingoProgressView: View {
                     
                     Text("\(markedCount)/\(totalCells)")
                         .font(.system(size: 14, weight: .bold))
-                        .foregroundStyle(Color(hex: "667eea"))
+                        .foregroundStyle(Color(hexString: "667eea"))
                         .contentTransition(.numericText())
                 }
                 
@@ -49,7 +49,7 @@ struct BingoProgressView: View {
                         Capsule()
                             .fill(
                                 LinearGradient(
-                                    colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                                    colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                                     startPoint: .leading,
                                     endPoint: .trailing
                                 )
@@ -68,7 +68,7 @@ struct BingoProgressView: View {
                     icon: "clock.fill",
                     value: formattedTime,
                     label: "Tiempo",
-                    color: Color(hex: "ffa94d")
+                    color: Color(hexString: "ffa94d")
                 )
                 
                 // Patterns achieved
@@ -76,7 +76,7 @@ struct BingoProgressView: View {
                     icon: "checkmark.seal.fill",
                     value: "\(patternsAchieved.count)",
                     label: "Patrones",
-                    color: Color(hex: "51cf66")
+                    color: Color(hexString: "51cf66")
                 )
                 
                 // Progress percentage
@@ -84,7 +84,7 @@ struct BingoProgressView: View {
                     icon: "chart.pie.fill",
                     value: "\(Int(progress * 100))%",
                     label: "Completo",
-                    color: Color(hex: "667eea")
+                    color: Color(hexString: "667eea")
                 )
             }
             
@@ -107,12 +107,12 @@ struct BingoProgressView: View {
                     .frame(height: 48)
                     .background(
                         isPaused
-                        ? Color(hex: "51cf66")
-                        : Color(hex: "ffa94d"),
+                        ? Color(hexString: "51cf66")
+                        : Color(hexString: "ffa94d"),
                         in: RoundedRectangle(cornerRadius: 14)
                     )
                     .shadow(
-                        color: (isPaused ? Color(hex: "51cf66") : Color(hex: "ffa94d")).opacity(0.4),
+                        color: (isPaused ? Color(hexString: "51cf66") : Color(hexString: "ffa94d")).opacity(0.4),
                         radius: 10,
                         x: 0,
                         y: 5
@@ -137,13 +137,13 @@ struct BingoProgressView: View {
                     .frame(height: 52)
                     .background(
                         LinearGradient(
-                            colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                            colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                             startPoint: .leading,
                             endPoint: .trailing
                         ),
                         in: RoundedRectangle(cornerRadius: 16)
                     )
-                    .shadow(color: Color(hex: "667eea").opacity(0.5), radius: 12, x: 0, y: 6)
+                    .shadow(color: Color(hexString: "667eea").opacity(0.5), radius: 12, x: 0, y: 6)
                 }
                 .buttonStyle(.plain)
             }
@@ -203,7 +203,7 @@ struct BingoPatternsView: View {
             HStack {
                 Image(systemName: "trophy.fill")
                     .font(.system(size: 16, weight: .semibold))
-                    .foregroundStyle(Color(hex: "ffd43b"))
+                    .foregroundStyle(Color(hexString: "ffd43b"))
                 
                 Text("Patrones Logrados")
                     .font(.system(size: 16, weight: .bold))
@@ -239,12 +239,12 @@ struct BingoPatternsView: View {
         HStack(spacing: 12) {
             ZStack {
                 Circle()
-                    .fill(Color(hex: "ffd43b").opacity(0.2))
+                    .fill(Color(hexString: "ffd43b").opacity(0.2))
                     .frame(width: 40, height: 40)
                 
                 Image(systemName: pattern.icon)
                     .font(.system(size: 18, weight: .semibold))
-                    .foregroundStyle(Color(hex: "ffd43b"))
+                    .foregroundStyle(Color(hexString: "ffd43b"))
             }
             
             VStack(alignment: .leading, spacing: 2) {
@@ -261,24 +261,24 @@ struct BingoPatternsView: View {
             
             Image(systemName: "checkmark.circle.fill")
                 .font(.system(size: 22, weight: .semibold))
-                .foregroundStyle(Color(hex: "51cf66"))
+                .foregroundStyle(Color(hexString: "51cf66"))
         }
         .padding(12)
-        .background(Color(hex: "ffd43b").opacity(0.08), in: RoundedRectangle(cornerRadius: 12))
+        .background(Color(hexString: "ffd43b").opacity(0.08), in: RoundedRectangle(cornerRadius: 12))
         .overlay {
             RoundedRectangle(cornerRadius: 12)
-                .stroke(Color(hex: "ffd43b").opacity(0.3), lineWidth: 1)
+                .stroke(Color(hexString: "ffd43b").opacity(0.3), lineWidth: 1)
         }
     }
 }
 
 // MARK: - Preview
-#Preview {
+#Preview("Bingo Progress & Patterns") {
     ZStack {
         LinearGradient(
             colors: [
-                Color(hex: "667eea").opacity(0.12),
-                Color(hex: "764ba2").opacity(0.08)
+                Color(hexString: "667eea").opacity(0.12),
+                Color(hexString: "764ba2").opacity(0.08)
             ],
             startPoint: .topLeading,
             endPoint: .bottomTrailing

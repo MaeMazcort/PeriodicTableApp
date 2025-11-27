@@ -62,7 +62,7 @@ struct PairsGameView: View {
                         }
                         .foregroundStyle(
                             LinearGradient(
-                                colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                                colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                                 startPoint: .leading,
                                 endPoint: .trailing
                             )
@@ -77,9 +77,9 @@ struct PairsGameView: View {
     private var backgroundGradient: some View {
         LinearGradient(
             colors: [
-                Color(hex: "667eea").opacity(0.12),
-                Color(hex: "764ba2").opacity(0.08),
-                Color(hex: "f093fb").opacity(0.06)
+                Color(hexString: "667eea").opacity(0.12),
+                Color(hexString: "764ba2").opacity(0.08),
+                Color(hexString: "f093fb").opacity(0.06)
             ],
             startPoint: .topLeading,
             endPoint: .bottomTrailing
@@ -97,7 +97,7 @@ struct PairsGameView: View {
                 Circle()
                     .fill(
                         LinearGradient(
-                            colors: [Color(hex: "667eea").opacity(0.2), Color(hex: "764ba2").opacity(0.15)],
+                            colors: [Color(hexString: "667eea").opacity(0.2), Color(hexString: "764ba2").opacity(0.15)],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         )
@@ -108,7 +108,7 @@ struct PairsGameView: View {
                     .font(.system(size: 60, weight: .semibold))
                     .foregroundStyle(
                         LinearGradient(
-                            colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                            colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         )
@@ -154,13 +154,13 @@ struct PairsGameView: View {
                 .frame(height: 58)
                 .background(
                     LinearGradient(
-                        colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                        colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                         startPoint: .leading,
                         endPoint: .trailing
                     ),
                     in: RoundedRectangle(cornerRadius: 18)
                 )
-                .shadow(color: Color(hex: "667eea").opacity(0.4), radius: 12, x: 0, y: 6)
+                .shadow(color: Color(hexString: "667eea").opacity(0.4), radius: 12, x: 0, y: 6)
             }
             .buttonStyle(.plain)
             .padding(.horizontal, 20)
@@ -179,12 +179,12 @@ struct PairsGameView: View {
                 // Icon
                 ZStack {
                     Circle()
-                        .fill(Color(hex: difficulty.color).opacity(0.15))
+                        .fill(Color(hexString: difficulty.color).opacity(0.15))
                         .frame(width: 50, height: 50)
                     
                     Image(systemName: difficulty.icon)
                         .font(.system(size: 24, weight: .semibold))
-                        .foregroundStyle(Color(hex: difficulty.color))
+                        .foregroundStyle(Color(hexString: difficulty.color))
                 }
                 
                 // Info
@@ -205,7 +205,7 @@ struct PairsGameView: View {
                     .font(.system(size: 24, weight: .semibold))
                     .foregroundStyle(
                         selectedDifficulty == difficulty
-                        ? Color(hex: difficulty.color)
+                        ? Color(hexString: difficulty.color)
                         : Color.gray.opacity(0.3)
                     )
             }
@@ -215,14 +215,14 @@ struct PairsGameView: View {
                 RoundedRectangle(cornerRadius: 20)
                     .stroke(
                         selectedDifficulty == difficulty
-                        ? Color(hex: difficulty.color).opacity(0.5)
+                        ? Color(hexString: difficulty.color).opacity(0.5)
                         : Color.clear,
                         lineWidth: 2
                     )
             }
             .shadow(
                 color: selectedDifficulty == difficulty
-                ? Color(hex: difficulty.color).opacity(0.2)
+                ? Color(hexString: difficulty.color).opacity(0.2)
                 : .clear,
                 radius: 12,
                 x: 0,
@@ -275,7 +275,7 @@ struct PairsGameView: View {
         HStack(spacing: 12) {
             Image(systemName: "lightbulb.fill")
                 .font(.system(size: 18, weight: .semibold))
-                .foregroundStyle(Color(hex: "ffa94d"))
+                .foregroundStyle(Color(hexString: "ffa94d"))
             
             VStack(alignment: .leading, spacing: 4) {
                 Text("Encuentra las parejas")
@@ -293,7 +293,7 @@ struct PairsGameView: View {
         .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16))
         .overlay {
             RoundedRectangle(cornerRadius: 16)
-                .stroke(Color(hex: "ffa94d").opacity(0.3), lineWidth: 1)
+                .stroke(Color(hexString: "ffa94d").opacity(0.3), lineWidth: 1)
         }
         .padding(.horizontal, 20)
     }

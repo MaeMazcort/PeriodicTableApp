@@ -35,12 +35,12 @@ struct CelebrationConfettiView: View {
 struct CelebrationConfettiPiece: View {
     // Merged palette from both previous implementations
     private static let palette: [Color] = [
-        Color(hex: "667eea"),
-        Color(hex: "764ba2"),
-        Color(hex: "f093fb"),
-        Color(hex: "51cf66"),
-        Color(hex: "ff6b6b"),
-        Color(hex: "ffa94d")
+        Color(hexString: "667eea"),
+        Color(hexString: "764ba2"),
+        Color(hexString: "f093fb"),
+        Color(hexString: "51cf66"),
+        Color(hexString: "ff6b6b"),
+        Color(hexString: "ffa94d")
     ]
 
     private let size: CGFloat
@@ -49,7 +49,7 @@ struct CelebrationConfettiPiece: View {
     init() {
         // Choose deterministic values at init time to avoid ambiguous type inference in the body
         self.size = CGFloat.random(in: 6...12)
-        self.color = Self.palette.randomElement() ?? Color(hex: "667eea")
+        self.color = Self.palette.randomElement() ?? Color(hexString: "667eea")
     }
 
     var body: some View {

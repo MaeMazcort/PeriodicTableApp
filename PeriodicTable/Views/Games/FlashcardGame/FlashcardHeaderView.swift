@@ -33,7 +33,7 @@ struct FlashcardHeaderView: View {
                     Capsule()
                         .fill(
                             LinearGradient(
-                                colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                                colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                                 startPoint: .leading,
                                 endPoint: .trailing
                             )
@@ -52,7 +52,7 @@ struct FlashcardHeaderView: View {
                         .font(.system(size: 16, weight: .semibold))
                         .foregroundStyle(
                             LinearGradient(
-                                colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                                colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
                                 startPoint: .topLeading,
                                 endPoint: .bottomTrailing
                             )
@@ -87,7 +87,7 @@ struct FlashcardHeaderView: View {
                     HStack(spacing: 6) {
                         Image(systemName: "checkmark.circle.fill")
                             .font(.system(size: 16, weight: .semibold))
-                            .foregroundStyle(Color(hex: "51cf66"))
+                            .foregroundStyle(Color(hexString: "51cf66"))
                         
                         Text("\(correctCount)")
                             .font(.system(size: 17, weight: .bold))
@@ -96,17 +96,17 @@ struct FlashcardHeaderView: View {
                     }
                     .padding(.horizontal, 14)
                     .padding(.vertical, 8)
-                    .background(Color(hex: "51cf66").opacity(0.12), in: Capsule())
+                    .background(Color(hexString: "51cf66").opacity(0.12), in: Capsule())
                     .overlay {
                         Capsule()
-                            .stroke(Color(hex: "51cf66").opacity(0.3), lineWidth: 1)
+                            .stroke(Color(hexString: "51cf66").opacity(0.3), lineWidth: 1)
                     }
                     
                     // Incorrect count
                     HStack(spacing: 6) {
                         Image(systemName: "xmark.circle.fill")
                             .font(.system(size: 16, weight: .semibold))
-                            .foregroundStyle(Color(hex: "ff6b6b"))
+                            .foregroundStyle(Color(hexString: "ff6b6b"))
                         
                         Text("\(incorrectCount)")
                             .font(.system(size: 17, weight: .bold))
@@ -115,10 +115,10 @@ struct FlashcardHeaderView: View {
                     }
                     .padding(.horizontal, 14)
                     .padding(.vertical, 8)
-                    .background(Color(hex: "ff6b6b").opacity(0.12), in: Capsule())
+                    .background(Color(hexString: "ff6b6b").opacity(0.12), in: Capsule())
                     .overlay {
                         Capsule()
-                            .stroke(Color(hex: "ff6b6b").opacity(0.3), lineWidth: 1)
+                            .stroke(Color(hexString: "ff6b6b").opacity(0.3), lineWidth: 1)
                     }
                 }
             }
@@ -131,38 +131,40 @@ struct FlashcardHeaderView: View {
 }
 
 // MARK: - Preview
-#Preview {
-    VStack(spacing: 20) {
-        FlashcardHeaderView(
-            currentIndex: 0,
-            totalCards: 10,
-            correctCount: 0,
-            incorrectCount: 0
-        )
-        
-        FlashcardHeaderView(
-            currentIndex: 5,
-            totalCards: 10,
-            correctCount: 4,
-            incorrectCount: 1
-        )
-        
-        FlashcardHeaderView(
-            currentIndex: 9,
-            totalCards: 10,
-            correctCount: 8,
-            incorrectCount: 1
+struct FlashcardHeaderView_Previews: PreviewProvider {
+    static var previews: some View {
+        VStack(spacing: 20) {
+            FlashcardHeaderView(
+                currentIndex: 0,
+                totalCards: 10,
+                correctCount: 0,
+                incorrectCount: 0
+            )
+            
+            FlashcardHeaderView(
+                currentIndex: 5,
+                totalCards: 10,
+                correctCount: 4,
+                incorrectCount: 1
+            )
+            
+            FlashcardHeaderView(
+                currentIndex: 9,
+                totalCards: 10,
+                correctCount: 8,
+                incorrectCount: 1
+            )
+        }
+        .padding()
+        .background(
+            LinearGradient(
+                colors: [
+                    Color(hexString: "667eea").opacity(0.12),
+                    Color(hexString: "764ba2").opacity(0.08)
+                ],
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
         )
     }
-    .padding()
-    .background(
-        LinearGradient(
-            colors: [
-                Color(hex: "667eea").opacity(0.12),
-                Color(hex: "764ba2").opacity(0.08)
-            ],
-            startPoint: .topLeading,
-            endPoint: .bottomTrailing
-        )
-    )
 }
