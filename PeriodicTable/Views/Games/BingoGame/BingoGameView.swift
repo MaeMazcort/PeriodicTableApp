@@ -19,58 +19,56 @@ struct BingoGameView: View {
     @State private var selectedSpeed: BingoGameSpeed = .normal
     
     var body: some View {
-        NavigationStack {
-            ZStack {
-                // Background gradient
-                backgroundGradient
-                
-                VStack(spacing: 0) {
-                    if showSetup {
-                        setupView
-                    } else if viewModel.gameState == .playing {
-                        playingView
-                    } else if case .won(let patterns) = viewModel.gameState {
-                        BingoResultsView(
-                            patterns: patterns,
-                            totalTime: viewModel.elapsedTime,
-                            markedCount: viewModel.markedOnCard,
-                            totalCalled: viewModel.totalElementsCalled,
-                            onPlayAgain: {
-                                withAnimation {
-                                    showSetup = true
-                                    viewModel.gameState = .setup
-                                }
-                            },
-                            onExit: {
-                                dismiss()
+        ZStack {
+            // Background gradient
+            backgroundGradient
+            
+            VStack(spacing: 0) {
+                if showSetup {
+                    setupView
+                } else if viewModel.gameState == .playing {
+                    playingView
+                } else if case .won(let patterns) = viewModel.gameState {
+                    BingoResultsView(
+                        patterns: patterns,
+                        totalTime: viewModel.elapsedTime,
+                        markedCount: viewModel.markedOnCard,
+                        totalCalled: viewModel.totalElementsCalled,
+                        onPlayAgain: {
+                            withAnimation {
+                                showSetup = true
+                                viewModel.gameState = .setup
                             }
-                        )
-                    }
+                        },
+                        onExit: {
+                            dismiss()
+                        }
+                    )
                 }
             }
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    if showSetup || viewModel.gameState != .playing {
-                        exitButton
-                    }
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                if showSetup || viewModel.gameState != .playing {
+                    exitButton
                 }
-                ToolbarItem(placement: .principal) {
-                    if !showSetup {
-                        HStack(spacing: 6) {
-                            Image(systemName: "circle.grid.3x3.fill")
-                                .font(.system(size: 16, weight: .semibold))
-                            Text("Bingo Químico")
-                                .font(.system(size: 18, weight: .bold))
-                        }
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
+            }
+            ToolbarItem(placement: .principal) {
+                if !showSetup {
+                    HStack(spacing: 6) {
+                        Image(systemName: "circle.grid.3x3.fill")
+                            .font(.system(size: 16, weight: .semibold))
+                        Text("Bingo Químico")
+                            .font(.system(size: 18, weight: .bold))
                     }
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
                 }
             }
         }

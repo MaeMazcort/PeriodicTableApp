@@ -26,8 +26,18 @@ private extension Color {
     }
 }
 
+// Custom ButtonStyle for press animations
+private struct PressableButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .scaleEffect(configuration.isPressed ? 0.98 : 1.0)
+            .animation(.spring(response: 0.3, dampingFraction: 0.6), value: configuration.isPressed)
+    }
+}
+
 // MARK: - GamesHubView
 struct GamesHubView: View {
+    @EnvironmentObject var dataManager: DataManager
     @EnvironmentObject var progressManager: ProgressManager
     @State private var scale: CGFloat = 0.95
     @State private var opacity: Double = 0
@@ -190,7 +200,7 @@ struct GamesHubView: View {
                     NavigationLink(value: juego) {
                         GameRowView(tipoJuego: juego)
                     }
-                    .buttonStyle(.plain)
+                    .buttonStyle(PressableButtonStyle())
                 }
             }
         }
@@ -302,5 +312,6 @@ struct StatBadge: View {
 // MARK: - Preview
 #Preview("Juegos") {
     GamesHubView()
+        .environmentObject(DataManager.shared)
         .environmentObject(ProgressManager.shared)
 }

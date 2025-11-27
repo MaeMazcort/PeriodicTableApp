@@ -26,56 +26,54 @@ struct QuizGameView: View {
     @State private var selectedDifficulty: QuizDifficulty = .mixed
     
     var body: some View {
-        NavigationStack {
-            ZStack {
-                // Background gradient
-                backgroundGradient
-                
-                VStack(spacing: 0) {
-                    if viewModel.gameState == .setup || showDifficultyPicker {
-                        difficultySelectionView
-                    } else if viewModel.gameState == .playing {
-                        playingView
-                    } else if viewModel.gameState == .completed {
-                        QuizResultsView(
-                            correctCount: viewModel.correctCount,
-                            incorrectCount: viewModel.incorrectCount,
-                            totalTime: viewModel.elapsedTime,
-                            difficulty: viewModel.difficulty,
-                            onPlayAgain: {
-                                withAnimation {
-                                    showDifficultyPicker = true
-                                    viewModel.gameState = .setup
-                                }
-                            },
-                            onExit: {
-                                dismiss()
+        ZStack {
+            // Background gradient
+            backgroundGradient
+            
+            VStack(spacing: 0) {
+                if viewModel.gameState == .setup || showDifficultyPicker {
+                    difficultySelectionView
+                } else if viewModel.gameState == .playing {
+                    playingView
+                } else if viewModel.gameState == .completed {
+                    QuizResultsView(
+                        correctCount: viewModel.correctCount,
+                        incorrectCount: viewModel.incorrectCount,
+                        totalTime: viewModel.elapsedTime,
+                        difficulty: viewModel.difficulty,
+                        onPlayAgain: {
+                            withAnimation {
+                                showDifficultyPicker = true
+                                viewModel.gameState = .setup
                             }
-                        )
-                    }
+                        },
+                        onExit: {
+                            dismiss()
+                        }
+                    )
                 }
             }
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    exitButton
-                }
-                ToolbarItem(placement: .principal) {
-                    if !showDifficultyPicker {
-                        HStack(spacing: 6) {
-                            Image(systemName: "questionmark.circle.fill")
-                                .font(.system(size: 16, weight: .semibold))
-                            Text("Quiz")
-                                .font(.system(size: 18, weight: .bold))
-                        }
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                exitButton
+            }
+            ToolbarItem(placement: .principal) {
+                if !showDifficultyPicker {
+                    HStack(spacing: 6) {
+                        Image(systemName: "questionmark.circle.fill")
+                            .font(.system(size: 16, weight: .semibold))
+                        Text("Quiz")
+                            .font(.system(size: 18, weight: .bold))
                     }
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
                 }
             }
         }

@@ -27,64 +27,62 @@ struct GuessPropertyGameView: View {
     @State private var currentGuess: Double = 50.0
     
     var body: some View {
-        NavigationStack {
-            ZStack {
-                backgroundGradient
-                
-                VStack(spacing: 0) {
-                    if showSetup {
-                        setupView
-                    } else if viewModel.gameState == .playing || viewModel.gameState == .reviewing {
-                        playingView
-                    } else if viewModel.gameState == .completed {
-                        GuessPropertyResultsView(
-                            totalScore: viewModel.totalScore,
-                            averageScore: viewModel.averageScore,
-                            averageError: viewModel.averageError,
-                            totalTime: viewModel.elapsedTime,
-                            excellentCount: viewModel.excellentCount,
-                            goodCount: viewModel.goodCount,
-                            okCount: viewModel.okCount,
-                            fairCount: viewModel.fairCount,
-                            poorCount: viewModel.poorCount,
-                            propertyStats: viewModel.propertyStats,
-                            difficulty: viewModel.difficulty,
-                            onPlayAgain: {
-                                withAnimation {
-                                    showSetup = true
-                                    viewModel.gameState = .setup
-                                }
-                            },
-                            onExit: {
-                                dismiss()
+        ZStack {
+            backgroundGradient
+            
+            VStack(spacing: 0) {
+                if showSetup {
+                    setupView
+                } else if viewModel.gameState == .playing || viewModel.gameState == .reviewing {
+                    playingView
+                } else if viewModel.gameState == .completed {
+                    GuessPropertyResultsView(
+                        totalScore: viewModel.totalScore,
+                        averageScore: viewModel.averageScore,
+                        averageError: viewModel.averageError,
+                        totalTime: viewModel.elapsedTime,
+                        excellentCount: viewModel.excellentCount,
+                        goodCount: viewModel.goodCount,
+                        okCount: viewModel.okCount,
+                        fairCount: viewModel.fairCount,
+                        poorCount: viewModel.poorCount,
+                        propertyStats: viewModel.propertyStats,
+                        difficulty: viewModel.difficulty,
+                        onPlayAgain: {
+                            withAnimation {
+                                showSetup = true
+                                viewModel.gameState = .setup
                             }
-                        )
-                    }
+                        },
+                        onExit: {
+                            dismiss()
+                        }
+                    )
                 }
             }
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    if showSetup || viewModel.gameState == .completed {
-                        exitButton
-                    }
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                if showSetup || viewModel.gameState == .completed {
+                    exitButton
                 }
-                ToolbarItem(placement: .principal) {
-                    if !showSetup {
-                        HStack(spacing: 6) {
-                            Image(systemName: "slider.horizontal.3")
-                                .font(.system(size: 16, weight: .semibold))
-                            Text("Adivina Propiedad")
-                                .font(.system(size: 18, weight: .bold))
-                        }
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
+            }
+            ToolbarItem(placement: .principal) {
+                if !showSetup {
+                    HStack(spacing: 6) {
+                        Image(systemName: "slider.horizontal.3")
+                            .font(.system(size: 16, weight: .semibold))
+                        Text("Adivina Propiedad")
+                            .font(.system(size: 18, weight: .bold))
                     }
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
                 }
             }
         }

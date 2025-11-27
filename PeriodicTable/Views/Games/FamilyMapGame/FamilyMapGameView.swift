@@ -19,57 +19,55 @@ struct FamilyMapGameView: View {
     @State private var selectedMode: FamilyMapGameMode = .buttons
     
     var body: some View {
-        NavigationStack {
-            ZStack {
-                // Background gradient
-                backgroundGradient
-                
-                VStack(spacing: 0) {
-                    if viewModel.gameState == .setup || showDifficultyPicker {
-                        difficultySelectionView
-                    } else if viewModel.gameState == .playing {
-                        playingView
-                    } else if viewModel.gameState == .completed {
-                        FamilyMapResultsView(
-                            correctCount: viewModel.correctCount,
-                            incorrectCount: viewModel.incorrectCount,
-                            totalTime: viewModel.elapsedTime,
-                            difficulty: viewModel.difficulty,
-                            familyStats: viewModel.familyStats,
-                            onPlayAgain: {
-                                withAnimation {
-                                    showDifficultyPicker = true
-                                    viewModel.gameState = .setup
-                                }
-                            },
-                            onExit: {
-                                dismiss()
+        ZStack {
+            // Background gradient
+            backgroundGradient
+            
+            VStack(spacing: 0) {
+                if viewModel.gameState == .setup || showDifficultyPicker {
+                    difficultySelectionView
+                } else if viewModel.gameState == .playing {
+                    playingView
+                } else if viewModel.gameState == .completed {
+                    FamilyMapResultsView(
+                        correctCount: viewModel.correctCount,
+                        incorrectCount: viewModel.incorrectCount,
+                        totalTime: viewModel.elapsedTime,
+                        difficulty: viewModel.difficulty,
+                        familyStats: viewModel.familyStats,
+                        onPlayAgain: {
+                            withAnimation {
+                                showDifficultyPicker = true
+                                viewModel.gameState = .setup
                             }
-                        )
-                    }
+                        },
+                        onExit: {
+                            dismiss()
+                        }
+                    )
                 }
             }
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    exitButton
-                }
-                ToolbarItem(placement: .principal) {
-                    if !showDifficultyPicker {
-                        HStack(spacing: 6) {
-                            Image(systemName: "square.grid.3x3.fill")
-                                .font(.system(size: 16, weight: .semibold))
-                            Text("Mapa por Familias")
-                                .font(.system(size: 18, weight: .bold))
-                        }
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                exitButton
+            }
+            ToolbarItem(placement: .principal) {
+                if !showDifficultyPicker {
+                    HStack(spacing: 6) {
+                        Image(systemName: "square.grid.3x3.fill")
+                            .font(.system(size: 16, weight: .semibold))
+                        Text("Mapa por Familias")
+                            .font(.system(size: 18, weight: .bold))
                     }
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
                 }
             }
         }

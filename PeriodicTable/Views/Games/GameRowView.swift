@@ -28,7 +28,6 @@ private extension Color {
 
 struct GameRowView: View {
     let tipoJuego: TipoJuego
-    @State private var isPressed = false
     
     var body: some View {
         HStack(spacing: 16) {
@@ -99,6 +98,7 @@ struct GameRowView: View {
                 .foregroundColor(.secondary)
         }
         .padding(16)
+        .contentShape(Rectangle())
         .background {
             ZStack {
                 // Colored background
@@ -128,8 +128,6 @@ struct GameRowView: View {
                 )
         }
         .shadow(color: gameColor.opacity(0.2), radius: 12, x: 0, y: 6)
-        .scaleEffect(isPressed ? 0.98 : 1.0)
-        .animation(.spring(response: 0.3, dampingFraction: 0.6), value: isPressed)
     }
     
     // MARK: - Computed Properties

@@ -27,58 +27,56 @@ struct FlashcardGameView: View {
     }
     
     var body: some View {
-        NavigationStack {
-            ZStack {
-                // Modern gradient background
-                backgroundGradient
+        ZStack {
+            // Modern gradient background
+            backgroundGradient
+            
+            VStack(spacing: 0) {
+                // Compact progress header
+                progressHeader
+                    .padding(.top, 8)
                 
-                VStack(spacing: 0) {
-                    // Compact progress header
-                    progressHeader
-                        .padding(.top, 8)
-                    
-                    if viewModel.gameState == .playing {
-                        playingView
-                    } else if viewModel.gameState == .completed {
-                        resultsView
-                    }
-                }
-                
-                // Confetti overlay for celebrations
-                if showConfetti {
-                    CelebrationConfettiView()
-                        .ignoresSafeArea()
-                        .allowsHitTesting(false)
+                if viewModel.gameState == .playing {
+                    playingView
+                } else if viewModel.gameState == .completed {
+                    resultsView
                 }
             }
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    exitButton
+            
+            // Confetti overlay for celebrations
+            if showConfetti {
+                CelebrationConfettiView()
+                    .ignoresSafeArea()
+                    .allowsHitTesting(false)
+            }
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                exitButton
+            }
+            ToolbarItem(placement: .principal) {
+                HStack(spacing: 6) {
+                    Image(systemName: "rectangle.stack.fill")
+                        .font(.system(size: 16, weight: .semibold))
+                    Text("Flashcards")
+                        .font(.system(size: 18, weight: .bold))
                 }
-                ToolbarItem(placement: .principal) {
-                    HStack(spacing: 6) {
-                        Image(systemName: "rectangle.stack.fill")
-                            .font(.system(size: 16, weight: .semibold))
-                        Text("Flashcards")
-                            .font(.system(size: 18, weight: .bold))
-                    }
-                    .foregroundStyle(
-                        LinearGradient(
-                            colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
-                            startPoint: .leading,
-                            endPoint: .trailing
-                        )
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
+                        startPoint: .leading,
+                        endPoint: .trailing
                     )
-                }
+                )
             }
-            .onAppear {
-                if viewModel.flashcards.isEmpty {
-                    viewModel.startNewGame(elementos: dataManager.elementos)
-                }
-                withAnimation(.easeInOut(duration: 1.5).repeatForever()) {
-                    showHint = true
-                }
+        }
+        .onAppear {
+            if viewModel.flashcards.isEmpty {
+                viewModel.startNewGame(elementos: dataManager.elementos)
+            }
+            withAnimation(.easeInOut(duration: 1.5).repeatForever()) {
+                showHint = true
             }
         }
     }

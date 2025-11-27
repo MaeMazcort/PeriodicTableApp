@@ -17,62 +17,60 @@ struct LightningGameView: View {
     @State private var showInstructions = true
     
     var body: some View {
-        NavigationStack {
-            ZStack {
-                // Background gradient
-                backgroundGradient
-                
-                VStack(spacing: 0) {
-                    if showInstructions {
-                        instructionsView
-                    } else if case .countdown(let count) = viewModel.gameState {
-                        LightningCountdownView(count: count)
-                    } else if viewModel.gameState == .playing {
-                        playingView
-                    } else if viewModel.gameState == .completed {
-                        LightningResultsView(
-                            correctCount: viewModel.correctCount,
-                            incorrectCount: viewModel.incorrectCount,
-                            totalPoints: viewModel.totalPoints,
-                            bestStreak: viewModel.bestStreak,
-                            averageTime: viewModel.averageTimePerQuestion,
-                            questionsPerMinute: viewModel.questionsPerMinute,
-                            onPlayAgain: {
-                                withAnimation {
-                                    showInstructions = true
-                                    viewModel.gameState = .ready
-                                }
-                            },
-                            onExit: {
-                                dismiss()
+        ZStack {
+            // Background gradient
+            backgroundGradient
+            
+            VStack(spacing: 0) {
+                if showInstructions {
+                    instructionsView
+                } else if case .countdown(let count) = viewModel.gameState {
+                    LightningCountdownView(count: count)
+                } else if viewModel.gameState == .playing {
+                    playingView
+                } else if viewModel.gameState == .completed {
+                    LightningResultsView(
+                        correctCount: viewModel.correctCount,
+                        incorrectCount: viewModel.incorrectCount,
+                        totalPoints: viewModel.totalPoints,
+                        bestStreak: viewModel.bestStreak,
+                        averageTime: viewModel.averageTimePerQuestion,
+                        questionsPerMinute: viewModel.questionsPerMinute,
+                        onPlayAgain: {
+                            withAnimation {
+                                showInstructions = true
+                                viewModel.gameState = .ready
                             }
-                        )
-                    }
+                        },
+                        onExit: {
+                            dismiss()
+                        }
+                    )
                 }
             }
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    if showInstructions || viewModel.gameState == .completed {
-                        exitButton
-                    }
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                if showInstructions || viewModel.gameState == .completed {
+                    exitButton
                 }
-                ToolbarItem(placement: .principal) {
-                    if !showInstructions && viewModel.gameState != .completed {
-                        HStack(spacing: 6) {
-                            Image(systemName: "bolt.fill")
-                                .font(.system(size: 16, weight: .semibold))
-                            Text("Reto Relámpago")
-                                .font(.system(size: 18, weight: .bold))
-                        }
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
+            }
+            ToolbarItem(placement: .principal) {
+                if !showInstructions && viewModel.gameState != .completed {
+                    HStack(spacing: 6) {
+                        Image(systemName: "bolt.fill")
+                            .font(.system(size: 16, weight: .semibold))
+                        Text("Reto Relámpago")
+                            .font(.system(size: 18, weight: .bold))
                     }
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [Color(hexString: "667eea"), Color(hexString: "764ba2")],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
                 }
             }
         }
