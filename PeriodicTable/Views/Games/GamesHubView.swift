@@ -9,15 +9,11 @@ import SwiftUI
 
 // MARK: - GamesHubView
 struct GamesHubView: View {
-    @State private var selectedGame: TipoJuego?
-    
     var body: some View {
         NavigationStack {
             List {
                 ForEach(TipoJuego.allCases, id: \.self) { juego in
-                    Button {
-                        selectedGame = juego
-                    } label: {
+                    NavigationLink(value: juego) {
                         GameRowView(tipoJuego: juego)
                     }
                     .accessibleButton(
@@ -27,7 +23,7 @@ struct GamesHubView: View {
                 }
             }
             .navigationTitle("Juegos")
-            .sheet(item: $selectedGame) { juego in
+            .navigationDestination(for: TipoJuego.self) { juego in
                 switch juego {
                 case .flashcards:
                     FlashcardGameView()

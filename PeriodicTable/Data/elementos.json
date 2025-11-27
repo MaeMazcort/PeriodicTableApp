@@ -16,12 +16,10 @@
     "electronegatividad": 2.20,
     "radioAtomico": 53,
     "energiaIonizacion": 1312,
-    "usosES": [
-      "Combustible para cohetes",
+    "usosES": [ "Combustible para cohetes",
       "Producción de amoníaco",
       "Refinación de petróleo",
-      "Pilas de combustible"
-    ],
+      "Pilas de combustible" ],
     "usosEN": [
         "Rocket fuel",
         "Ammonia production",

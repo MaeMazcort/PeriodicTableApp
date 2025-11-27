@@ -65,7 +65,7 @@ struct FlashcardGameView: View {
                     }
                     .foregroundStyle(
                         LinearGradient(
-                            colors: [ptColor("667eea"), ptColor("764ba2")],
+                            colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
                             startPoint: .leading,
                             endPoint: .trailing
                         )
@@ -87,9 +87,9 @@ struct FlashcardGameView: View {
     private var backgroundGradient: some View {
         LinearGradient(
             colors: [
-                ptColor("667eea").opacity(0.12),
-                ptColor("764ba2").opacity(0.08),
-                ptColor("f093fb").opacity(0.06)
+                Color(hex: "667eea").opacity(0.12),
+                Color(hex: "764ba2").opacity(0.08),
+                Color(hex: "f093fb").opacity(0.06)
             ],
             startPoint: .topLeading,
             endPoint: .bottomTrailing
@@ -106,7 +106,7 @@ struct FlashcardGameView: View {
                     .font(.system(size: 16, weight: .semibold))
                     .foregroundStyle(
                         LinearGradient(
-                            colors: [ptColor("667eea"), ptColor("764ba2")],
+                            colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         )
@@ -141,13 +141,13 @@ struct FlashcardGameView: View {
                 scoreIndicator(
                     icon: "checkmark.circle.fill",
                     count: viewModel.correctCount,
-                    color: ptColor("51cf66")
+                    color: Color(hex: "51cf66")
                 )
                 
                 scoreIndicator(
                     icon: "xmark.circle.fill",
                     count: viewModel.incorrectCount,
-                    color: ptColor("ff6b6b")
+                    color: Color(hex: "ff6b6b")
                 )
             }
         }
@@ -189,7 +189,7 @@ struct FlashcardGameView: View {
                 Capsule()
                     .fill(
                         LinearGradient(
-                            colors: [ptColor("667eea"), ptColor("764ba2")],
+                            colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
                             startPoint: .leading,
                             endPoint: .trailing
                         )
@@ -330,8 +330,8 @@ struct FlashcardGameView: View {
                                 .fill(
                                     LinearGradient(
                                         colors: [
-                                            ptColor("667eea").opacity(0.2),
-                                            ptColor("764ba2").opacity(0.15)
+                                            Color(hex: "667eea").opacity(0.2),
+                                            Color(hex: "764ba2").opacity(0.15)
                                         ],
                                         startPoint: .topLeading,
                                         endPoint: .bottomTrailing
@@ -343,7 +343,7 @@ struct FlashcardGameView: View {
                                 .font(.system(size: 44, weight: .semibold))
                                 .foregroundStyle(
                                     LinearGradient(
-                                        colors: [ptColor("667eea"), ptColor("764ba2")],
+                                        colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
                                         startPoint: .topLeading,
                                         endPoint: .bottomTrailing
                                     )
@@ -373,10 +373,10 @@ struct FlashcardGameView: View {
                                 Text("Escuchar pronunciación")
                                     .font(.system(size: 15, weight: .semibold))
                             }
-                            .foregroundStyle(ptColor("667eea"))
+                            .foregroundStyle(Color(hex: "667eea"))
                             .padding(.horizontal, 20)
                             .padding(.vertical, 12)
-                            .background(ptColor("667eea").opacity(0.1), in: Capsule())
+                            .background(Color(hex: "667eea").opacity(0.1), in: Capsule())
                         }
                         .buttonStyle(.plain)
                     }
@@ -399,7 +399,7 @@ struct FlashcardGameView: View {
                             .padding(.vertical, 6)
                             .background(
                                 LinearGradient(
-                                    colors: [ptColor("667eea"), ptColor("764ba2")],
+                                    colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
                                     startPoint: .leading,
                                     endPoint: .trailing
                                 ),
@@ -411,7 +411,7 @@ struct FlashcardGameView: View {
                             .font(.system(size: 72, weight: .bold))
                             .foregroundStyle(
                                 LinearGradient(
-                                    colors: [ptColor("667eea"), ptColor("764ba2")],
+                                    colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
                                     startPoint: .topLeading,
                                     endPoint: .bottomTrailing
                                 )
@@ -435,10 +435,10 @@ struct FlashcardGameView: View {
                             Text("Escuchar pronunciación")
                                 .font(.system(size: 15, weight: .semibold))
                         }
-                        .foregroundStyle(ptColor("667eea"))
+                        .foregroundStyle(Color(hex: "667eea"))
                         .padding(.horizontal, 20)
                         .padding(.vertical, 12)
-                        .background(ptColor("667eea").opacity(0.1), in: Capsule())
+                        .background(Color(hex: "667eea").opacity(0.1), in: Capsule())
                     }
                     .buttonStyle(.plain)
                 }
@@ -477,10 +477,10 @@ struct FlashcardGameView: View {
                 VStack(spacing: 8) {
                     Image(systemName: "xmark.circle.fill")
                         .font(.system(size: 44))
-                        .foregroundStyle(ptColor("ff6b6b"))
+                        .foregroundStyle(Color(hex: "ff6b6b"))
                     Text("No lo sé")
                         .font(.system(size: 14, weight: .bold))
-                        .foregroundStyle(ptColor("ff6b6b"))
+                        .foregroundStyle(Color(hex: "ff6b6b"))
                 }
                 .opacity(swipeProgress)
                 .scaleEffect(0.8 + (swipeProgress * 0.2))
@@ -494,10 +494,10 @@ struct FlashcardGameView: View {
                 VStack(spacing: 8) {
                     Image(systemName: "checkmark.circle.fill")
                         .font(.system(size: 44))
-                        .foregroundStyle(ptColor("51cf66"))
+                        .foregroundStyle(Color(hex: "51cf66"))
                     Text("Lo sé")
                         .font(.system(size: 14, weight: .bold))
-                        .foregroundStyle(ptColor("51cf66"))
+                        .foregroundStyle(Color(hex: "51cf66"))
                 }
                 .opacity(swipeProgress)
                 .scaleEffect(0.8 + (swipeProgress * 0.2))
@@ -582,13 +582,13 @@ struct FlashcardGameView: View {
                 .frame(height: 56)
                 .background(
                     LinearGradient(
-                        colors: [ptColor("ff6b6b"), ptColor("ee5a52")],
+                        colors: [Color(hex: "ff6b6b"), Color(hex: "ee5a52")],
                         startPoint: .leading,
                         endPoint: .trailing
                     ),
                     in: RoundedRectangle(cornerRadius: 16)
                 )
-                .shadow(color: ptColor("ff6b6b").opacity(0.4), radius: 12, x: 0, y: 6)
+                .shadow(color: Color(hex: "ff6b6b").opacity(0.4), radius: 12, x: 0, y: 6)
             }
             .buttonStyle(.plain)
             
@@ -616,13 +616,13 @@ struct FlashcardGameView: View {
                 .frame(height: 56)
                 .background(
                     LinearGradient(
-                        colors: [ptColor("51cf66"), ptColor("37b24d")],
+                        colors: [Color(hex: "51cf66"), Color(hex: "37b24d")],
                         startPoint: .leading,
                         endPoint: .trailing
                     ),
                     in: RoundedRectangle(cornerRadius: 16)
                 )
-                .shadow(color: ptColor("51cf66").opacity(0.4), radius: 12, x: 0, y: 6)
+                .shadow(color: Color(hex: "51cf66").opacity(0.4), radius: 12, x: 0, y: 6)
             }
             .buttonStyle(.plain)
         }
@@ -641,13 +641,13 @@ struct FlashcardGameView: View {
                 Circle()
                     .fill(
                         LinearGradient(
-                            colors: [ptColor("667eea"), ptColor("764ba2")],
+                            colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         )
                     )
                     .frame(width: 120, height: 120)
-                    .shadow(color: ptColor("667eea").opacity(0.5), radius: 20, x: 0, y: 10)
+                    .shadow(color: Color(hex: "667eea").opacity(0.5), radius: 20, x: 0, y: 10)
                 
                 Image(systemName: "checkmark")
                     .font(.system(size: 50, weight: .bold))
@@ -679,14 +679,14 @@ struct FlashcardGameView: View {
                     title: "Correctas",
                     value: "\(viewModel.correctCount)",
                     icon: "checkmark.circle.fill",
-                    color: ptColor("51cf66")
+                    color: Color(hex: "51cf66")
                 )
                 
                 statCard(
                     title: "Incorrectas",
                     value: "\(viewModel.incorrectCount)",
                     icon: "xmark.circle.fill",
-                    color: ptColor("ff6b6b")
+                    color: Color(hex: "ff6b6b")
                 )
             }
             .padding(.horizontal, 20)
@@ -698,7 +698,7 @@ struct FlashcardGameView: View {
                 HStack(spacing: 8) {
                     Image(systemName: "chart.bar.fill")
                         .font(.system(size: 16, weight: .semibold))
-                        .foregroundStyle(ptColor("667eea"))
+                        .foregroundStyle(Color(hex: "667eea"))
                     
                     Text("Precisión: \(Int(accuracy))%")
                         .font(.system(size: 17, weight: .semibold))
@@ -745,13 +745,13 @@ struct FlashcardGameView: View {
                     .frame(height: 58)
                     .background(
                         LinearGradient(
-                            colors: [ptColor("667eea"), ptColor("764ba2")],
+                            colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
                             startPoint: .leading,
                             endPoint: .trailing
                         ),
                         in: RoundedRectangle(cornerRadius: 16)
                     )
-                    .shadow(color: ptColor("667eea").opacity(0.4), radius: 12, x: 0, y: 6)
+                    .shadow(color: Color(hex: "667eea").opacity(0.4), radius: 12, x: 0, y: 6)
                 }
                 .buttonStyle(.plain)
                 
@@ -877,11 +877,11 @@ struct ConfettiView: View {
 
 struct ConfettiPiece: View {
     private static let palette: [Color] = [
-        ptColor("667eea"),
-        ptColor("764ba2"),
-        ptColor("f093fb"),
-        ptColor("51cf66"),
-        ptColor("ff6b6b")
+        Color(hex: "667eea"),
+        Color(hex: "764ba2"),
+        Color(hex: "f093fb"),
+        Color(hex: "51cf66"),
+        Color(hex: "ff6b6b")
     ]
     
     private let size: CGFloat
@@ -890,44 +890,13 @@ struct ConfettiPiece: View {
     init() {
         // Choose deterministic values at init time to avoid ambiguous type inference in the body
         self.size = CGFloat.random(in: 6...12)
-        self.color = Self.palette.randomElement() ?? ptColor("667eea")
+        self.color = Self.palette.randomElement() ?? Color(hex: "667eea")
     }
     
     var body: some View {
         Circle()
             .fill(color)
             .frame(width: size, height: size)
-    }
-}
-
-// MARK: - Helper function for pt_hex Color initialization
-fileprivate func ptColor(_ hex: String) -> Color { Color(pt_hex: hex) }
-
-// MARK: - Color Extension
-fileprivate extension Color {
-    init(pt_hex: String) {
-        let hex = pt_hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
-        var int: UInt64 = 0
-        Scanner(string: hex).scanHexInt64(&int)
-        let a, r, g, b: UInt64
-        switch hex.count {
-        case 3: // RGB (12-bit)
-            (a, r, g, b) = (255, (int >> 8) * 17, (int >> 4 & 0xF) * 17, (int & 0xF) * 17)
-        case 6: // RGB (24-bit)
-            (a, r, g, b) = (255, int >> 16, int >> 8 & 0xFF, int & 0xFF)
-        case 8: // ARGB (32-bit)
-            (a, r, g, b) = (int >> 24, int >> 16 & 0xFF, int >> 8 & 0xFF, int & 0xFF)
-        default:
-            (a, r, g, b) = (1, 1, 1, 0)
-        }
-        
-        self.init(
-            .sRGB,
-            red: Double(r) / 255,
-            green: Double(g) / 255,
-            blue:  Double(b) / 255,
-            opacity: Double(a) / 255
-        )
     }
 }
 
@@ -938,4 +907,3 @@ fileprivate extension Color {
         .environmentObject(ProgressManager.shared)
         .environmentObject(TTSManager.shared)
 }
-

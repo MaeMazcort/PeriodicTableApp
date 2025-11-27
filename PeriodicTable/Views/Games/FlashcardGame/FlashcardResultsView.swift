@@ -17,8 +17,8 @@ struct FlashcardResultsView: View {
     @State private var showContent = false
     @State private var scale: CGFloat = 0.8
     
-    static let gradientStart = Color(pt_hex: "667eea")
-    static let gradientEnd = Color(pt_hex: "764ba2")
+    static let gradientStart = Color(hex: "667eea")
+    static let gradientEnd = Color(hex: "764ba2")
     
     private var totalCards: Int {
         correctCount + incorrectCount
@@ -61,7 +61,7 @@ struct FlashcardResultsView: View {
                         )
                     )
                     .frame(width: 120, height: 120)
-                    .shadow(color: Color(pt_hex: "667eea").opacity(0.5), radius: 20, x: 0, y: 10)
+                    .shadow(color: Color(hex: "667eea").opacity(0.5), radius: 20, x: 0, y: 10)
                     .scaleEffect(scale)
                 
                 Image(systemName: "checkmark")
@@ -102,14 +102,14 @@ struct FlashcardResultsView: View {
                     title: "Correctas",
                     value: "\(correctCount)",
                     icon: "checkmark.circle.fill",
-                    color: Color(pt_hex: "51cf66")
+                    color: Color(hex: "51cf66")
                 )
                 
                 statCard(
                     title: "Incorrectas",
                     value: "\(incorrectCount)",
                     icon: "xmark.circle.fill",
-                    color: Color(pt_hex: "ff6b6b")
+                    color: Color(hex: "ff6b6b")
                 )
             }
             .padding(.horizontal, 20)
@@ -122,7 +122,7 @@ struct FlashcardResultsView: View {
                 HStack(spacing: 8) {
                     Image(systemName: "chart.bar.fill")
                         .font(.system(size: 18, weight: .semibold))
-                        .foregroundStyle(Color(pt_hex: "667eea"))
+                        .foregroundStyle(Color(hex: "667eea"))
                     
                     Text("Precisión:")
                         .font(.system(size: 17, weight: .medium))
@@ -189,7 +189,7 @@ struct FlashcardResultsView: View {
                         ),
                         in: RoundedRectangle(cornerRadius: 18)
                     )
-                    .shadow(color: Color(pt_hex: "667eea").opacity(0.4), radius: 12, x: 0, y: 6)
+                    .shadow(color: Color(hex: "667eea").opacity(0.4), radius: 12, x: 0, y: 6)
                 }
                 .buttonStyle(.plain)
                 
@@ -265,34 +265,6 @@ struct FlashcardResultsView: View {
     }
 }
 
-// MARK: - Color Extension
-fileprivate extension Color {
-    init(pt_hex: String) {
-        let hex = pt_hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
-        var int: UInt64 = 0
-        Scanner(string: hex).scanHexInt64(&int)
-        let a, r, g, b: UInt64
-        switch hex.count {
-        case 3: // RGB (12-bit)
-            (a, r, g, b) = (255, (int >> 8) * 17, (int >> 4 & 0xF) * 17, (int & 0xF) * 17)
-        case 6: // RGB (24-bit)
-            (a, r, g, b) = (255, int >> 16, int >> 8 & 0xFF, int & 0xFF)
-        case 8: // ARGB (32-bit)
-            (a, r, g, b) = (int >> 24, int >> 16 & 0xFF, int >> 8 & 0xFF, int & 0xFF)
-        default:
-            (a, r, g, b) = (1, 1, 1, 0)
-        }
-        
-        self.init(
-            .sRGB,
-            red: Double(r) / 255,
-            green: Double(g) / 255,
-            blue:  Double(b) / 255,
-            opacity: Double(a) / 255
-        )
-    }
-}
-
 // MARK: - Preview
 #Preview {
     ZStack {
@@ -325,4 +297,3 @@ fileprivate extension Color {
         }
     }
 }
-
