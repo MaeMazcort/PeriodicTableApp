@@ -290,12 +290,12 @@ struct HomeView: View {
                 }
                 
                 ModernQuickActionButton(
-                    icon: "bolt.fill",
-                    title: "Reto Rápido",
-                    gradient: [Color(hexString: "ff6b6b"), Color(hexString: "ffa94d")]
+                    icon: "chart.bar.fill",
+                    title: "Progreso",
+                    gradient: [Color(hexString: "4dabf7"), Color(hexString: "667eea")]
                 ) {
                     generateHaptic()
-                    selectedTab = .games
+                    selectedTab = .progress
                 }
                 
                 ModernQuickActionButton(

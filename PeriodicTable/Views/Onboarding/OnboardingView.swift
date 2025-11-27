@@ -354,7 +354,7 @@ struct OnboardingView: View {
             // What you'll discover
             VStack(spacing: 12) {
                 ReadyFeature(icon: "atom", text: "118 elementos químicos")
-                ReadyFeature(icon: "gamecontroller.fill", text: "6 juegos educativos")
+                ReadyFeature(icon: "gamecontroller.fill", text: "7 juegos educativos")
                 ReadyFeature(icon: "chart.line.uptrend.xyaxis", text: "Seguimiento de progreso")
             }
             
