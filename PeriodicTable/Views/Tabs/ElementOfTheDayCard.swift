@@ -87,19 +87,38 @@ struct ElementOfTheDayCard: View {
                 }
             }
             .padding(24)
-            .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 24))
+            .background {
+                ZStack {
+                    // Colored background layer for better contrast
+                    RoundedRectangle(cornerRadius: 24)
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    Color(hexString: "667eea").opacity(0.15),
+                                    Color(hexString: "764ba2").opacity(0.12)
+                                ],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            )
+                        )
+                    
+                    // Glass material on top
+                    RoundedRectangle(cornerRadius: 24)
+                        .fill(.ultraThickMaterial)
+                }
+            }
             .overlay {
                 RoundedRectangle(cornerRadius: 24)
                     .stroke(
                         LinearGradient(
-                            colors: [Color.white.opacity(0.5), Color.white.opacity(0.2)],
+                            colors: [Color.white.opacity(0.6), Color.white.opacity(0.3)],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         ),
-                        lineWidth: 1.5
+                        lineWidth: 2
                     )
             }
-            .shadow(color: ColorPalette.colorParaFamilia(elemento.familia).opacity(0.2), radius: 20, x: 0, y: 10)
+            .shadow(color: Color(hexString: "667eea").opacity(0.25), radius: 24, x: 0, y: 12)
             .scaleEffect(scale)
         }
         .buttonStyle(.plain)

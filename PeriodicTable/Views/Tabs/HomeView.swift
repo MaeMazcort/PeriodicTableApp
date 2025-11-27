@@ -93,9 +93,9 @@ struct HomeView: View {
     private var backgroundGradient: some View {
         LinearGradient(
             colors: [
-                Color(hexString: "667eea").opacity(0.08),
-                Color(hexString: "764ba2").opacity(0.05),
-                Color(hexString: "f093fb").opacity(0.03)
+                Color(hexString: "667eea").opacity(0.15),
+                Color(hexString: "764ba2").opacity(0.12),
+                Color(hexString: "f093fb").opacity(0.08)
             ],
             startPoint: .topLeading,
             endPoint: .bottomTrailing
@@ -186,19 +186,38 @@ struct HomeView: View {
             Spacer()
         }
         .padding(20)
-        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 24))
+        .background {
+            ZStack {
+                // Colored background layer
+                RoundedRectangle(cornerRadius: 24)
+                    .fill(
+                        LinearGradient(
+                            colors: [
+                                Color(hexString: "ff6b6b").opacity(0.12),
+                                Color(hexString: "ffa94d").opacity(0.08)
+                            ],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                    )
+                
+                // Glass material on top
+                RoundedRectangle(cornerRadius: 24)
+                    .fill(.ultraThickMaterial)
+            }
+        }
         .overlay {
             RoundedRectangle(cornerRadius: 24)
                 .stroke(
                     LinearGradient(
-                        colors: [Color.white.opacity(0.5), Color.white.opacity(0.2)],
+                        colors: [Color.white.opacity(0.6), Color.white.opacity(0.3)],
                         startPoint: .topLeading,
                         endPoint: .bottomTrailing
                     ),
-                    lineWidth: 1.5
+                    lineWidth: 2
                 )
         }
-        .shadow(color: Color(hexString: "ff6b6b").opacity(0.15), radius: 20, x: 0, y: 10)
+        .shadow(color: Color(hexString: "ff6b6b").opacity(0.25), radius: 24, x: 0, y: 12)
         .scaleEffect(scale)
         .opacity(opacity)
         .modifier(
@@ -427,19 +446,38 @@ struct ModernElementOfTheDayCard: View {
                 }
             }
             .padding(24)
-            .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 24))
+            .background {
+                ZStack {
+                    // Colored background layer
+                    RoundedRectangle(cornerRadius: 24)
+                        .fill(
+                            LinearGradient(
+                                colors: [
+                                    Color(hexString: "667eea").opacity(0.15),
+                                    Color(hexString: "764ba2").opacity(0.12)
+                                ],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            )
+                        )
+                    
+                    // Glass material on top
+                    RoundedRectangle(cornerRadius: 24)
+                        .fill(.ultraThickMaterial)
+                }
+            }
             .overlay {
                 RoundedRectangle(cornerRadius: 24)
                     .stroke(
                         LinearGradient(
-                            colors: [Color.white.opacity(0.5), Color.white.opacity(0.2)],
+                            colors: [Color.white.opacity(0.6), Color.white.opacity(0.3)],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         ),
-                        lineWidth: 1.5
+                        lineWidth: 2
                     )
             }
-            .shadow(color: ColorPalette.colorParaFamilia(elemento.familia).opacity(0.2), radius: 20, x: 0, y: 10)
+            .shadow(color: Color(hexString: "667eea").opacity(0.25), radius: 24, x: 0, y: 12)
             .scaleEffect(scale)
         }
         .buttonStyle(.plain)
@@ -504,19 +542,35 @@ struct ModernQuickActionButton: View {
             }
             .frame(maxWidth: .infinity)
             .frame(height: 120)
-            .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 20))
+            .background {
+                ZStack {
+                    // Colored background layer
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(
+                            LinearGradient(
+                                colors: [gradient[0].opacity(0.12), gradient[1].opacity(0.08)],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            )
+                        )
+                    
+                    // Glass material on top
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(.ultraThickMaterial)
+                }
+            }
             .overlay {
                 RoundedRectangle(cornerRadius: 20)
                     .stroke(
                         LinearGradient(
-                            colors: [Color.white.opacity(0.4), Color.white.opacity(0.1)],
+                            colors: [Color.white.opacity(0.5), Color.white.opacity(0.2)],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         ),
-                        lineWidth: 1
+                        lineWidth: 1.5
                     )
             }
-            .shadow(color: gradient[0].opacity(0.15), radius: 12, x: 0, y: 6)
+            .shadow(color: gradient[0].opacity(0.2), radius: 16, x: 0, y: 8)
             .scaleEffect(isPressed ? 0.95 : 1.0)
             .animation(.spring(response: 0.3, dampingFraction: 0.6), value: isPressed)
         }
@@ -563,15 +617,25 @@ struct ModernElementMiniCard: View {
         .frame(width: 100)
         .padding(.vertical, 16)
         .padding(.horizontal, 12)
-        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 18))
+        .background {
+            ZStack {
+                // Colored background layer
+                RoundedRectangle(cornerRadius: 18)
+                    .fill(ColorPalette.colorParaFamilia(elemento.familia).opacity(0.12))
+                
+                // Glass material on top
+                RoundedRectangle(cornerRadius: 18)
+                    .fill(.ultraThickMaterial)
+            }
+        }
         .overlay {
             RoundedRectangle(cornerRadius: 18)
                 .stroke(
-                    ColorPalette.colorParaFamilia(elemento.familia).opacity(0.3),
-                    lineWidth: 1
+                    ColorPalette.colorParaFamilia(elemento.familia).opacity(0.4),
+                    lineWidth: 1.5
                 )
         }
-        .shadow(color: ColorPalette.colorParaFamilia(elemento.familia).opacity(0.15), radius: 10, x: 0, y: 5)
+        .shadow(color: ColorPalette.colorParaFamilia(elemento.familia).opacity(0.2), radius: 12, x: 0, y: 6)
         .accessibleButton(label: elemento.nombreLocalizado)
     }
 }
@@ -583,4 +647,3 @@ struct ModernElementMiniCard: View {
         .environmentObject(ProgressManager.shared)
         .environmentObject(TTSManager.shared)
 }
-
