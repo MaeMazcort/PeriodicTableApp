@@ -318,9 +318,10 @@ struct FlashcardGameView: View {
                 swipeIndicators(swipeProgress: swipeProgress)
             }
             
-            // Content
-            VStack(spacing: 24) {
-                if !viewModel.isFlipped {
+            // Content: two faces
+            ZStack {
+                // Front face
+                VStack(spacing: 24) {
                     // Front side - Question
                     VStack(spacing: 20) {
                         // Animated icon
@@ -362,7 +363,14 @@ struct FlashcardGameView: View {
                             .foregroundStyle(.secondary)
                     }
                     .padding(.horizontal, 28)
-                } else {
+                }
+                .frame(maxHeight: .infinity, alignment: .center)
+                .padding(.vertical, 24)
+                .opacity(viewModel.isFlipped ? 0 : 1)
+                .rotation3DEffect(.degrees(viewModel.isFlipped ? 180 : 0), axis: (x: 0, y: 1, z: 0))
+                
+                // Back face
+                VStack(spacing: 24) {
                     // Back side - Answer
                     VStack(spacing: 20) {
                         // Answer badge
@@ -398,8 +406,6 @@ struct FlashcardGameView: View {
                     }
                     .padding(.horizontal, 28)
                     
-                    Spacer()
-                    
                     // TTS button
                     Button {
                         ttsManager.speak(flashcard.answer)
@@ -418,13 +424,13 @@ struct FlashcardGameView: View {
                     }
                     .buttonStyle(.plain)
                 }
+                .frame(maxHeight: .infinity, alignment: .center)
+                .padding(.vertical, 24)
+                .opacity(viewModel.isFlipped ? 1 : 0)
+                .rotation3DEffect(.degrees(viewModel.isFlipped ? 360 : 180), axis: (x: 0, y: 1, z: 0))
             }
-            .padding(.vertical, 40)
+            .animation(.spring(response: 0.5, dampingFraction: 0.75), value: viewModel.isFlipped)
         }
-        .rotation3DEffect(
-            .degrees(cardRotation),
-            axis: (x: 0, y: 1, z: 0)
-        )
         .offset(x: dragOffset.width, y: dragOffset.height * 0.3)
         .rotationEffect(.degrees(Double(dragOffset.width / 20)))
         .gesture(
