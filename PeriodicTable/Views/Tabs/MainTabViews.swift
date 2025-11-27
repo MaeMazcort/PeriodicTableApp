@@ -7,105 +7,6 @@
 
 import SwiftUI
 
-// MARK: - SearchView
-struct SearchView: View {
-    @EnvironmentObject var dataManager: DataManager
-    @State private var searchText = ""
-    @State private var selectedFilter: FiltroElemento = .todos
-    
-    var body: some View {
-        NavigationStack {
-            VStack {
-                // Barra de búsqueda
-                HStack {
-                    Image(systemName: "magnifyingglass")
-                        .foregroundColor(.secondary)
-                    
-                    TextField("Buscar elemento...", text: $searchText)
-                        .textFieldStyle(.plain)
-                        .accessibilityLabel("Campo de búsqueda")
-                        .accessibilityHint("Escribe el nombre o símbolo de un elemento")
-                }
-                .padding()
-                .background(ColorPalette.Sistema.fondoSecundario)
-                .cornerRadius(12)
-                .padding(.horizontal)
-                
-                // Filtros rápidos
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 8) {
-                        ForEach(FiltroElemento.allCases, id: \.self) { filtro in
-                            FilterChip(
-                                title: filtro.nombre,
-                                isSelected: selectedFilter == filtro
-                            ) {
-                                selectedFilter = filtro
-                            }
-                        }
-                    }
-                    .padding(.horizontal)
-                }
-                
-                // Resultados
-                List(searchResults) { elemento in
-                    NavigationLink(destination: ElementDetailView(elemento: elemento)) {
-                        ElementRowView(elemento: elemento)
-                    }
-                    .accessibleButton(label: "\(elemento.nombreLocalizado), símbolo \(elemento.simbolo)")
-                }
-                .listStyle(.plain)
-            }
-            .navigationTitle("Buscar")
-        }
-    }
-    
-    private var searchResults: [Elemento] {
-        var results = dataManager.elementos
-        
-        // Aplicar búsqueda de texto
-        if !searchText.isEmpty {
-            results = results.filter { elemento in
-                elemento.nombreES.lowercased().contains(searchText.lowercased()) ||
-                elemento.nombreEN.lowercased().contains(searchText.lowercased()) ||
-                elemento.simbolo.lowercased().contains(searchText.lowercased())
-            }
-        }
-        
-        // Aplicar filtro
-        switch selectedFilter {
-        case .todos:
-            break
-        case .metales:
-            results = results.filter { $0.esMetal }
-        case .noMetales:
-            results = results.filter { !$0.esMetal }
-        case .gases:
-            results = results.filter { $0.estado25C == .gas }
-        case .liquidos:
-            results = results.filter { $0.estado25C == .liquido }
-        case .solidos:
-            results = results.filter { $0.estado25C == .solido }
-        }
-        
-        return results
-    }
-    
-    enum FiltroElemento: String, CaseIterable {
-        case todos = "Todos"
-        case metales = "Metales"
-        case noMetales = "No Metales"
-        case gases = "Gases"
-        case liquidos = "Líquidos"
-        case solidos = "Sólidos"
-        
-        var nombre: String { rawValue }
-    }
-}
-
-// MARK: - Games Hub
-// Note: GamesHubView, GameRowView, and GameViewPlaceholder are now in separate files
-// in the Games folder for better organization.
-
 // MARK: - ProgressView (Estadísticas)
 struct ProgressView: View {
     @EnvironmentObject var progressManager: ProgressManager
@@ -294,41 +195,7 @@ struct SettingsView: View {
     }
 }
 
-// MARK: - Componentes Auxiliares
-
-struct FilterChip: View {
-    let title: String
-    let isSelected: Bool
-    let action: () -> Void
-    
-    var body: some View {
-        Button(action: action) {
-            Text(title)
-                .font(.caption)
-                .fontWeight(isSelected ? .semibold : .regular)
-                .padding(.horizontal, 12)
-                .padding(.vertical, 6)
-                .background(
-                    Capsule()
-                        .fill(isSelected ? Color.accentColor : ColorPalette.Sistema.fondoSecundario)
-                )
-                .foregroundColor(isSelected ? .white : .primary)
-        }
-        .accessibleButton(
-            label: title,
-            hint: isSelected ? "Seleccionado" : "Toca para filtrar"
-        )
-    }
-}
-
 // MARK: - Previews
-#Preview("Búsqueda") {
-    SearchView()
-        .environmentObject(DataManager.shared)
-        .environmentObject(ProgressManager.shared)
-        .environmentObject(TTSManager.shared)
-}
-
 #Preview("Progreso") {
     ProgressView()
         .environmentObject(ProgressManager.shared)
