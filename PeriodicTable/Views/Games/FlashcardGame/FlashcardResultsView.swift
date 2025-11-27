@@ -17,8 +17,8 @@ struct FlashcardResultsView: View {
     @State private var showContent = false
     @State private var scale: CGFloat = 0.8
     
-    static let gradientStart = Color(hex: "667eea")
-    static let gradientEnd = Color(hex: "764ba2")
+    static let gradientStart = Color(hexString: "667eea")
+    static let gradientEnd = Color(hexString: "764ba2")
     
     private var totalCards: Int {
         correctCount + incorrectCount
@@ -61,7 +61,7 @@ struct FlashcardResultsView: View {
                         )
                     )
                     .frame(width: 120, height: 120)
-                    .shadow(color: Color(hex: "667eea").opacity(0.5), radius: 20, x: 0, y: 10)
+                    .shadow(color: Color(hexString: "667eea").opacity(0.5), radius: 20, x: 0, y: 10)
                     .scaleEffect(scale)
                 
                 Image(systemName: "checkmark")
@@ -102,14 +102,14 @@ struct FlashcardResultsView: View {
                     title: "Correctas",
                     value: "\(correctCount)",
                     icon: "checkmark.circle.fill",
-                    color: Color(hex: "51cf66")
+                    color: Color(hexString: "51cf66")
                 )
                 
                 statCard(
                     title: "Incorrectas",
                     value: "\(incorrectCount)",
                     icon: "xmark.circle.fill",
-                    color: Color(hex: "ff6b6b")
+                    color: Color(hexString: "ff6b6b")
                 )
             }
             .padding(.horizontal, 20)
@@ -122,7 +122,7 @@ struct FlashcardResultsView: View {
                 HStack(spacing: 8) {
                     Image(systemName: "chart.bar.fill")
                         .font(.system(size: 18, weight: .semibold))
-                        .foregroundStyle(Color(hex: "667eea"))
+                        .foregroundStyle(Color(hexString: "667eea"))
                     
                     Text("Precisión:")
                         .font(.system(size: 17, weight: .medium))
@@ -189,7 +189,7 @@ struct FlashcardResultsView: View {
                         ),
                         in: RoundedRectangle(cornerRadius: 18)
                     )
-                    .shadow(color: Color(hex: "667eea").opacity(0.4), radius: 12, x: 0, y: 6)
+                    .shadow(color: Color(hexString: "667eea").opacity(0.4), radius: 12, x: 0, y: 6)
                 }
                 .buttonStyle(.plain)
                 
@@ -297,3 +297,4 @@ struct FlashcardResultsView: View {
         }
     }
 }
+

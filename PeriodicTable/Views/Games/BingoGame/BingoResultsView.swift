@@ -8,6 +8,25 @@
 
 import SwiftUI
 
+// Local hex color helper to avoid conflicting initializers
+fileprivate func brColor(_ hex: String) -> Color {
+    var hexString = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
+    var int: UInt64 = 0
+    Scanner(string: hexString).scanHexInt64(&int)
+    let a, r, g, b: UInt64
+    switch hexString.count {
+    case 3: // RGB (12-bit)
+        (a, r, g, b) = (255, (int >> 8) * 17, ((int >> 4) & 0xF) * 17, (int & 0xF) * 17)
+    case 6: // RGB (24-bit)
+        (a, r, g, b) = (255, int >> 16, (int >> 8) & 0xFF, int & 0xFF)
+    case 8: // ARGB (32-bit)
+        (a, r, g, b) = (int >> 24, (int >> 16) & 0xFF, (int >> 8) & 0xFF, int & 0xFF)
+    default:
+        (a, r, g, b) = (255, 0, 0, 0)
+    }
+    return Color(.sRGB, red: Double(r) / 255, green: Double(g) / 255, blue: Double(b) / 255, opacity: Double(a) / 255)
+}
+
 struct BingoResultsView: View {
     let patterns: [BingoWinPattern]
     let totalTime: Int
@@ -58,7 +77,7 @@ struct BingoResultsView: View {
                             .font(.system(size: 19, weight: .semibold))
                             .foregroundStyle(
                                 LinearGradient(
-                                    colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                                    colors: [brColor("667eea"), brColor("764ba2")],
                                     startPoint: .leading,
                                     endPoint: .trailing
                                 )
@@ -73,28 +92,28 @@ struct BingoResultsView: View {
                             title: "Puntos",
                             value: "\(totalPoints)",
                             icon: "star.fill",
-                            color: Color(hex: "ffd43b")
+                            color: brColor("ffd43b")
                         )
                         
                         statCard(
                             title: "Marcados",
                             value: "\(markedCount)/25",
                             icon: "checkmark.seal.fill",
-                            color: Color(hex: "51cf66")
+                            color: brColor("51cf66")
                         )
                         
                         statCard(
                             title: "Tiempo",
                             value: formattedTime,
                             icon: "clock.fill",
-                            color: Color(hex: "ffa94d")
+                            color: brColor("ffa94d")
                         )
                         
                         statCard(
                             title: "Cantados",
                             value: "\(totalCalled)",
                             icon: "number",
-                            color: Color(hex: "667eea")
+                            color: brColor("667eea")
                         )
                     }
                     .padding(.horizontal, 20)
@@ -124,13 +143,13 @@ struct BingoResultsView: View {
                             .frame(height: 58)
                             .background(
                                 LinearGradient(
-                                    colors: [Color(hex: "667eea"), Color(hex: "764ba2")],
+                                    colors: [brColor("667eea"), brColor("764ba2")],
                                     startPoint: .leading,
                                     endPoint: .trailing
                                 ),
                                 in: RoundedRectangle(cornerRadius: 18)
                             )
-                            .shadow(color: Color(hex: "667eea").opacity(0.4), radius: 12, x: 0, y: 6)
+                            .shadow(color: brColor("667eea").opacity(0.4), radius: 12, x: 0, y: 6)
                         }
                         .buttonStyle(.plain)
                         
@@ -185,13 +204,13 @@ struct BingoResultsView: View {
             Circle()
                 .fill(
                     LinearGradient(
-                        colors: [Color(hex: "ffd43b"), Color(hex: "ffa94d")],
+                        colors: [brColor("ffd43b"), brColor("ffa94d")],
                         startPoint: .topLeading,
                         endPoint: .bottomTrailing
                     )
                 )
                 .frame(width: 140, height: 140)
-                .shadow(color: Color(hex: "ffd43b").opacity(0.5), radius: 24, x: 0, y: 12)
+                .shadow(color: brColor("ffd43b").opacity(0.5), radius: 24, x: 0, y: 12)
                 .scaleEffect(scale)
             
             VStack(spacing: 4) {
@@ -218,7 +237,7 @@ struct BingoResultsView: View {
             HStack {
                 Image(systemName: "trophy.fill")
                     .font(.system(size: 18, weight: .semibold))
-                    .foregroundStyle(Color(hex: "ffd43b"))
+                    .foregroundStyle(brColor("ffd43b"))
                 
                 Text("Patrones Completados")
                     .font(.system(size: 20, weight: .bold))
@@ -241,12 +260,12 @@ struct BingoResultsView: View {
         HStack(spacing: 14) {
             ZStack {
                 Circle()
-                    .fill(Color(hex: "ffd43b").opacity(0.2))
+                    .fill(brColor("ffd43b").opacity(0.2))
                     .frame(width: 56, height: 56)
                 
                 Image(systemName: pattern.icon)
                     .font(.system(size: 26, weight: .bold))
-                    .foregroundStyle(Color(hex: "ffd43b"))
+                    .foregroundStyle(brColor("ffd43b"))
             }
             
             VStack(alignment: .leading, spacing: 4) {
@@ -263,15 +282,15 @@ struct BingoResultsView: View {
             
             Image(systemName: "checkmark.seal.fill")
                 .font(.system(size: 28, weight: .semibold))
-                .foregroundStyle(Color(hex: "51cf66"))
+                .foregroundStyle(brColor("51cf66"))
         }
         .padding(16)
-        .background(Color(hex: "ffd43b").opacity(0.08), in: RoundedRectangle(cornerRadius: 18))
+        .background(brColor("ffd43b").opacity(0.08), in: RoundedRectangle(cornerRadius: 18))
         .overlay {
             RoundedRectangle(cornerRadius: 18)
-                .stroke(Color(hex: "ffd43b").opacity(0.4), lineWidth: 2)
+                .stroke(brColor("ffd43b").opacity(0.4), lineWidth: 2)
         }
-        .shadow(color: Color(hex: "ffd43b").opacity(0.15), radius: 12, x: 0, y: 6)
+        .shadow(color: brColor("ffd43b").opacity(0.15), radius: 12, x: 0, y: 6)
     }
     
     // MARK: - Stat Card
@@ -335,8 +354,8 @@ struct BingoResultsView: View {
     ZStack {
         LinearGradient(
             colors: [
-                Color(hex: "667eea").opacity(0.12),
-                Color(hex: "764ba2").opacity(0.08)
+                brColor("667eea").opacity(0.12),
+                brColor("764ba2").opacity(0.08)
             ],
             startPoint: .topLeading,
             endPoint: .bottomTrailing
@@ -353,4 +372,3 @@ struct BingoResultsView: View {
         )
     }
 }
-
