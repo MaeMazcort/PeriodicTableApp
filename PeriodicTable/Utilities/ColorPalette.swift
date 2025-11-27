@@ -138,8 +138,8 @@ struct ColorPalette {
 
 // MARK: - Extensión de Color para Hex (opcional)
 extension Color {
-    init(hex: String) {
-        let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
+    init(hexString: String) {
+        let hex = hexString.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
         var int: UInt64 = 0
         Scanner(string: hex).scanHexInt64(&int)
         let a, r, g, b: UInt64
@@ -161,6 +161,10 @@ extension Color {
             blue:  Double(b) / 255,
             opacity: Double(a) / 255
         )
+    }
+    
+    static func fromHex(_ hexString: String) -> Color {
+        return Color(hexString: hexString)
     }
 }
 
@@ -194,3 +198,4 @@ extension Color {
     Halógenos: #FFB6C1 (claro), #DC143C (oscuro), #8B0000 (HC)
     Gases Nobles: #D3D3D3 (claro), #A9A9A9 (oscuro), #696969 (HC)
 */
+
