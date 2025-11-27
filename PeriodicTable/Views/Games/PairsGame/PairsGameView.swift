@@ -48,9 +48,6 @@ struct PairsGameView: View {
         }
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                exitButton
-            }
             ToolbarItem(placement: .principal) {
                 if !showDifficultyPicker {
                     HStack(spacing: 6) {
@@ -67,6 +64,11 @@ struct PairsGameView: View {
                         )
                     )
                 }
+            }
+        }
+        .onDisappear {
+            if viewModel.gameState == .playing {
+                viewModel.saveProgress(progressManager: progressManager)
             }
         }
     }
@@ -309,33 +311,6 @@ struct PairsGameView: View {
         }
         .padding(.horizontal, 20)
         .animation(.spring(response: 0.5, dampingFraction: 0.75), value: viewModel.cards.map { $0.isFlipped })
-    }
-    
-    // MARK: - Exit Button
-    private var exitButton: some View {
-        Button {
-            if viewModel.gameState == .playing {
-                viewModel.saveProgress(progressManager: progressManager)
-            }
-            generateHaptic(style: .light)
-            dismiss()
-        } label: {
-            HStack(spacing: 6) {
-                Image(systemName: "xmark")
-                    .font(.system(size: 14, weight: .semibold))
-                
-                Text("Salir")
-                    .font(.system(size: 16, weight: .semibold))
-            }
-            .foregroundStyle(.primary)
-            .padding(.horizontal, 14)
-            .padding(.vertical, 8)
-            .background(.ultraThinMaterial, in: Capsule())
-            .overlay {
-                Capsule()
-                    .stroke(Color.white.opacity(0.3), lineWidth: 1)
-            }
-        }
     }
     
     // MARK: - Helper Functions

@@ -51,11 +51,6 @@ struct LightningGameView: View {
         }
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                if showInstructions || viewModel.gameState == .completed {
-                    exitButton
-                }
-            }
             ToolbarItem(placement: .principal) {
                 if !showInstructions && viewModel.gameState != .completed {
                     HStack(spacing: 6) {
@@ -72,6 +67,11 @@ struct LightningGameView: View {
                         )
                     )
                 }
+            }
+        }
+        .onDisappear {
+            if viewModel.gameState == .playing {
+                viewModel.saveProgress(progressManager: progressManager)
             }
         }
     }
@@ -293,33 +293,6 @@ struct LightningGameView: View {
             return "¡Últimos segundos! Da todo 💪"
         } else {
             return "Responde rápido para más puntos ⚡"
-        }
-    }
-    
-    // MARK: - Exit Button
-    private var exitButton: some View {
-        Button {
-            if viewModel.gameState == .playing {
-                viewModel.saveProgress(progressManager: progressManager)
-            }
-            generateHaptic(style: .light)
-            dismiss()
-        } label: {
-            HStack(spacing: 6) {
-                Image(systemName: "xmark")
-                    .font(.system(size: 14, weight: .semibold))
-                
-                Text("Salir")
-                    .font(.system(size: 16, weight: .semibold))
-            }
-            .foregroundStyle(.primary)
-            .padding(.horizontal, 14)
-            .padding(.vertical, 8)
-            .background(.ultraThinMaterial, in: Capsule())
-            .overlay {
-                Capsule()
-                    .stroke(Color.white.opacity(0.3), lineWidth: 1)
-            }
         }
     }
     

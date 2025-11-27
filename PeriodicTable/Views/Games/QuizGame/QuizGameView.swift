@@ -56,9 +56,6 @@ struct QuizGameView: View {
         }
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                exitButton
-            }
             ToolbarItem(placement: .principal) {
                 if !showDifficultyPicker {
                     HStack(spacing: 6) {
@@ -75,6 +72,11 @@ struct QuizGameView: View {
                         )
                     )
                 }
+            }
+        }
+        .onDisappear {
+            if viewModel.gameState == .playing {
+                viewModel.saveProgress(progressManager: progressManager)
             }
         }
     }
@@ -366,33 +368,6 @@ struct QuizGameView: View {
             }
             .buttonStyle(.plain)
             .disabled(!viewModel.canGoNext)
-        }
-    }
-    
-    // MARK: - Exit Button
-    private var exitButton: some View {
-        Button {
-            if viewModel.gameState == .playing {
-                viewModel.saveProgress(progressManager: progressManager)
-            }
-            generateHaptic(style: .light)
-            dismiss()
-        } label: {
-            HStack(spacing: 6) {
-                Image(systemName: "xmark")
-                    .font(.system(size: 14, weight: .semibold))
-                
-                Text("Salir")
-                    .font(.system(size: 16, weight: .semibold))
-            }
-            .foregroundStyle(.primary)
-            .padding(.horizontal, 14)
-            .padding(.vertical, 8)
-            .background(.ultraThinMaterial, in: Capsule())
-            .overlay {
-                Capsule()
-                    .stroke(Color.white.opacity(0.3), lineWidth: 1)
-            }
         }
     }
     
