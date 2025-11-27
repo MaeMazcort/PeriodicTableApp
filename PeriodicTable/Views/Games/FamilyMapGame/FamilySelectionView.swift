@@ -44,12 +44,12 @@ struct FamilySelectionView: View {
                 // Icon
                 ZStack {
                     Circle()
-                        .fill(Color(hex: family.color).opacity(0.2))
+                        .fill(Color(hexString: family.color).opacity(0.2))
                         .frame(width: 44, height: 44)
                     
                     Image(systemName: family.icon)
                         .font(.system(size: 20, weight: .semibold))
-                        .foregroundStyle(Color(hex: family.color))
+                        .foregroundStyle(Color(hexString: family.color))
                 }
                 
                 // Name
@@ -65,7 +65,7 @@ struct FamilySelectionView: View {
             .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16))
             .overlay {
                 RoundedRectangle(cornerRadius: 16)
-                    .stroke(Color(hex: family.color).opacity(0.3), lineWidth: 2)
+                    .stroke(Color(hexString: family.color).opacity(0.3), lineWidth: 2)
             }
             .shadow(color: .black.opacity(0.05), radius: 8, x: 0, y: 4)
         }
@@ -106,12 +106,12 @@ struct FamilySelectionCompactView: View {
                 // Icon
                 ZStack {
                     Circle()
-                        .fill(Color(hex: family.color).opacity(0.2))
+                        .fill(Color(hexString: family.color).opacity(0.2))
                         .frame(width: 40, height: 40)
                     
                     Image(systemName: family.icon)
                         .font(.system(size: 18, weight: .semibold))
-                        .foregroundStyle(Color(hex: family.color))
+                        .foregroundStyle(Color(hexString: family.color))
                 }
                 
                 // Name
@@ -126,7 +126,7 @@ struct FamilySelectionCompactView: View {
             .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 14))
             .overlay {
                 RoundedRectangle(cornerRadius: 14)
-                    .stroke(Color(hex: family.color).opacity(0.3), lineWidth: 1.5)
+                    .stroke(Color(hexString: family.color).opacity(0.3), lineWidth: 1.5)
             }
             .shadow(color: .black.opacity(0.05), radius: 6, x: 0, y: 3)
         }
@@ -142,33 +142,36 @@ struct FamilySelectionCompactView: View {
 }
 
 // MARK: - Preview
-#Preview {
-    ZStack {
-        LinearGradient(
-            colors: [
-                Color(hex: "667eea").opacity(0.12),
-                Color(hex: "764ba2").opacity(0.08)
-            ],
-            startPoint: .topLeading,
-            endPoint: .bottomTrailing
-        )
-        .ignoresSafeArea()
-        
-        VStack(spacing: 30) {
-            FamilySelectionView(
-                onSelect: { _ in },
-                disabled: false
+struct FamilySelectionView_Previews: PreviewProvider {
+    static var previews: some View {
+        ZStack {
+            LinearGradient(
+                colors: [
+                    Color(hexString: "667eea").opacity(0.12),
+                    Color(hexString: "764ba2").opacity(0.08)
+                ],
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
             )
-            .padding()
+            .ignoresSafeArea()
             
-            Divider()
-            
-            FamilySelectionCompactView(
-                onSelect: { _ in },
-                disabled: false
-            )
-            .frame(height: 300)
-            .padding()
+            VStack(spacing: 30) {
+                FamilySelectionView(
+                    onSelect: { _ in },
+                    disabled: false
+                )
+                .padding()
+                
+                Divider()
+                
+                FamilySelectionCompactView(
+                    onSelect: { _ in },
+                    disabled: false
+                )
+                .frame(height: 300)
+                .padding()
+            }
         }
     }
 }
+
