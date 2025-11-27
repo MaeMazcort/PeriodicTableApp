@@ -352,7 +352,13 @@ struct ModernElementCard: View {
     let elemento: Elemento
     let action: () -> Void
     
-    @State private var isPressed = false
+    private struct ModernElementCardButtonStyle: ButtonStyle {
+        func makeBody(configuration: Configuration) -> some View {
+            configuration.label
+                .scaleEffect(configuration.isPressed ? 0.95 : 1.0)
+                .animation(.spring(response: 0.3, dampingFraction: 0.6), value: configuration.isPressed)
+        }
+    }
     
     var body: some View {
         Button(action: action) {
@@ -410,22 +416,8 @@ struct ModernElementCard: View {
                     )
             }
             .shadow(color: elementColor.opacity(0.2), radius: 6, x: 0, y: 3)
-            .scaleEffect(isPressed ? 0.95 : 1.0)
         }
-        .buttonStyle(.plain)
-        .simultaneousGesture(
-            DragGesture(minimumDistance: 0)
-                .onChanged { _ in
-                    withAnimation(.spring(response: 0.3, dampingFraction: 0.6)) {
-                        isPressed = true
-                    }
-                }
-                .onEnded { _ in
-                    withAnimation(.spring(response: 0.3, dampingFraction: 0.6)) {
-                        isPressed = false
-                    }
-                }
-        )
+        .buttonStyle(ModernElementCardButtonStyle())
     }
     
     private var elementColor: Color {
