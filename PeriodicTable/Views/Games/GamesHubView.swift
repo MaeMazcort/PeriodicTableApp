@@ -28,7 +28,12 @@ struct GamesHubView: View {
             }
             .navigationTitle("Juegos")
             .sheet(item: $selectedGame) { juego in
-                GameViewPlaceholder(tipoJuego: juego)
+                switch juego {
+                case .flashcards:
+                    FlashcardGameView()
+                default:
+                    GameViewPlaceholder(tipoJuego: juego)
+                }
             }
         }
     }

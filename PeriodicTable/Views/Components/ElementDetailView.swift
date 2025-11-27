@@ -1,5 +1,5 @@
 //
-//  ElementViews.swift
+//  ElementDetailView.swift
 //  PeriodicTable
 //
 //  Created by Maeva Mazadiego
@@ -7,116 +7,12 @@
 
 import SwiftUI
 
-// MARK: - ElementCardView (para la tabla periódica)
-struct ElementCardView: View {
-    let elemento: Elemento
-    @EnvironmentObject var progressManager: ProgressManager
-    @Environment(\.sizeCategory) var sizeCategory
-    
-    var body: some View {
-        VStack(spacing: 2) {
-            // Número atómico
-            Text("\(elemento.id)")
-                .font(.caption2)
-                .foregroundColor(.secondary)
-            
-            // Símbolo
-            Text(elemento.simbolo)
-                .font(sizeCategory.isAccessibilityCategory ? .body : .title3)
-                .fontWeight(.bold)
-                .minimumScaleFactor(0.5)
-                .lineLimit(1)
-            
-            // Nombre (opcional, depende del espacio)
-            if !sizeCategory.isAccessibilityCategory {
-                Text(elemento.nombreLocalizado)
-                    .font(.caption2)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.7)
-            }
-        }
-        .frame(minWidth: 50, minHeight: 50)
-        .padding(4)
-        .background(
-            RoundedRectangle(cornerRadius: 8)
-                .fill(ColorPalette.colorParaFamilia(elemento.familia).opacity(0.2))
-        )
-        .overlay(
-            RoundedRectangle(cornerRadius: 8)
-                .stroke(
-                    progressManager.esFavorito(elemento.id) ? Color.yellow : Color.clear,
-                    lineWidth: 2
-                )
-        )
-        .accessibilityElement(children: .ignore)
-        .accessibilityLabel("\(elemento.nombreLocalizado), símbolo \(elemento.simbolo), número atómico \(elemento.id)")
-        .accessibilityHint("Toca para ver detalles del elemento")
-    }
-}
-
-// MARK: - ElementRowView (para listas)
-struct ElementRowView: View {
-    let elemento: Elemento
-    @EnvironmentObject var progressManager: ProgressManager
-    
-    var body: some View {
-        HStack(spacing: 12) {
-            // Círculo con símbolo
-            ZStack {
-                Circle()
-                    .fill(ColorPalette.colorParaFamilia(elemento.familia).opacity(0.2))
-                    .frame(width: 50, height: 50)
-                
-                Text(elemento.simbolo)
-                    .font(.headline)
-                    .fontWeight(.bold)
-            }
-            
-            VStack(alignment: .leading, spacing: 4) {
-                HStack {
-                    Text(elemento.nombreLocalizado)
-                        .font(.body)
-                        .fontWeight(.semibold)
-                    
-                    if progressManager.esFavorito(elemento.id) {
-                        Image(systemName: "star.fill")
-                            .font(.caption)
-                            .foregroundColor(.yellow)
-                    }
-                }
-                
-                HStack {
-                    Text(elemento.familia.rawValue)
-                        .font(.caption)
-                    
-                    Text("•")
-                        .font(.caption)
-                    
-                    Text("Z = \(elemento.id)")
-                        .font(.caption)
-                }
-                .foregroundColor(.secondary)
-            }
-            
-            Spacer()
-            
-            // Nivel de dominio
-            if let nivel = progressManager.estadoAprendizaje(de: elemento.id)?.nivelDominio {
-                Image(systemName: nivel.icono)
-                    .foregroundColor(ColorPalette.colorParaNivelDominio(nivel))
-            }
-        }
-        .padding(.vertical, 4)
-    }
-}
-
 // MARK: - ElementDetailView (vista completa del elemento)
 struct ElementDetailView: View {
     let elemento: Elemento
     @EnvironmentObject var progressManager: ProgressManager
     @EnvironmentObject var ttsManager: TTSManager
     @Environment(\.dismiss) var dismiss
-    @State private var isPlaying = false
     
     var body: some View {
         NavigationStack {
@@ -421,16 +317,6 @@ struct PropertyRow: View {
 }
 
 // MARK: - Previews
-#Preview("Tarjeta de Elemento") {
-    ElementCardView(elemento: .ejemploHidrogeno)
-        .environmentObject(ProgressManager.shared)
-}
-
-#Preview("Fila de Elemento") {
-    ElementRowView(elemento: .ejemploHidrogeno)
-        .environmentObject(ProgressManager.shared)
-}
-
 #Preview("Detalle de Elemento") {
     ElementDetailView(elemento: .ejemploHidrogeno)
         .environmentObject(ProgressManager.shared)
